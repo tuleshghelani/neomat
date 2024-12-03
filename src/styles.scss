@@ -5,11 +5,11 @@
   --primary-color: #17a3de;
   --text-color: #333333;
   --background-color: #f0f0f0;
-  
+
   /* Typography */
   --font-primary: 'Outfit', sans-serif;
   --font-secondary: 'Quicksand', sans-serif;
-  
+
   /* Font Sizes */
   --text-xs: 0.75rem;    /* 12px */
   --text-sm: 0.875rem;   /* 14px */
@@ -110,33 +110,8 @@ a {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
-  
+
   &:hover {
     color: darken(#17a3de, 10%);
   }
-}
-
-/* Utility Classes */
-.text-primary {
-  color: var(--primary-color);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.leading-tight {
-  line-height: 1.25;
-}
-
-.leading-normal {
-  line-height: 1.5;
-}
-
-.leading-loose {
-  line-height: 1.75;
 }

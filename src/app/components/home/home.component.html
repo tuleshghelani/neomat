@@ -1,0 +1,79 @@
+<div class="slider-container">
+  <!-- Main Slider -->
+  <div class="slider">
+    <div class="slides" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
+      <div class="slide" *ngFor="let slide of slides; let i = index">
+        <img [src]="slide.image" [alt]="slide.alt" class="slide-image">
+        <div class="slide-content" data-aos="fade-up" data-aos-duration="1000">
+          <h2>{{slide.title}}</h2>
+          <p>{{slide.description}}</p>
+          <button class="cta-button" (click)="navigateToProduct(slide.link)">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button class="slider-nav prev" (click)="prevSlide()" (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+    <span class="arrow">&#10094;</span>
+  </button>
+  <button class="slider-nav next" (click)="nextSlide()" (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+    <span class="arrow">&#10095;</span>
+  </button>
+
+  <!-- Dots Navigation -->
+  <div class="slider-dots">
+    <button
+      *ngFor="let slide of slides; let i = index"
+      class="dot"
+      [class.active]="currentSlide === i"
+      (click)="goToSlide(i)"
+      (mouseenter)="stopAutoSlide()"
+      (mouseleave)="startAutoSlide()">
+    </button>
+  </div>
+</div>
+
+<div class="about-section">
+  <div class="about-container">
+    <!-- Left Content -->
+    <div class="about-content" data-aos="fade-right" data-aos-duration="1000">
+      <h2>Leading Industrial Solutions Provider</h2>
+      <p class="subtitle">Excellence in Engineering Since 1995</p>
+      <p class="description">
+        At Neomat, we specialize in delivering premium industrial solutions with a focus on valves,
+        fittings, and custom engineering services. Our commitment to quality and innovation has made
+        us a trusted partner for industries worldwide.
+      </p>
+      <div class="stats-container">
+        <div class="stat-item" *ngFor="let stat of stats">
+          <span class="stat-number">{{stat.current}}{{stat.suffix}}</span>
+          <span class="stat-label">{{stat.label}}</span>
+        </div>
+      </div>
+      <button class="about-cta">Discover More</button>
+    </div>
+
+    <!-- Right Image Grid -->
+    <div class="about-images" data-aos="fade-left" data-aos-duration="1000">
+      <div class="image-grid">
+        <div class="grid-item">
+          <img src="assets/about/engineering1.jpeg" alt="Engineering Excellence">
+        </div>
+        <div class="grid-item">
+          <img src="assets/about/engineering2.jpeg" alt="Quality Manufacturing">
+        </div>
+        <div class="grid-item">
+          <img src="assets/about/engineering3.jpeg" alt="Professional Team">
+        </div>
+        <div class="grid-item">
+          <img src="assets/about/engineering4.jpeg" alt="Professional Team">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
