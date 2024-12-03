@@ -16,7 +16,7 @@ interface StatItem {
 export class HomeComponent implements OnInit, OnDestroy {
   slides = [
     {
-      image: 'assets/Slider/1.jpeg',
+      image: 'assets/Slider/5.jpeg',
       alt: 'Industrial Valves',
       title: 'Premium Industrial Valves',
       description: 'Discover our comprehensive range of high-performance industrial valves engineered for reliability and durability in demanding environments.',
@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     //   link: '/products/control-valves'
     // },
     {
-      image: 'assets/Slider/4.jpeg',
+      image: 'assets/Slider/6.jpeg',
       alt: 'Custom Solutions',
       title: 'Custom Engineering Solutions',
       description: 'Tailored engineering solutions meeting specific industry requirements with innovative design and superior quality.',

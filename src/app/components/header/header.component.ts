@@ -28,18 +28,19 @@ export class HeaderComponent implements OnInit {
 
     // Initialize Google Translate
     window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: 'en',
-          layout: window.innerWidth < 768 ? 
-            window.google.translate.TranslateElement.InlineLayout.SIMPLE :
-            window.google.translate.TranslateElement.InlineLayout.HORIZONTAL,
-          autoDisplay: false,
-        },
-        'google_translate_element'
-      );
+      // Desktop version
+      if (window.innerWidth >= 992) {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            layout: window.google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+            autoDisplay: false,
+          },
+          'google_translate_element'
+        );
+      }
 
-      // Initialize mobile version
+      // Mobile version
       new window.google.translate.TranslateElement(
         {
           pageLanguage: 'en',

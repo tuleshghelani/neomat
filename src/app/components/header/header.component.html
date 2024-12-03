@@ -1,3 +1,21 @@
+<div class="sub-header">
+  <div class="sub-header-container">
+    <div class="contact-info">
+      <a href="tel:+1234567890" class="info-item">
+        <i class="fas fa-phone"></i>
+        +91 (234) 567-890
+      </a>
+      <a href="mailto:info@neomat.com" class="info-item">
+        <i class="fas fa-envelope"></i>
+        info&#64;neomat.com
+      </a>
+    </div>
+    <div class="translate-container-top">
+      <div id="google_translate_element"></div>
+    </div>
+  </div>
+</div>
+
 <header class="header">
   <div class="header-container">
     <div class="logo-container">
@@ -7,8 +25,8 @@
 
     <nav class="nav-desktop">
       <ul class="nav-links">
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link active">About</a></li>
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
         <li><a href="#" class="nav-link">Elements</a></li>
         <li><a href="#" class="nav-link">Blog</a></li>
         <li><a href="#" class="nav-link">Portfolio</a></li>
@@ -20,9 +38,9 @@
       <div class="translate-container">
         <div id="google_translate_element"></div>
       </div>
-      <button class="theme-toggle">
+      <!-- <button class="theme-toggle">
         <i class="fas fa-sun"></i>
-      </button>
+      </button> -->
     </div>
 
     <button class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
@@ -41,7 +59,7 @@
       <li><a href="#" class="nav-link">Portfolio</a></li>
       <li><a href="#" class="nav-link">Contact</a></li>
     </ul>
-    <div class="translate-container-mobile">
+    <div class="translate-container-mobile-top">
       <div id="google_translate_element_mobile"></div>
     </div>
   </nav>

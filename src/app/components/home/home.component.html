@@ -1,5 +1,5 @@
 <div class="slider-container">
-  <!-- Main Slider -->
+
   <div class="slider">
     <div class="slides" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
       <div class="slide" *ngFor="let slide of slides; let i = index">
@@ -15,7 +15,6 @@
     </div>
   </div>
 
-  <!-- Navigation Arrows -->
   <button class="slider-nav prev" (click)="prevSlide()" (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
     <span class="arrow">&#10094;</span>
   </button>
@@ -23,7 +22,6 @@
     <span class="arrow">&#10095;</span>
   </button>
 
-  <!-- Dots Navigation -->
   <div class="slider-dots">
     <button
       *ngFor="let slide of slides; let i = index"
@@ -182,7 +180,7 @@
     <!-- Products Grid -->
     <div class="products-grid">
       <!-- Product Card 1 -->
-      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <div class="product-image">
           <img src="assets/home/product/Forged_Fittings.jpeg" alt="Forged Fittings">
           <div class="overlay">
@@ -196,7 +194,7 @@
       </div>
 
       <!-- Product Card 2 -->
-      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <div class="product-image">
           <img src="assets/home/product/SORF_Flange.jpeg" alt="SORF Flange">
           <div class="overlay">
@@ -224,7 +222,7 @@
       </div>
 
       <!-- Product Card 4 -->
-      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <div class="product-image">
           <img src="assets/home/product/VCO_Fittings.jpeg" alt="VCO Fittings">
           <div class="overlay">
@@ -239,7 +237,7 @@
 
 
       <!-- Product Card 5 -->
-      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <div class="product-image">
           <img src="assets/home/product/BLRF_Flanges.jpeg" alt="Tube Fittings">
           <div class="overlay">
@@ -253,7 +251,7 @@
       </div>
 
       <!-- Product Card 6 -->
-      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <div class="product-image">
           <img src="assets/home/product/Flanges.jpeg" alt="Tube Fittings">
           <div class="overlay">
@@ -281,7 +279,7 @@
       </div>
 
       <!-- Product Card 8 -->
-      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <div class="product-image">
           <img src="assets/home/product/VCR_Fittings.jpeg" alt="Tube Fittings">
           <div class="overlay">
