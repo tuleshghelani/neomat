@@ -4,12 +4,12 @@
     <div class="slides" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
       <div class="slide" *ngFor="let slide of slides; let i = index">
         <img [src]="slide.image" [alt]="slide.alt" class="slide-image">
-        <div class="slide-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="slide-content" data-aos="fade-up" data-aos-duration="1000" [ngClass]="'position-' + i">
           <h2>{{slide.title}}</h2>
           <p>{{slide.description}}</p>
-          <button class="cta-button" (click)="navigateToProduct(slide.link)">
+          <!-- <button class="cta-button" (click)="navigateToProduct(slide.link)">
             Learn More
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
@@ -74,19 +74,19 @@
   </div>
 </div>
 
-<div class="why-choose-section">
+<div class="why-choose-section neumorphic">
   <div class="why-choose-container">
     <div class="content-side" data-aos="fade-right" data-aos-duration="1000">
-      <h2>Why Choose Us</h2>
+      <h2 class="neumorphic-title">Why Choose Us</h2>
       <p class="subtitle">Excellence Through Innovation</p>
 
       <div class="features-grid">
-        <div class="feature-item">
+        <div class="feature-item neumorphic-card">
           <div class="feature-icon">
             <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#17a3de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M2 17L12 22L22 17" stroke="#17a3de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M2 12L12 17L22 12" stroke="#17a3de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <div class="feature-content">
@@ -95,7 +95,7 @@
           </div>
         </div>
 
-        <div class="feature-item">
+        <div class="feature-item neumorphic-card">
           <div class="feature-icon">
             <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14 4V9C14 9.55228 14.4477 10 15 10H20" stroke="#17a3de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -109,7 +109,7 @@
           </div>
         </div>
 
-        <div class="feature-item">
+        <div class="feature-item neumorphic-card">
           <div class="feature-icon">
             <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="10" stroke="#17a3de" stroke-width="2"/>
@@ -123,7 +123,7 @@
           </div>
         </div>
 
-        <div class="feature-item">
+        <div class="feature-item neumorphic-card">
           <div class="feature-icon">
             <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#17a3de" stroke-width="2"/>
@@ -137,7 +137,7 @@
         </div>
       </div>
 
-      <div class="promotion-banner" data-aos="fade-up" data-aos-duration="1000">
+      <div class="promotion-banner neumorphic-promo">
         <div class="promotion-content">
           <span class="promo-label">Special Offer</span>
           <h3>15% Off on Bulk Orders</h3>
@@ -147,7 +147,7 @@
       </div>
     </div>
 
-    <div class="image-side" data-aos="fade-left" data-aos-duration="1000">
+    <div class="image-side neumorphic-image" data-aos="fade-left" data-aos-duration="1000">
       <div class="image-container">
         <img src="assets/about/Why_Choose_Us.jpg" alt="Engineering Excellence">
         <div class="stats-overlay">
