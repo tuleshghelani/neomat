@@ -3,7 +3,7 @@
     <div class="contact-info">
       <a href="tel:+1234567890" class="info-item">
         <i class="fas fa-phone"></i>
-        +91 (234) 567-890
+        +91 234 567-890
       </a>
       <a href="mailto:info@neomat.com" class="info-item">
         <i class="fas fa-envelope"></i>
@@ -20,28 +20,18 @@
   <div class="header-container">
     <div class="logo-container">
       <img src="assets/neomat.png" alt="Neomat Logo" class="logo">
-      <!-- <span class="logo-text">NEOMAT</span> -->
     </div>
 
     <nav class="nav-desktop">
       <ul class="nav-links">
         <li><a href="#" class="nav-link active">Home</a></li>
         <li><a href="#" class="nav-link">About</a></li>
-        <li><a href="#" class="nav-link">Elements</a></li>
-        <li><a href="#" class="nav-link">Blog</a></li>
+        <li><a href="#" class="nav-link">Industries</a></li>
+        <li><a href="#" class="nav-link">Our Products</a></li>
         <li><a href="#" class="nav-link">Portfolio</a></li>
         <li><a href="#" class="nav-link">Contact</a></li>
       </ul>
     </nav>
-
-    <div class="header-right">
-      <div class="translate-container">
-        <div id="google_translate_element"></div>
-      </div>
-      <!-- <button class="theme-toggle">
-        <i class="fas fa-sun"></i>
-      </button> -->
-    </div>
 
     <button class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
       <span></span>
@@ -49,18 +39,4 @@
       <span></span>
     </button>
   </div>
-
-  <nav class="nav-mobile" [class.active]="isMenuOpen">
-    <ul class="nav-links">
-      <li><a href="#" class="nav-link active">Home</a></li>
-      <li><a href="#" class="nav-link">About</a></li>
-      <li><a href="#" class="nav-link">Elements</a></li>
-      <li><a href="#" class="nav-link">Blog</a></li>
-      <li><a href="#" class="nav-link">Portfolio</a></li>
-      <li><a href="#" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="translate-container-mobile-top">
-      <div id="google_translate_element_mobile"></div>
-    </div>
-  </nav>
 </header>

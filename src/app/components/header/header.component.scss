@@ -3,30 +3,106 @@ $background-color: #000000;
 $text-color: #ffffff;
 $hover-color: #17a3de;
 
+.sub-header {
+  background: darken($background-color, 3%);
+  padding: 0.8rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1002;
+  }
+}
+
+.sub-header-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .contact-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .info-item {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $hover-color;
+      }
+
+      i {
+        color: $hover-color;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem;
+
+    .contact-info {
+      width: 100%;
+      justify-content: space-between;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+
+      .info-item {
+        font-size: 0.8rem;
+        white-space: nowrap;
+      }
+    }
+
+    .translate-container-top {
+      display: none; // Hide translate in sub-header for mobile
+    }
+  }
+}
+
 .header {
   background: $background-color;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   position: fixed;
-  width: 100vw;
+  width: 100%;
+  top: 45px;
   left: 0;
   z-index: 1000;
   box-sizing: border-box;
-  overflow-x: hidden;
-  top: 55px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   @media (max-width: 768px) {
-    top: 35px;
+    top: 40px; // Adjust based on sub-header height
+    padding: 0.8rem 0;
   }
 }
 
 .header-container {
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 .logo-container {
@@ -35,21 +111,18 @@ $hover-color: #17a3de;
   gap: 1rem;
 
   .logo {
-    height: 35px;
+    height: 40px;
     transition: transform 0.3s ease;
-  }
 
-  .logo-text {
-    color: $text-color;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
 .nav-desktop {
   margin-left: auto;
-  display: none;
+  margin-right: 2rem;
 
   @media (min-width: 992px) {
     display: block;
@@ -66,18 +139,37 @@ $hover-color: #17a3de;
       text-decoration: none;
       color: rgba(255, 255, 255, 0.7);
       font-weight: 500;
-      font-size: 15px;
+      font-size: 1rem;
       padding: 0.5rem 0;
       position: relative;
       transition: all 0.3s ease;
       letter-spacing: 0.5px;
 
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $hover-color;
+        transition: width 0.3s ease;
+      }
+
       &:hover {
         color: $hover-color;
+
+        &::after {
+          width: 100%;
+        }
       }
 
       &.active {
         color: $hover-color;
+
+        &::after {
+          width: 100%;
+        }
       }
     }
   }
@@ -143,6 +235,18 @@ $hover-color: #17a3de;
   &:hover span {
     background-color: $hover-color;
   }
+
+  @media (max-width: 768px) {
+    display: block;
+    margin-left: auto;
+    z-index: 1003;
+
+    span {
+      width: 22px;
+      height: 2px;
+      margin: 4px 0;
+    }
+  }
 }
 
 .nav-mobile {
@@ -190,7 +294,48 @@ $hover-color: #17a3de;
   }
 
   @media (max-width: 768px) {
-    top: 90px;
+    position: fixed;
+    top: 85px; // Adjust based on header + sub-header height
+    left: 0;
+    right: 0;
+    background: $background-color;
+    padding: 1rem;
+    display: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &.active {
+      display: block;
+    }
+
+    .nav-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      .nav-link {
+        display: block;
+        padding: 1rem;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+
+        &:hover, &.active {
+          color: $hover-color;
+          background: rgba(255, 255, 255, 0.05);
+        }
+      }
+    }
   }
 }
 
@@ -270,6 +415,13 @@ $hover-color: #17a3de;
       }
     }
   }
+
+  @media (max-width: 768px) {
+    display: block;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 1rem;
+  }
 }
 
 // Hide the powered by Google text on mobile
@@ -316,76 +468,6 @@ $hover-color: #17a3de;
   }
 }
 
-.sub-header {
-  background: darken($background-color, 3%);
-  padding: 0.5rem 0;
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 1001;
-  overflow-x: hidden;
-  box-sizing: border-box;
-
-  @media (max-width: 768px) {
-    padding: 0.5rem 0;
-  }
-}
-
-.sub-header-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  box-sizing: border-box;
-
-  @media (max-width: 768px) {
-    .contact-info {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      font-size: 0.9rem;
-
-      .info-item {
-        white-space: nowrap;
-      }
-    }
-  }
-}
-
-.contact-info {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-  flex-wrap: wrap;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    justify-content: space-between;
-    gap: 0.5rem;
-    font-size: 0.8rem;
-  }
-
-  .info-item {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    white-space: nowrap;
-
-    @media (max-width: 768px) {
-      font-size: 0.8rem;
-    }
-
-    i {
-      color: $hover-color;
-    }
-  }
-}
-
 .translate-container-top {
   @media (max-width: 768px) {
     width: 100%;
@@ -403,6 +485,90 @@ $hover-color: #17a3de;
           max-width: 100%;
         }
       }
+    }
+  }
+}
+
+.products-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #111111, #000000);
+  color: #ffffff;
+}
+
+.product-card {
+  background: #111111;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4),
+              -8px -8px 16px rgba(30, 30, 30, 0.4);
+  border: 1px solid rgba(23, 163, 222, 0.05);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.5),
+                -12px -12px 20px rgba(30, 30, 30, 0.5);
+
+    .product-image img {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      opacity: 1;
+    }
+  }
+}
+
+.product-info {
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #0f0f0f, #131313);
+
+  h3 {
+    font-size: 1.3rem;
+    color: #17a3de;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+.view-details {
+  padding: 0.8rem 1.5rem;
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3),
+              inset -4px -4px 8px rgba(30, 30, 30, 0.3);
+
+  &:hover {
+    background: #17a3de;
+    border-color: #17a3de;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3),
+                -4px -4px 8px rgba(30, 30, 30, 0.3);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-section {
+    padding: 4rem 1rem;
+  }
+
+  .product-card {
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4),
+                -6px -6px 12px rgba(30, 30, 30, 0.4);
+
+    &:hover {
+      box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5),
+                  -8px -8px 16px rgba(30, 30, 30, 0.5);
     }
   }
 }
