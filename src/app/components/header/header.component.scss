@@ -120,7 +120,8 @@ $hover-color: #17a3de;
   gap: 1rem;
 
   .logo {
-    height: 40px;
+    height: auto;
+    width: 170px;
     transition: transform 0.3s ease;
 
     &:hover {
