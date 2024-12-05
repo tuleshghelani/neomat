@@ -1,15 +1,5 @@
 <div class="sub-header">
   <div class="sub-header-container">
-    <div class="contact-info">
-      <a href="tel:+1234567890" class="info-item">
-        <i class="fas fa-phone"></i>
-        +91 234 567-890
-      </a>
-      <a href="mailto:info@neomat.co.in" class="info-item">
-        <i class="fas fa-envelope"></i>
-        info&#64;neomat.co.in
-      </a>
-    </div>
     <div class="translate-container-top">
       <div id="google_translate_element"></div>
     </div>
@@ -19,15 +9,39 @@
 <header class="header">
   <div class="header-container">
     <div class="logo-container">
-      <img src="assets/neomat.jpg" alt="Neomat Logo" class="logo">
+      <img src="assets/ADAPTIX.png" alt="Neomat Logo" class="logo">
     </div>
 
     <nav class="nav-desktop">
       <ul class="nav-links">
         <li><a href="#" class="nav-link active">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link">Our Products</a>
+          <div class="mega-menu">
+            <div class="mega-menu-content">
+              <ul class="main-categories">
+                <li class="category-item" *ngFor="let category of productCategories">
+                  <a href="#"
+                     class="category-link"
+                     (click)="toggleSubMenu(category, $event)"
+                     [class.active]="category.isActive">
+                    {{ category.name }}
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <div class="sub-menu" [class.active]="category.isActive">
+                    <ul class="sub-categories">
+                      <li *ngFor="let subItem of category.subItems">
+                        <a href="#">{{ subItem }}</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
         <li><a href="#" class="nav-link">About</a></li>
         <li><a href="#" class="nav-link">Industries</a></li>
-        <li><a href="#" class="nav-link">Our Products</a></li>
         <li><a href="#" class="nav-link">Portfolio</a></li>
         <li><a href="#" class="nav-link">Contact</a></li>
       </ul>

@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   private intervalId: any;
 
   stats: StatItem[] = [
-    { current: 0, target: 25, suffix: '+', label: 'Years Experience' },
+    { current: 0, target: 10, suffix: '+', label: 'Years Experience' },
     { current: 0, target: 1000, suffix: '+', label: 'Projects Completed' },
     { current: 0, target: 50, suffix: '+', label: 'Countries Served' }
   ];

@@ -564,9 +564,9 @@
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -574,32 +574,45 @@
   }
 }
 
-.feature-item {
-  display: flex;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  background: white;
+.feature-item.neumorphic-card {
+  background: #e0e0e0;
   border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(193, 120, 23, 0.15);
+    box-shadow: 12px 12px 20px #bebebe,
+                -12px -12px 20px #ffffff;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
   }
 
   .feature-icon {
+    background: #e0e0e0;
+    padding: 1rem;
+    border-radius: 12px;
     min-width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 6px 6px 12px #bebebe,
+                -6px -6px 12px #ffffff;
 
     svg {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
 
       path, circle {
-        stroke: var(--primary-color);
+        stroke: #17a3de;
         transition: all 0.3s ease;
       }
     }
@@ -608,18 +621,18 @@
   .feature-content {
     h3 {
       color: #17a3de;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
     }
 
     p {
-      color: rgba(0, 0, 0, 0.7);
-      font-size: 0.95rem;
+      color: #666;
       line-height: 1.6;
+      font-size: 0.95rem;
     }
   }
 }
-
 
 .feature-icon:hover svg {
   transform: scale(1.1);
@@ -838,5 +851,76 @@
 
   .neumorphic-title {
     font-size: 2rem;
+  }
+}
+
+.company-values-section {
+  padding: 4rem 2rem;
+  background: var(--background-color);
+
+  .values-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .value-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--neumorphic-shadow);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .value-icon {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    h3 {
+      color: var(--text-color);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .core-values-list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+
+        &:before {
+          content: "•";
+          color: var(--primary-color);
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
   }
 }
