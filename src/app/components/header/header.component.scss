@@ -114,14 +114,30 @@ $hover-color: #17a3de;
   }
 }
 
+@media (max-width: 768px) {
+  .logo-container {
+    .logo {
+      max-height: 40px; // Smaller size for mobile devices
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-container {
+    .logo {
+      max-height: 60px;
+    }
+  }
+}
+
 .logo-container {
   display: flex;
   align-items: center;
   gap: 1rem;
 
   .logo {
-    height: auto;
-    width: 170px;
+    height: 75px;
+    width: 260px;
     transition: transform 0.3s ease;
 
     &:hover {
