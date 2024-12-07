@@ -11,6 +11,8 @@ declare global {
 }
 
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -18,6 +20,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  currentRoute: string = '/';
   isMenuOpen = false;
 
   productCategories = [
@@ -157,6 +160,14 @@ export class HeaderComponent implements OnInit {
     },
   ];
 
+  constructor(private router: Router) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: any) => {
+      this.currentRoute = event.urlAfterRedirects;
+    });
+  }
+
   ngOnInit() {
     // Add Google Translate script
     const script = document.createElement('script');
@@ -221,5 +232,12 @@ export class HeaderComponent implements OnInit {
   showSubMenu(category: any) {
     this.productCategories.forEach(cat => cat.isActive = false);
     category.isActive = true;
+  }
+
+  isRouteActive(route: string): boolean {
+    if (route === '/') {
+      return this.currentRoute === '/';
+    }
+    return this.currentRoute.startsWith(route);
   }
 }

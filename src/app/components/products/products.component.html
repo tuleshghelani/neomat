@@ -1,0 +1,40 @@
+<div class="products-container">
+  <!-- Left side - Product Categories -->
+  <div class="categories-section">
+    <h2>Our Products</h2>
+    <div class="category-list">
+      <div class="category-item" *ngFor="let category of productCategories">
+        <div class="category-header" (click)="toggleCategory(category)"
+             [class.active]="category.isExpanded">
+          <span class="category-name">{{category.name}}</span>
+          <i class="arrow" [class.expanded]="category.isExpanded"></i>
+        </div>
+        <div class="sub-products" [@expandCollapse]="category.isExpanded ? 'expanded' : 'collapsed'">
+          <div class="sub-product-item" *ngFor="let subProduct of category.subProducts"
+               (click)="selectSubProduct(category, subProduct)"
+               [class.active]="category.selectedImage?.includes(subProduct.toLowerCase())">
+            {{subProduct}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side - Product Images -->
+  <div class="product-display">
+    <div class="product-image-container" *ngIf="selectedCategory">
+      <h3>{{selectedCategory.name}}</h3>
+      <div class="image-wrapper" *ngIf="selectedCategory.selectedImage">
+        <img [src]="selectedCategory.selectedImage" [alt]="selectedCategory.name" 
+             onerror="this.src='assets/images/placeholder.jpg'">
+      </div>
+      <div class="no-image" *ngIf="!selectedCategory.selectedImage">
+        <p>Please select a product to view details</p>
+      </div>
+    </div>
+    <div class="welcome-message" *ngIf="!selectedCategory">
+      <h3>Welcome to Our Product Gallery</h3>
+      <p>Please select a category from the left to explore our products</p>
+    </div>
+  </div>
+</div>

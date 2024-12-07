@@ -1,0 +1,233 @@
+// Variables
+$primary-color: #1a237e;
+$secondary-color: #303f9f;
+$hover-color: #3949ab;
+$text-color: #333;
+$light-gray: #f5f5f5;
+$border-color: #e0e0e0;
+$transition-time: 0.3s;
+$header-height: 100px; // Adjusted to match your header height
+$header-offset: 120px; // Additional offset for padding and safe space
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.products-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: calc(100vh - #{$header-offset});
+  background-color: white;
+  margin-top: $header-offset;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: calc(#{$header-offset} + 1rem);
+  }
+}
+
+.categories-section {
+  flex: 0 0 300px;
+  background-color: white;
+  border-radius: 8px;
+  @include box-shadow;
+  height: calc(100vh - #{$header-offset} - 4rem);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    flex: none;
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+  }
+
+  h2 {
+    padding: 1.5rem;
+    margin: 0;
+    color: $primary-color;
+    border-bottom: 2px solid $border-color;
+    font-size: 1.5rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.category-list {
+  overflow-y: auto;
+  flex: 1;
+  padding-bottom: 1rem;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $light-gray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $border-color;
+    border-radius: 3px;
+  }
+
+  @media (max-width: 768px) {
+    max-height: calc(70vh - 60px);
+  }
+}
+
+.category-item {
+  border-bottom: 1px solid $border-color;
+}
+
+.category-header {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color $transition-time;
+
+  &:hover {
+    background-color: $light-gray;
+  }
+
+  &.active {
+    background-color: $primary-color;
+    color: white;
+
+    .arrow {
+      border-color: white;
+    }
+  }
+}
+
+.category-name {
+  font-weight: 500;
+}
+
+.arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid $text-color;
+  border-bottom: 2px solid $text-color;
+  transform: rotate(45deg);
+  transition: transform $transition-time;
+
+  &.expanded {
+    transform: rotate(-135deg);
+  }
+}
+
+.sub-products {
+  background-color: $light-gray;
+}
+
+.sub-product-item {
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: background-color $transition-time;
+  font-size: 0.9rem;
+
+  &:hover {
+    background-color: darken($light-gray, 5%);
+  }
+
+  &.active {
+    background-color: $secondary-color;
+    color: white;
+  }
+}
+
+.product-display {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  @include box-shadow;
+  height: calc(100vh - #{$header-offset} - 4rem);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $light-gray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $border-color;
+    border-radius: 3px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    height: auto;
+    min-height: 50vh;
+  }
+}
+
+.product-image-container {
+  h3 {
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+}
+
+.image-wrapper {
+  @include flex-center;
+  min-height: 400px;
+  background-color: $light-gray;
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 300px;
+  }
+}
+
+.no-image, .welcome-message {
+  @include flex-center;
+  min-height: 400px;
+  background-color: $light-gray;
+  border-radius: 8px;
+  flex-direction: column;
+  text-align: center;
+  color: $text-color;
+
+  h3 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $text-color;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 300px;
+  }
+}

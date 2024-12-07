@@ -1,0 +1,36 @@
+<div class="industries-banner">
+  <div class="banner-overlay">
+    <div class="banner-content" data-aos="fade-up" data-aos-duration="1000">
+      <h1>Industries We Serve</h1>
+      <p>Delivering Excellence Across Multiple Sectors</p>
+    </div>
+  </div>
+</div>
+
+<div class="industries-section">
+  <div class="industries-container">
+    <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Our Industry Expertise</h2>
+      <p>We take immense pride in our products with a dedicated team of professionals in the Design & Development of instrumentation
+        Fittings under high pressure and temperature environments at the most competitive pricing in the Industry.
+        Our products are used in various industries in domestic and international market.</p>
+    </div>
+
+    <div class="industries-grid">
+      <div class="industry-card neumorphic" *ngFor="let industry of industries" 
+           data-aos="fade-up" 
+           data-aos-duration="1000">
+        <div class="industry-image">
+          <img [src]="industry.image" [alt]="industry.name" loading="lazy">
+          <div class="overlay">
+            <div class="industry-name">{{ industry.name }}</div>
+          </div>
+        </div>
+        <div class="industry-content">
+          <h3>{{ industry.name }}</h3>
+          <p>{{ industry.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
