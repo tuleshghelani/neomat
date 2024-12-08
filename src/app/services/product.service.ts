@@ -407,6 +407,186 @@ export class ProductService {
             'Surface Finish': '< 20 Ra',
             'Installation Type': 'Weld Socket'
         }
+    },
+    {
+      name: 'Gland',
+      categoryName: 'VCR FITTINGS',
+      subCategory: ['Gland'],
+      mainImage: 'assets/product/Gasket.jpeg',
+      otherImages: [
+          'assets/product/Gasket_2.jpeg',
+          'assets/product/Gasket_3.jpeg',
+          'assets/product/Gasket_4.jpeg'
+      ],
+      description: 'High-precision VCR gland engineered for critical fluid handling applications. Features proprietary surface finishing technology and optimized geometry for maximum sealing reliability. Designed with advanced anti-rotation features and precise dimensional control for consistent performance in ultra-high purity systems.',
+      specifications: {
+          'Material': '316/316L Stainless Steel',
+          'Size Range': '1/4" to 1"',
+          'Pressure Rating': 'Up to 3000 PSI',
+          'Temperature Range': '-65°F to 450°F',
+          'Surface Finish': '< 10 Ra',
+          'Hardness': 'Rb 80 maximum',
+          'Concentricity': '0.005" TIR max',
+          'Thread Type': 'Precision-rolled',
+          'Sealing Technology': 'Metal-to-metal',
+          'Certification': 'Material traceability per EN 10204 3.1'
+      }
+  },
+  {
+      name: 'Union Tee',
+      categoryName: 'VCR FITTINGS',
+      subCategory: ['Union Tee'],
+      mainImage: 'assets/product/Gasket.jpeg',
+      otherImages: [
+          'assets/product/Gasket_2.jpeg',
+          'assets/product/Gasket_3.jpeg',
+          'assets/product/Gasket_4.jpeg'
+      ],
+      description: 'Premium VCR union tee featuring advanced flow optimization technology. Engineered with computational fluid dynamics-designed internal geometry for minimal pressure drop and uniform flow distribution. Ideal for high-purity gas distribution systems requiring precise flow control and contamination-free operation.',
+      specifications: {
+          'Material': '316/316L Stainless Steel',
+          'Size Range': '1/4" to 1"',
+          'Pressure Rating': 'Up to 3000 PSI',
+          'Temperature Range': '-65°F to 450°F',
+          'Surface Finish': '< 10 Ra',
+          'Flow Coefficient': 'Optimized Cv values',
+          'Branch Angle': '90° ±1°',
+          'Internal Volume': 'Minimized dead space',
+          'Assembly Torque': 'Specified per size',
+          'Helium Leak Rating': '4 x 10⁻⁹ std cc/sec'
+      }
+  },
+  {
+      name: 'Union Cross',
+      categoryName: 'VCR FITTINGS',
+      subCategory: ['Union Cross'],
+      mainImage: 'assets/product/Gasket.jpeg',
+      otherImages: [
+          'assets/product/Gasket_2.jpeg',
+          'assets/product/Gasket_3.jpeg',
+          'assets/product/Gasket_4.jpeg'
+      ],
+      description: 'Advanced VCR union cross incorporating symmetrical flow path design for multi-directional fluid distribution. Features precision-machined internal passages with optimized flow geometry for balanced distribution and minimal turbulence. Engineered for high-purity semiconductor and analytical instrumentation applications.',
+      specifications: {
+          'Material': '316/316L Stainless Steel',
+          'Size Range': '1/4" to 1"',
+          'Pressure Rating': 'Up to 3000 PSI',
+          'Temperature Range': '-65°F to 450°F',
+          'Surface Finish': '< 10 Ra',
+          'Flow Configuration': 'Symmetrical 4-way',
+          'Port Alignment': '90° ±0.5°',
+          'Internal Passageway': 'Electropolished',
+          'Cleanliness': 'Certified particle-free',
+          'Quality Control': '100% helium leak tested'
+      }
+    },
+    {
+        name: 'Male Connector',
+        categoryName: 'VCR FITTINGS',
+        subCategory: ['Male Connector'],
+        mainImage: 'assets/product/Gasket.jpeg',
+        otherImages: [
+          'assets/product/Gasket_2.jpeg',
+          'assets/product/Gasket_3.jpeg',
+          'assets/product/Gasket_4.jpeg'
+        ],
+        description: 'Precision-engineered VCR male connector designed for secure and leak-tight connections in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+        specifications: {
+            'Material': '316/316L Stainless Steel',
+            'Size Range': '1/4" to 1"',
+            'Pressure Rating': 'Up to 3000 PSI',
+            'Temperature Range': '-20°F to 450°F',
+        }
+    },
+    {
+        name: 'Female Connector',
+        categoryName: 'VCR FITTINGS',
+        subCategory: ['Female Connector'],
+        mainImage: 'assets/product/Gasket.jpeg',
+        otherImages: [
+          'assets/product/Gasket_2.jpeg',
+          'assets/product/Gasket_3.jpeg',
+          'assets/product/Gasket_4.jpeg'
+        ],
+        description: 'Precision-engineered VCR female connector designed for secure and leak-tight connections in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+        specifications: {
+            'Material': '316/316L Stainless Steel',
+            'Size Range': '1/4" to 1"',
+            'Pressure Rating': 'Up to 3000 PSI',
+            'Temperature Range': '-20°F to 450°F',
+        }
+    },
+    {
+        name: 'Union Elbow',
+        categoryName: 'VCR FITTINGS',
+        subCategory: ['Union Elbow'],
+        mainImage: 'assets/product/Gasket.jpeg',
+        otherImages: [
+          'assets/product/Gasket_2.jpeg',
+          'assets/product/Gasket_3.jpeg',
+          'assets/product/Gasket_4.jpeg'
+        ],
+        description: 'Precision-engineered VCR union elbow designed for efficient flow distribution in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+        specifications: {
+            'Material': '316/316L Stainless Steel',
+            'Size Range': '1/4" to 1"',
+            'Pressure Rating': 'Up to 3000 PSI',
+            'Temperature Range': '-20°F to 450°F',
+        }
+    },
+    {
+        name: 'Male Elbow',
+        categoryName: 'VCR FITTINGS',
+        subCategory: ['Male Elbow'],
+        mainImage: 'assets/product/Gasket.jpeg',
+        otherImages: [
+          'assets/product/Gasket_2.jpeg',
+          'assets/product/Gasket_3.jpeg',
+          'assets/product/Gasket_4.jpeg'
+        ],
+        description: 'Precision-engineered VCR male elbow designed for efficient flow distribution in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+        specifications: {
+            'Material': '316/316L Stainless Steel',
+            'Size Range': '1/4" to 1"',
+            'Pressure Rating': 'Up to 3000 PSI',
+            'Temperature Range': '-20°F to 450°F',
+        }
+    },
+    {
+        name: 'Bulkhead Union',
+        categoryName: 'VCR FITTINGS',
+        subCategory: ['Bulkhead Union'],
+        mainImage: 'assets/product/Gasket.jpeg',
+        otherImages: [
+          'assets/product/Gasket_2.jpeg',
+          'assets/product/Gasket_3.jpeg',
+          'assets/product/Gasket_4.jpeg'
+        ],
+        description: 'Precision-engineered VCR bulkhead union designed for secure and leak-tight connections in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+        specifications: {
+            'Material': '316/316L Stainless Steel',
+            'Size Range': '1/4" to 1"',
+            'Pressure Rating': 'Up to 3000 PSI',
+            'Temperature Range': '-20°F to 450°F',
+        }
+    },
+    {
+        name: 'Equal Union',
+        categoryName: 'VCR FITTINGS',
+        subCategory: ['Equal Union'],
+        mainImage: 'assets/product/Gasket.jpeg',
+        otherImages: [
+          'assets/product/Gasket_2.jpeg',
+          'assets/product/Gasket_3.jpeg',
+          'assets/product/Gasket_4.jpeg'
+        ],
+        description: 'Precision-engineered VCR equal union designed for efficient flow distribution in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+        specifications: {
+            'Material': '316/316L Stainless Steel',
+            'Size Range': '1/4" to 1"',
+            'Pressure Rating': 'Up to 3000 PSI',
+            'Temperature Range': '-20°F to 450°F',
+        }
     }
 
   ];
