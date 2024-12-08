@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { ProductService } from '../../services/product.service';
 
 interface ProductCategory {
   name: string;
+  isExpanded: boolean;
   subProducts: string[];
-  isExpanded?: boolean;
   selectedImage?: string;
 }
 
@@ -16,91 +17,64 @@ interface ProductCategory {
     trigger('expandCollapse', [
       state('collapsed', style({
         height: '0',
+        opacity: '0',
         overflow: 'hidden',
-        opacity: '0'
+        padding: '0'
       })),
       state('expanded', style({
         height: '*',
-        opacity: '1'
+        opacity: '1',
+        padding: '0.5rem 0'
       })),
       transition('collapsed <=> expanded', [
-        animate('300ms ease-in-out')
+        animate('300ms cubic-bezier(0.4, 0, 0.2, 1)')
       ])
     ])
   ]
 })
-export class ProductsComponent {
+export class ProductsComponent implements OnInit {
+  productCategories: ProductCategory[] = [];
   selectedCategory: ProductCategory | null = null;
-  
-  productCategories: ProductCategory[] = [
-    {
-      name: 'VCO FITTINGS',
-      subProducts: [
-        'Male Connector', 'Female Connector', 'Gland', 'Male Elbow',
-        'Union Elbow', 'Union Tee', 'Union Cross', 'Male Run Tee',
-        'Male Branch Tee', '"O" Ring Seat Connector', '"O" Ring Seat Male Connector',
-        'Union', 'Tube Socket'
-      ]
-    },
-    {
-      name: 'VCR FITTINGS',
-      subProducts: [
-        'Nut', 'Gasket', 'Gland', 'Union Tee', 'Union Cross',
-        'Male Connector', 'Female Connector', 'Union Elbow',
-        'Male Elbow', 'Bulkhead Union', 'Equal Union'
-      ]
-    },
-    {
-      name: 'TUBE FITTINGS',
-      subProducts: [
-        'Male Connector', 'Female Connector', 'Adapter', 'Plug',
-        'Union Tee', 'Run Tee', 'Female Tee', 'Union',
-        'Reducing Union', 'Bulkhead Union', 'Tube Elbow',
-        'OD Cap', 'OD Plug', 'Hex Nipple'
-      ]
-    },
-    {
-      name: 'BUT WELD END FITTINGS',
-      subProducts: [
-        '45 Deg Elbow', '90 Deg Elbow', 'Tee Equal', 'Tee Reducing',
-        'End Cap', 'Barrel Nipple', 'Pipe Nipple', 'Swage Nipple',
-        'U bend', 'Long Stub End', 'Short Stub End', 'Lateral Tee',
-        'Reducer Eccentric'
-      ]
-    },
-    {
-      name: 'FORGED FITTINGS',
-      subProducts: [
-        '45 Deg Elbow Fittings', '90 Deg Elbow Fittings', 'Union',
-        'Barrel Nipple', 'Swage nipple', 'Bushing', 'Forged Tee',
-        'Equal Tee Fittings', 'Reducing Tee Fittings', 'End Cap',
-        'Cross', 'Plug', 'Coupling', 'Full Coupling', 'Half Coupling',
-        'Reducing Coupling', 'Boss'
-      ]
-    },
-    {
-      name: 'FLANGES',
-      subProducts: [
-        'SORF Flanges', 'BLRF Flanges', 'Ring Joint Flanges',
-        'Paddle & Spacer', 'Spectacles', 'Long Weld Neck Flanges',
-        'Threaded/screwed Flanges', 'Lapped Joint Flanges',
-        'Tongue & Groove Flanges', 'Orifice Flanges', 'Flange Olet',
-        'Nipo Flanges', 'Puddle Flanges', 'WNRF Flanges'
-      ]
-    }
-  ];
+  filteredProducts: any[] = [];
+  isMobileCategoriesVisible = false;
+
+  constructor(private productService: ProductService) {}
+
+  ngOnInit() {
+    this.productCategories = this.productService.getProductCategories();
+    this.updateFilteredProducts();
+  }
 
   toggleCategory(category: ProductCategory) {
+    // Close other categories
     this.productCategories.forEach(cat => {
       if (cat !== category) {
         cat.isExpanded = false;
       }
     });
+    
+    // Toggle current category
     category.isExpanded = !category.isExpanded;
     this.selectedCategory = category.isExpanded ? category : null;
+    
+    // Update filtered products
+    this.updateFilteredProducts();
   }
 
   selectSubProduct(category: ProductCategory, subProduct: string) {
-    category.selectedImage = `assets/images/products/${category.name.toLowerCase().replace(/\s+/g, '-')}/${subProduct.toLowerCase().replace(/\s+/g, '-')}.jpg`;
+    category.selectedImage = subProduct.toLowerCase();
+    this.updateFilteredProducts(category, subProduct);
+  }
+
+  private updateFilteredProducts(category?: ProductCategory, subProduct?: string) {
+    if (category && subProduct) {
+      this.filteredProducts = this.productService.getProductsByCategory(category.name, subProduct);
+    } else {
+      this.filteredProducts = this.productService.getAllProducts();
+    }
+  }
+
+  toggleMobileCategories() {
+    this.isMobileCategoriesVisible = !this.isMobileCategoriesVisible;
   }
 }
