@@ -1,13 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { ProductService } from '../../services/product.service';
-
-interface ProductCategory {
-  name: string;
-  isExpanded: boolean;
-  subProducts: string[];
-  selectedImage?: string;
-}
+import { ProductService, ProductCategory, ProductDetail } from '../../services/product.service';
 
 @Component({
   selector: 'app-products',
@@ -27,7 +20,7 @@ interface ProductCategory {
         padding: '0.5rem 0'
       })),
       transition('collapsed <=> expanded', [
-        animate('300ms cubic-bezier(0.4, 0, 0.2, 1)')
+        animate('300ms ease-in-out')
       ])
     ])
   ]
@@ -35,8 +28,9 @@ interface ProductCategory {
 export class ProductsComponent implements OnInit {
   productCategories: ProductCategory[] = [];
   selectedCategory: ProductCategory | null = null;
-  filteredProducts: any[] = [];
+  filteredProducts: ProductDetail[] = [];
   isMobileCategoriesVisible = false;
+  activeCategory: string | null = null;
 
   constructor(private productService: ProductService) {}
 
@@ -55,20 +49,35 @@ export class ProductsComponent implements OnInit {
     
     // Toggle current category
     category.isExpanded = !category.isExpanded;
+    
+    // Update selected category
     this.selectedCategory = category.isExpanded ? category : null;
+    this.activeCategory = category.isExpanded ? category.name : null;
     
     // Update filtered products
-    this.updateFilteredProducts();
+    if (category.isExpanded) {
+      this.updateFilteredProducts(category);
+    } else {
+      this.filteredProducts = this.productService.getAllProducts();
+    }
   }
 
   selectSubProduct(category: ProductCategory, subProduct: string) {
-    category.selectedImage = subProduct.toLowerCase();
-    this.updateFilteredProducts(category, subProduct);
+    // Toggle selected state
+    if (category.selectedImage === subProduct.toLowerCase()) {
+      category.selectedImage = undefined;
+      this.updateFilteredProducts(category);
+    } else {
+      category.selectedImage = subProduct.toLowerCase();
+      this.updateFilteredProducts(category, subProduct);
+    }
   }
 
   private updateFilteredProducts(category?: ProductCategory, subProduct?: string) {
     if (category && subProduct) {
       this.filteredProducts = this.productService.getProductsByCategory(category.name, subProduct);
+    } else if (category) {
+      this.filteredProducts = this.productService.getProductsByCategory(category.name);
     } else {
       this.filteredProducts = this.productService.getAllProducts();
     }
@@ -76,5 +85,9 @@ export class ProductsComponent implements OnInit {
 
   toggleMobileCategories() {
     this.isMobileCategoriesVisible = !this.isMobileCategoriesVisible;
+  }
+
+  isCategoryActive(category: ProductCategory): boolean {
+    return this.activeCategory === category.name;
   }
 }

@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 // Variables
 $primary-color: var(--primary-color);
 $secondary-color: var(--accent-color);
@@ -461,5 +463,96 @@ $header-offset: 120px;
     &:hover {
       padding-left: 1.5rem;
     }
+  }
+}
+
+// Add these new styles to your existing SCSS
+.product-card.neumorphic {
+  background: var(--cream-light);
+  border-radius: 15px;
+  box-shadow: 
+    8px 8px 16px var(--shadow-dark),
+    -8px -8px 16px var(--shadow-light);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+      12px 12px 20px var(--shadow-dark),
+      -12px -12px 20px var(--shadow-light);
+  }
+}
+
+.specifications {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+
+  .spec-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+
+    .spec-label {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+
+    .spec-value {
+      color: var(--text-color);
+      text-align: right;
+    }
+  }
+}
+
+// Mobile optimization
+@media (max-width: 768px) {
+  .categories-section {
+    position: sticky;
+    top: 70px;
+    z-index: 100;
+    
+    .category-list {
+      max-height: 0;
+      transition: max-height 0.3s ease-in-out;
+      
+      &.mobile-expanded {
+        max-height: calc(100vh - 200px);
+      }
+    }
+  }
+
+  .mobile-toggle {
+    .fas {
+      transition: transform 0.3s ease;
+      
+      &.fa-times {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+// Tablet optimization
+@media (min-width: 769px) and (max-width: 1024px) {
+  .products-container {
+    grid-template-columns: 250px 1fr;
+    gap: 1.5rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+// Additional responsive adjustments
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    margin-bottom: 1.5rem;
   }
 }

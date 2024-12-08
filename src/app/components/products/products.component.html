@@ -4,7 +4,7 @@
     <div class="categories-header">
       <h2>Our Products</h2>
       <button class="mobile-toggle" (click)="toggleMobileCategories()">
-        <i class="fas fa-bars"></i>
+        <i class="fas" [class.fa-bars]="!isMobileCategoriesVisible" [class.fa-times]="isMobileCategoriesVisible"></i>
       </button>
     </div>
     
@@ -12,9 +12,9 @@
       <div class="category-item" *ngFor="let category of productCategories">
         <div class="category-header neumorphic" 
              (click)="toggleCategory(category)"
-             [class.active]="category.isExpanded">
+             [class.active]="isCategoryActive(category)">
           <span class="category-name">{{category.name}}</span>
-          <div class="arrow" [class.expanded]="category.isExpanded"></div>
+          <span class="arrow" [class.expanded]="category.isExpanded"></span>
         </div>
         <div class="sub-products" [@expandCollapse]="category.isExpanded ? 'expanded' : 'collapsed'">
           <div class="sub-product-item" 
@@ -28,21 +28,31 @@
     </div>
   </div>
 
-  <!-- Updated right side with new product card design -->
+  <!-- Right side - Product Display -->
   <div class="product-display">
     <div class="product-grid">
-      <div class="product-card" *ngFor="let product of filteredProducts">
+      <div class="product-card neumorphic" *ngFor="let product of filteredProducts">
         <div class="product-image-wrapper">
           <div class="main-image">
             <img [src]="product.mainImage" [alt]="product.name" loading="lazy">
           </div>
-          <div class="hover-image" *ngIf="product.otherImages?.length">
-            <img [src]="product.otherImages[1]" [alt]="product.name" loading="lazy">
+          <div class="hover-image" *ngIf="product?.otherImages?.length != undefined && product?.otherImages?.length">
+            <img 
+              [src]="product.otherImages?.[1]" 
+              [alt]="product.name || 'Product image'" 
+              loading="lazy">
           </div>
+          
         </div>
         <div class="product-info">
           <h3>{{product.name}}</h3>
           <p>{{product.description}}</p>
+          <div class="specifications" *ngIf="product.specifications">
+            <div class="spec-item" *ngFor="let spec of product.specifications | keyvalue">
+              <span class="spec-label">{{spec.key}}:</span>
+              <span class="spec-value">{{spec.value}}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
