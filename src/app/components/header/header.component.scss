@@ -29,7 +29,7 @@ $hover-color: #17a3de;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 
   .contact-info {
@@ -137,7 +137,7 @@ $hover-color: #17a3de;
 
   .logo {
     height: 75px;
-    width: 260px;
+    width: 200px;
     transition: transform 0.3s ease;
 
     &:hover {

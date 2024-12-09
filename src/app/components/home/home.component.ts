@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       image: 'assets/Slider/5.jpeg',
       alt: 'Industrial Valves',
-      title: 'Premium Industrial Valves',
-      description: 'Discover our comprehensive range of high-performance industrial valves engineered for reliability and durability in demanding environments.',
+      title: 'Premium Industrial Fittings',
+      description: 'Discover our comprehensive range of high-performance industrial fittings engineered for reliability and durability in demanding environments.',
       link: '/products/valves'
     },
     {

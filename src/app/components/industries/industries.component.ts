@@ -48,11 +48,6 @@ export class IndustriesComponent {
       description: 'Hygienic fittings and components meeting FDA standards for safe food processing and handling operations.'
     },
     {
-      name: 'Beverages',
-      image: 'assets/industries/Beverages.jpeg',
-      description: 'Sanitary grade components designed for beverage processing, ensuring contamination-free fluid handling.'
-    },
-    {
       name: 'Pharmaceuticals',
       image: 'assets/industries/Pharmaceuticals.jpeg',
       description: 'Ultra-pure components for pharmaceutical manufacturing, meeting GMP standards and regulatory requirements.'
@@ -76,11 +71,6 @@ export class IndustriesComponent {
       name: 'Pulp & Paper',
       image: 'assets/industries/marine.jpeg',
       description: 'Corrosion-resistant fittings designed for pulp and paper processing, handling aggressive chemicals and high temperatures.'
-    },
-    {
-      name: 'Semiconductor',
-      image: 'assets/industries/marine.jpeg',
-      description: 'Ultra-high purity components for semiconductor manufacturing, meeting stringent cleanliness requirements.'
     },
     {
       name: 'Instrumentations',

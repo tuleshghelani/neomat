@@ -19,6 +19,7 @@
     <nav class="nav-desktop">
       <ul class="nav-links">
         <li><a routerLink="/" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Home</a></li>
+        <li><a routerLink="/about-us" [routerLinkActive]="'active'" class="nav-link">About</a></li>
         <li class="has-dropdown">
           <a href="#" class="nav-link" [class.active]="isRouteActive('/products')" routerLink="/products">Our Products</a>
           <div class="mega-menu">
@@ -44,9 +45,8 @@
             </div>
           </div>
         </li>
-        <li><a routerLink="/about-us" [routerLinkActive]="'active'" class="nav-link">About</a></li>
         <li><a routerLink="/industries" [routerLinkActive]="'active'" class="nav-link">Industries</a></li>
-        <li><a routerLink="/portfolio" [routerLinkActive]="'active'" class="nav-link">Portfolio</a></li>
+        <li><a routerLink="/catelogue" [routerLinkActive]="'active'" class="nav-link">Catelogue</a></li>
         <li><a routerLink="/contact" [routerLinkActive]="'active'" class="nav-link">Contact</a></li>
       </ul>
     </nav>
