@@ -1,0 +1,106 @@
+<section class="catalogue-section">    
+    <br>
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h1>Catelogue</h1>
+            <p>Discover Our Premium Range of Construction Materials and Solutions</p>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 py-12">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-primary mb-4">Our Premium Catalogue</h1>
+        <p class="text-lg text-gray-600">Discover our extensive range of high-quality materials and solutions</p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div *ngFor="let item of catalogueItems" 
+             class="catalogue-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+          <div class="relative pb-[75%] overflow-hidden">
+            <img [src]="item.image" 
+                 [alt]="item.title"
+                 class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <span class="text-sm text-primary-color font-semibold uppercase tracking-wider">{{item.category}}</span>
+            <h3 class="text-xl font-bold mt-2 mb-3">{{item.title}}</h3>
+            <p class="text-gray-600">{{item.description}}</p>
+            <button (click)="openEnquiryForm(item)" class="mt-4 bg-primary-color text-white px-6 py-2 rounded-full hover:bg-primary-color-light transition-colors duration-300">
+                Enquiry Now
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- Enquiry Form Popup -->
+<div class="popup-overlay" *ngIf="showEnquiryForm" (click)="closeEnquiryForm()">
+    <div class="popup-content" (click)="$event.stopPropagation()">
+      <div class="popup-header">
+        <h2>Catelogue</h2>
+        <button class="close-btn" (click)="closeEnquiryForm()">&times;</button>
+      </div>
+      
+      <form [formGroup]="enquiryForm" (ngSubmit)="submitEnquiry()" class="enquiry-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            formControlName="name" 
+            placeholder="Enter your full name"
+            [class.error]="isFieldInvalid('name')">
+          <div class="error-message" *ngIf="isFieldInvalid('name')">
+            Please enter your name
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            formControlName="email" 
+            placeholder="Enter your email"
+            [class.error]="isFieldInvalid('email')">
+          <div class="error-message" *ngIf="isFieldInvalid('email')">
+            Please enter a valid email address
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="mobile">Mobile Number</label>
+          <input 
+            type="tel" 
+            id="mobile" 
+            formControlName="mobile" 
+            placeholder="Enter your mobile number"
+            [class.error]="isFieldInvalid('mobile')">
+          <div class="error-message" *ngIf="isFieldInvalid('mobile')">
+            Please enter a valid mobile number
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea 
+            id="address" 
+            formControlName="address" 
+            placeholder="Enter your address"
+            rows="3"
+            [class.error]="isFieldInvalid('address')"></textarea>
+          <div class="error-message" *ngIf="isFieldInvalid('address')">
+            Please enter your address
+          </div>
+        </div>
+  
+        <div class="form-actions">
+          <button type="submit" class="submit-btn" [disabled]="enquiryForm.invalid || isSubmitting">
+            <span *ngIf="!isSubmitting">Submit Enquiry</span>
+            <span *ngIf="isSubmitting">Submitting...</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

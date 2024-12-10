@@ -10,6 +10,12 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'industries', component: IndustriesComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'contact-us', 
+    loadChildren: () => import('./components/contact-us/contact-us.module').then(m => m.ContactUsModule) 
+  },
+  { path: 'catelogue', 
+    loadChildren: () => import('./components/catelogue/catelogue.module').then(m => m.CatelogueModule) 
+  },
   // { path: '**', redirectTo: '' }  // Wildcard route for 404
 ];
 

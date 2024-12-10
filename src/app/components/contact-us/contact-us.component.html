@@ -1,0 +1,140 @@
+<br>
+<div class="contact-wrapper">
+    <!-- Hero Banner -->
+    <br>
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We're here to help and answer any questions you might have</p>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <!-- Contact Info Cards -->
+        <div class="info-section">
+            <div class="info-grid">
+                <div class="info-card location">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-location-dot"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Visit Our Office</h3>
+                        <p>Survey No – 245, Plot 12/A,
+                            Opp. Gram Swaraj Mandal,
+                            NH-27, Shapar (Veraval),
+                            Rajkot - 360 024 Gujarat, INDIA.</p>
+                    </div>
+                </div>
+
+                <div class="info-card phone">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Call Us</h3>
+                        <p>+91 76210 00666</p>
+                        <span class="timing">Mon-Sat: 9:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+
+                <div class="info-card email">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <p>info&#64;neomat.co.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-container">
+            <h2>Send us a Message</h2>
+            <form class="contact-form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            [(ngModel)]="contactData.name" 
+                            required 
+                            placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            [(ngModel)]="contactData.email" 
+                            required 
+                            placeholder="john@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        [(ngModel)]="contactData.subject" 
+                        required 
+                        placeholder="How can we help you?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        [(ngModel)]="contactData.message" 
+                        required 
+                        rows="5" 
+                        placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit" [disabled]="!contactForm.valid" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+
+        <!-- Social Media Section -->
+        <!-- <div class="social-section">
+            <h2>Connect With Us</h2>
+            <div class="social-grid">
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div> -->
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <h2>Find Us<br><i class="fas fa-map-marked-alt"></i></h2>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29561.438118048958!2d70.79189805!3d22.15722825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3958359f6684fe6b%3A0xf590914470ce3372!2sShapar%2C%20Gujarat%20360024!5e0!3m2!1sen!2sin!4v1733819028601!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
