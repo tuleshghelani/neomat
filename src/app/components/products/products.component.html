@@ -54,6 +54,10 @@
         <h3>{{product.name}}</h3>
         <p>{{product.description}}</p>
         <div class="specifications" *ngIf="product.specifications">
+          <div class="spec-item">
+            <span class="spec-label">Brand:</span>
+            <span class="spec-value">Adaptix</span>
+          </div>
           <div class="spec-item" *ngFor="let spec of product.specifications | keyvalue">
             <span class="spec-label">{{spec.key}}:</span>
             <span class="spec-value">{{spec.value}}</span>
