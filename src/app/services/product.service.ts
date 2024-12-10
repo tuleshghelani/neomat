@@ -99,11 +99,9 @@ export class ProductService {
         name: 'Male Connector',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Male Connector'],
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/MALE CONNECTOR.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
+          'src/assets/product/vco/MALE CONNECTOR.png'
         ],
         description: 'Premium VCO male connector featuring precision-machined threads and sealing surface, designed for high-purity fluid handling systems. Provides reliable metal-to-metal seal with excellent resistance to vibration and thermal cycling.',
         specifications: {
@@ -119,7 +117,7 @@ export class ProductService {
         name: 'Female Connector',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Female Connector'],
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/FEMALE CONNECTOR.png',
         otherImages: [
           'assets/product/Gasket_2.jpeg',
           'assets/product/Gasket_3.jpeg',
@@ -139,11 +137,8 @@ export class ProductService {
         name: 'Gland',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Gland'],
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/GLAND.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],
         description: 'Precision-engineered VCO gland designed for secure mechanical grip and reliable sealing. Features optimized geometry for proper compression and seal engagement, ensuring leak-free performance in demanding applications.',
         specifications: {
@@ -160,11 +155,8 @@ export class ProductService {
       name: 'Male Elbow',
       categoryName: 'VCO FITTINGS',
       subCategory: ['Male Elbow'],
-      mainImage: 'assets/product/Gasket.jpeg',
+      mainImage: 'assets/product/vco/MALE ELBOW.png',
       otherImages: [
-        'assets/product/Gasket_2.jpeg',
-        'assets/product/Gasket_3.jpeg',
-        'assets/product/Gasket_4.jpeg'
       ],
       description: 'Precision-crafted 90-degree male elbow fitting with VCO end connection, designed for space-efficient directional changes in high-purity fluid systems. Features smooth internal bore for optimal flow characteristics.',
         specifications: {
@@ -181,11 +173,8 @@ export class ProductService {
         name: 'Union Elbow',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Union Elbow'],
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/UNION ELBOW.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],  
         description: 'High-performance VCO union elbow providing 90-degree flow direction change with the convenience of union-style assembly. Ideal for systems requiring frequent maintenance or reconfiguration.',
         specifications: {
@@ -202,11 +191,8 @@ export class ProductService {
         name: 'Union Tee',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Union Tee'],
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/UNION TEE.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],
         description: 'High-performance VCO union tee fitting designed for three-way flow distribution in high-purity systems. Features precision-machined body with uniform flow paths and metal-to-metal sealing surfaces for consistent performance. Ideal for applications requiring frequent system modifications or maintenance.',
         specifications: {
@@ -223,11 +209,8 @@ export class ProductService {
         name: 'Union Cross',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Union Cross'],   
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/UNION CROSS.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],
         description: 'Versatile VCO union cross fitting providing four-way flow distribution with balanced flow characteristics. Engineered for multi-directional fluid handling in complex systems. Features precision-machined body and standardized end connections for maximum system flexibility.',
         specifications: {
@@ -244,11 +227,8 @@ export class ProductService {
         name: 'Male Run Tee',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Male Run Tee'],  
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/BULKHEAD MALE RUN TEE.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],  
         description: 'Specialized VCO male run tee featuring straight-through flow path with branch connection. Designed for applications requiring minimal flow restriction in the main run with a secondary branch connection. Precision-machined for optimal flow characteristics and reliable sealing.',
         specifications: {
@@ -265,11 +245,8 @@ export class ProductService {
         name: 'Male Branch Tee',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Male Branch Tee'],
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/BULKHEAD MALE BRANCH TEE.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],
         description: 'Advanced VCO male branch tee designed with optimized flow geometry for branch-off applications. Features male thread branch connection with female run connections, ideal for instrument connections and sampling points. Ensures minimal pressure drop and uniform flow distribution.',
         specifications: {
@@ -286,11 +263,8 @@ export class ProductService {
         name: '"O" Ring Seat Connector',
         categoryName: 'VCO FITTINGS',
         subCategory: ['"O" Ring Seat Connector'],   
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/O RING SEAT CONNNECTOR.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],
         description: 'Precision-engineered VCO O-ring seat connector providing reliable sealing in high-purity applications. Features specially designed O-ring groove geometry for optimal compression and seal integrity. Ideal for applications requiring frequent assembly/disassembly with maintained sealing performance.',
         specifications: {
@@ -307,11 +281,8 @@ export class ProductService {
         name: '"O" Ring Seat Male Connector',
         categoryName: 'VCO FITTINGS',
         subCategory: ['"O" Ring Seat Male Connector'],  
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/O RING SEAT MALE ELBOW.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],
         description: 'High-performance VCO O-ring seat male connector combining thread sealing with O-ring technology. Features precision-machined male thread end and optimized O-ring groove design. Ensures reliable sealing in dynamic temperature and pressure conditions.',
         specifications: {
@@ -349,11 +320,8 @@ export class ProductService {
         name: 'Tube Socket',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Tube Socket'],
-        mainImage: 'assets/product/Gasket.jpeg',
+        mainImage: 'assets/product/vco/TUBE SOCKET.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],
         description: 'Precision-engineered VCO tube socket providing secure tube termination and connection point. Features optimized bore design for smooth flow transition and reliable tube grip. Manufactured with exact tolerances for consistent assembly and sealing performance.',
         specifications: {

@@ -37,9 +37,15 @@
         <div class="main-image">
           <img [src]="product.mainImage" [alt]="product.name" loading="lazy">
         </div>
-        <div class="hover-image" *ngIf="product?.otherImages?.length != undefined && product?.otherImages?.length">
+        <!-- <div class="hover-image" *ngIf="product?.otherImages?.length != undefined && product?.otherImages?.length">
           <img 
             [src]="product.otherImages?.[1]" 
+            [alt]="product.name || 'Product image'" 
+            loading="lazy">
+        </div> -->
+        <div class="hover-image" >
+          <img 
+            [src]="product.mainImage" 
             [alt]="product.name || 'Product image'" 
             loading="lazy">
         </div>
