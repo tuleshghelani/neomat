@@ -632,7 +632,7 @@ export class ProductService {
       name: 'Barrel Nipple',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Barrel Nipple'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/7.png',
+      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Barrel Nipple.png',
       otherImages: [
       ],
       description: 'Precision-engineered barrel nipple featuring uniform wall thickness throughout. Designed for optimal flow characteristics with minimal pressure drop. Includes precision-machined ends for perfect alignment.',
@@ -650,7 +650,7 @@ export class ProductService {
       name: 'Pipe Nipple',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Pipe Nipple'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/9.png',
+      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Pipe Nipple.png',
       otherImages: [
       ],
       description: 'High-quality pipe nipple designed for straight-line connections. Features precise length control and perfectly perpendicular end faces. Manufactured with strict tolerances for maximum reliability.',
@@ -668,7 +668,7 @@ export class ProductService {
       name: 'Swage Nipple',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Swage Nipple'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/10.png',
+      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Swage Nipple.png',
       otherImages: [
       ],
       description: 'Advanced swage nipple featuring smooth diameter transition. Engineered for gradual flow area changes with minimal turbulence. Includes precision-machined ends for perfect alignment and sealing.',
@@ -722,7 +722,7 @@ export class ProductService {
       name: 'Short Stub End',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Short Stub End'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Stubend.png',
+      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Short Stub End.png',
       otherImages: [
       ],
       description: 'Compact stub end designed for space-constrained applications. Features reinforced flange face with precision-machined sealing surface. Optimized for minimal installation length requirements.',
@@ -740,11 +740,8 @@ export class ProductService {
       name: 'Lateral Tee',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Lateral Tee'],
-      mainImage: 'assets/product/Gasket.jpeg',
+      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Lateral Tee.png',
       otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
       ],
       description: 'Specialized lateral tee designed for angled branch connections. Features optimized flow geometry for reduced pressure drop. Engineered for balanced flow distribution with minimal turbulence.',
       specifications: {
@@ -830,7 +827,7 @@ export class ProductService {
     name: 'Barrel Nipple',
     categoryName: 'FORGED FITTINGS', 
     subCategory: ['Barrel Nipple'],
-    mainImage: 'assets/product/Gasket.jpeg',
+    mainImage: 'assets/product/FORGED FITTINGS/Barrel Nipple.png',
     otherImages: [
     ],
     description: 'Heavy-duty forged barrel nipple featuring seamless construction and precise threading. Manufactured from high-grade materials for superior pressure and temperature resistance. Ideal for connecting pipes in high-pressure applications.',
@@ -902,7 +899,7 @@ export class ProductService {
     name: 'Equal Tee Fittings',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Equal Tee Fittings'],
-    mainImage: 'assets/product/Gasket.jpeg',
+    mainImage: 'assets/product/FORGED FITTINGS/Equal Tee Fittings.png',
     otherImages: [
     ],
     description: 'High-pressure equal tee fitting designed for uniform flow distribution. Features precision-forged construction with equal-sized outlets. Ideal for applications requiring three-way flow division or combination.',
@@ -974,7 +971,7 @@ export class ProductService {
     name: 'Plug',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Plug'],
-    mainImage: 'assets/product/Gasket.jpeg',
+    mainImage: 'assets/product/FORGED FITTINGS/Plug.png',
     otherImages: [
     ],
     description: 'Solid forged plug designed for secure system closure. Features precision threading and hexagonal head for reliable installation.',
@@ -1064,7 +1061,7 @@ export class ProductService {
     name: 'Boss',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Boss'],
-    mainImage: 'assets/product/Gasket.jpeg',
+    mainImage: 'assets/product/FORGED FITTINGS/Boss.png',
     otherImages: [
     ],
     description: 'Heavy-duty boss fitting designed for branch connections. Provides reinforced mounting point for high-pressure applications.',
@@ -1262,7 +1259,7 @@ export class ProductService {
     name: 'Tube Elbow',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Tube Elbow'],
-    mainImage: 'assets/product/Gasket.jpeg',
+    mainImage: 'assets/product/TUBE FITTING/Tube Elbow.png',
     otherImages: [
     ],
     description: 'High-performance 90-degree tube elbow for precise directional flow control. Engineered with optimized bend radius for minimum flow restriction. Features precision-machined sealing surfaces for maximum reliability and leak-free operation.',
@@ -1280,7 +1277,7 @@ export class ProductService {
     name: 'OD Cap',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['OD Cap'],
-    mainImage: 'assets/product/Gasket.jpeg',
+    mainImage: 'assets/product/TUBE FITTING/OD Cap.png',
     otherImages: [
     ],
     description: 'Premium quality OD cap designed for reliable tube end sealing. Features precision-machined internal surfaces for maximum sealing effectiveness. Constructed from durable materials for long-term performance and system protection.',
@@ -1298,7 +1295,7 @@ export class ProductService {
     name: 'OD Plug',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['OD Plug'],
-    mainImage: 'assets/product/Gasket.jpeg',
+    mainImage: 'assets/product/TUBE FITTING/OD Plug.png',
     otherImages: [
     ],
     description: 'High-quality OD plug engineered for secure system isolation. Features precision-machined sealing surfaces for reliable performance. Manufactured from premium materials for maximum durability and corrosion resistance.',
@@ -1372,7 +1369,7 @@ export class ProductService {
     name: 'Ring Joint Flanges',
     categoryName: 'FLANGES',
     subCategory: ['Ring Joint Flanges'],
-    mainImage: 'assets/product/Gasket.jpeg',
+    mainImage: 'assets/product/FLANGE/Ring Joint Flanges.png',
     otherImages: [
     ],
     description: 'Heavy-duty Ring Joint flanges engineered for high-pressure and high-temperature applications. Features precision-machined ring groove for metal-to-metal sealing. Superior design ensures excellent joint integrity and leak prevention.',
@@ -1499,7 +1496,7 @@ export class ProductService {
     name: 'Orifice Flanges',
     categoryName: 'FLANGES',
     subCategory: ['Orifice Flanges'],
-    mainImage: 'assets/product/Gasket.jpeg',
+    mainImage: 'assets/product/FLANGE/Orifice Flanges.png',
     otherImages: [
     ],
     description: 'Professional-grade orifice flanges designed for flow measurement applications. Incorporates precision-machined pressure taps and surface finish for accurate flow readings. Engineered for long-term reliability in metering services.',
