@@ -33,7 +33,35 @@
     </div>
   </section>
 
-  
+  <!-- <section class="enquiry-table-section">
+    <div class="container mx-auto px-4 py-12">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-primary mb-4">Enquiries</h2>
+            <input type="text" placeholder="Search..." (input)="onSearch($event)" class="search-input">
+        </div>
+        <table class="min-w-full bg-white">
+            <thead>
+                <tr>
+                    <th class="py-2">Name</th>
+                    <th class="py-2">Company Name</th>
+                    <th class="py-2">Email</th>
+                    <th class="py-2">Mobile Number</th>
+                    <th class="py-2">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let enquiry of filteredEnquiries">
+                    <td class="py-2">{{enquiry.name}}</td>
+                    <td class="py-2">{{enquiry.company_name}}</td>
+                    <td class="py-2">{{enquiry.email}}</td>
+                    <td class="py-2">{{enquiry.mobilenumber}}</td>
+                    <td class="py-2">{{enquiry.address}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section> -->
+
 <!-- Enquiry Form Popup -->
 <div class="popup-overlay" *ngIf="showEnquiryForm" (click)="closeEnquiryForm()">
     <div class="popup-content" (click)="$event.stopPropagation()">
@@ -73,12 +101,25 @@
           <label for="mobile">Mobile Number</label>
           <input 
             type="tel" 
-            id="mobile" 
-            formControlName="mobile" 
+            id="mobilenumber" 
+            formControlName="mobilenumber" 
             placeholder="Enter your mobile number"
-            [class.error]="isFieldInvalid('mobile')">
-          <div class="error-message" *ngIf="isFieldInvalid('mobile')">
+            [class.error]="isFieldInvalid('mobilenumber')">
+          <div class="error-message" *ngIf="isFieldInvalid('mobilenumber')">
             Please enter a valid mobile number
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="mobile">Comany Name</label>
+          <input 
+            type="text" 
+            id="company_name" 
+            formControlName="company_name" 
+            placeholder="Enter your company name"
+            [class.error]="isFieldInvalid('company_name')">
+          <div class="error-message" *ngIf="isFieldInvalid('company_name')">
+            Please enter a valid company name
           </div>
         </div>
   
