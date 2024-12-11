@@ -90,44 +90,44 @@ export class CatelogueComponent {
   catalogueItems: CatalogueItem[] = [
     {
       id: 1,
-      title: 'Premium Collection',
+      title: 'VCO Fittings',
       description: 'Discover our exclusive range of premium materials',
-      image: 'assets/catelogue/1.png',
+      image: 'assets/catelogue/VCO FETTING.jpg',
       category: 'Premium'
     },
     {
       id: 2,
-      title: 'Modern Design',
+      title: 'VCR Fitting',
       description: 'Contemporary solutions for modern spaces',
-      image: 'assets/catelogue/1.png',
+      image: 'assets/catelogue/VCR FETTING.jpg',
       category: 'Modern'
     },
     {
       id: 3,
-      title: 'Classic Series',
+      title: 'Tube Fittings',
       description: 'Timeless elegance for every project',
-      image: 'assets/catelogue/1.png',
+      image: 'assets/catelogue/TUBE FETTINGS.jpg',
       category: 'Classic'
     },
     {
       id: 4,
-      title: 'Innovative Materials',
+      title: 'But Weld End Fittings',
       description: 'Cutting-edge materials for future-ready construction',
-      image: 'assets/catelogue/1.png',
+      image: 'assets/catelogue/BUT WELD END FITTINGS.jpg',
       category: 'Innovation'
     },
     {
       id: 5,
-      title: 'Sustainable Solutions',
+      title: 'Forged Fittings',
       description: 'Eco-friendly options for conscious building',
-      image: 'assets/catelogue/1.png',
+      image: 'assets/catelogue/FORGED FITTINGS..jpg',
       category: 'Sustainable'
     },
     {
       id: 6,
-      title: 'Designer Collection',
+      title: 'Flanges',
       description: 'Expertly curated designer materials',
-      image: 'assets/catelogue/1.png',
+      image: 'assets/catelogue/Flanges _Detail Catalog.jpg',
       category: 'Designer'
     }
   ];

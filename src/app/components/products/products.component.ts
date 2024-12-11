@@ -43,7 +43,10 @@ export class ProductsComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
-    this.productCategories = this.productService.getProductCategories();
+    this.productCategories = this.productService.getProductCategories().map(category => ({
+      ...category,
+      isExpanded: false // Set all categories to collapsed initially
+    }));
     this.updateFilteredProducts();
   }
 
@@ -63,18 +66,21 @@ export class ProductsComponent implements OnInit {
     }
   }
 
+
   toggleCategory(category: ProductCategory) {
-    // Close other categories
-    this.productCategories.forEach(cat => {
-      if (cat !== category) {
-        cat.isExpanded = false;
-      }
-    });
-    
     // Toggle current category
     category.isExpanded = !category.isExpanded;
     
-    // Update selected category
+    // Close other categories when one is expanded
+    if (category.isExpanded) {
+      this.productCategories.forEach(cat => {
+        if (cat !== category) {
+          cat.isExpanded = false;
+        }
+      });
+    }
+    
+    // Update selected category and active state
     this.selectedCategory = category.isExpanded ? category : null;
     this.activeCategory = category.isExpanded ? category.name : null;
     
@@ -85,6 +91,10 @@ export class ProductsComponent implements OnInit {
     } else {
       this.updateFilteredProducts();
     }
+  }
+
+  isCategoryActive(category: ProductCategory): boolean {
+    return category.isExpanded;
   }
 
   selectSubProduct(category: ProductCategory, subProduct: string) {
@@ -158,7 +168,4 @@ export class ProductsComponent implements OnInit {
     this.isMobileCategoriesVisible = !this.isMobileCategoriesVisible;
   }
 
-  isCategoryActive(category: ProductCategory): boolean {
-    return this.activeCategory === category.name;
-  }
 }

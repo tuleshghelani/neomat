@@ -85,11 +85,13 @@ export class ProductService {
       name: 'FLANGES',
       isExpanded: false,
       subProducts: [
-        'SORF Flanges', 'BLRF Flanges', 'Ring Joint Flanges',
-        'Paddle & Spacer', 'Spectacles', 'Long Weld Neck Flanges',
-        'Threaded/screwed Flanges', 'Lapped Joint Flanges',
-        'Tongue & Groove Flanges', 'Orifice Flanges', 'Flange Olet',
-        'Nipo Flanges', 'Puddle Flanges', 'WNRF Flanges'
+        'Slip On Flanges',
+        'BLIND Flanges',
+        'Weld Neck Flanges',
+        'Threarded Flanges',
+        'Olet Flanges',
+        'Socket Weld Flanges',
+        'Lap Joint Flanges'
       ]
     }
   ];
@@ -105,12 +107,10 @@ export class ProductService {
         ],
         description: 'Premium VCO male connector featuring precision-machined threads and sealing surface, designed for high-purity fluid handling systems. Provides reliable metal-to-metal seal with excellent resistance to vibration and thermal cycling.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'End Connections': 'Male VCO x Male NPT/Tube',
-            'Surface Finish': '< 20 Ra'
+            'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+            'Size': '1/8” to 2”',
+            'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+            'Pressure Rating':  'Upto 10000 psi'
         }
     },
     {
@@ -119,18 +119,13 @@ export class ProductService {
         subCategory: ['Female Connector'],
         mainImage: 'assets/product/vco/FEMALE CONNECTOR.png',
         otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
         ],
         description: 'High-precision VCO female connector with expertly machined gland pocket, engineered for leak-tight connections in critical fluid systems. Features smooth bore design for optimal flow characteristics.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'End Connections': 'Female VCO x Female NPT/Tube',
-            'Surface Finish': '< 20 Ra'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8” to 2”',
+          'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+          'Pressure Rating':  'Upto 10000 psi'
         }
     },
     {
@@ -142,13 +137,10 @@ export class ProductService {
         ],
         description: 'Precision-engineered VCO gland designed for secure mechanical grip and reliable sealing. Features optimized geometry for proper compression and seal engagement, ensuring leak-free performance in demanding applications.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'Thread Type': 'Left-hand Thread',
-            'Surface Finish': '< 20 Ra',
-            'Hardness': 'Rb 80 maximum'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+          'End Connections': 'Tube OD',
+          'Pressure Rating':  'Upto 10000 psi'
         }
     },
     {
@@ -160,13 +152,10 @@ export class ProductService {
       ],
       description: 'Precision-crafted 90-degree male elbow fitting with VCO end connection, designed for space-efficient directional changes in high-purity fluid systems. Features smooth internal bore for optimal flow characteristics.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 2500 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'Angle': '90 degrees',
-            'End Connections': 'Male VCO x Male NPT/Tube',
-            'Surface Finish': '< 20 Ra'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+          'End Connections': 'Tube OD',
+          'Pressure Rating':  'Upto 10000 psi'
         }
     },
     {
@@ -178,13 +167,10 @@ export class ProductService {
         ],  
         description: 'High-performance VCO union elbow providing 90-degree flow direction change with the convenience of union-style assembly. Ideal for systems requiring frequent maintenance or reconfiguration.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 2500 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'Angle': '90 degrees',
-            'End Connections': 'VCO x VCO',
-            'Surface Finish': '< 20 Ra'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+          'End Connections': 'Tube OD',
+          'Pressure Rating':  'Upto 10000 psi'
         }
     },
     {
@@ -196,13 +182,10 @@ export class ProductService {
         ],
         description: 'High-performance VCO union tee fitting designed for three-way flow distribution in high-purity systems. Features precision-machined body with uniform flow paths and metal-to-metal sealing surfaces for consistent performance. Ideal for applications requiring frequent system modifications or maintenance.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'End Connections': 'VCO x VCO x VCO',
-            'Surface Finish': '< 20 Ra',
-            'Flow Configuration': 'Equal Flow Paths'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2"',
+          'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+          'Pressure Rating':  'Upto 10000 psi'
         }
     },
     {
@@ -214,13 +197,10 @@ export class ProductService {
         ],
         description: 'Versatile VCO union cross fitting providing four-way flow distribution with balanced flow characteristics. Engineered for multi-directional fluid handling in complex systems. Features precision-machined body and standardized end connections for maximum system flexibility.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'End Connections': 'VCO x VCO x VCO x VCO',
-            'Surface Finish': '< 20 Ra',
-            'Flow Pattern': 'Four-way Distribution'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+          'End Connections': 'Tube OD',
+          'Pressure Rating':  'Upto 10000 psi'
         }
     },
     {
@@ -232,13 +212,10 @@ export class ProductService {
         ],  
         description: 'Specialized VCO male run tee featuring straight-through flow path with branch connection. Designed for applications requiring minimal flow restriction in the main run with a secondary branch connection. Precision-machined for optimal flow characteristics and reliable sealing.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'End Connections': 'Male VCO x Female VCO x Male VCO',
-            'Surface Finish': '< 20 Ra',
-            'Flow Configuration': 'Straight Through with Branch'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+          'End Connections': 'Tube OD',
+          'Pressure Rating':  'Upto 10000 psi'
         }
     },
     {
@@ -250,13 +227,10 @@ export class ProductService {
         ],
         description: 'Advanced VCO male branch tee designed with optimized flow geometry for branch-off applications. Features male thread branch connection with female run connections, ideal for instrument connections and sampling points. Ensures minimal pressure drop and uniform flow distribution.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'End Connections': 'Female VCO x Female VCO x Male VCO Branch',
-            'Surface Finish': '< 20 Ra',
-            'Branch Angle': '90 degrees'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2"',
+          'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+          'Pressure Rating': 'Upto 10000 psi'
         }
     },
     {
@@ -268,13 +242,10 @@ export class ProductService {
         ],
         description: 'Precision-engineered VCO O-ring seat connector providing reliable sealing in high-purity applications. Features specially designed O-ring groove geometry for optimal compression and seal integrity. Ideal for applications requiring frequent assembly/disassembly with maintained sealing performance.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'Seal Type': 'Fluoroelastomer O-ring',
-            'Surface Finish': '< 20 Ra',
-            'Assembly Type': 'Thread-sealed'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2"',
+          'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+          'Pressure Rating': 'Upto 10000 psi'
         }
     },
     {
@@ -286,13 +257,10 @@ export class ProductService {
         ],
         description: 'High-performance VCO O-ring seat male connector combining thread sealing with O-ring technology. Features precision-machined male thread end and optimized O-ring groove design. Ensures reliable sealing in dynamic temperature and pressure conditions.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'End Connections': 'Male NPT x O-ring VCO',
-            'Surface Finish': '< 20 Ra',
-            'O-ring Material': 'Viton® (FKM)'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+          'End Connections': 'Tube OD',
+          'Pressure Rating': 'Upto 10000 psi'
         }
     },
     {
@@ -304,13 +272,10 @@ export class ProductService {
         ],
         description: 'Premium VCO union connector designed for joining tube sections with maximum reliability. Features symmetrical design with precision-machined sealing surfaces and robust body construction. Ideal for applications requiring frequent maintenance access or system modifications.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'End Connections': 'VCO x VCO',
-            'Surface Finish': '< 20 Ra',
-            'Assembly Type': 'Two-piece Design'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+          'End Connections': 'Tube OD',
+          'Pressure Rating': 'Upto 10000 psi'
         }
     },
     {
@@ -322,13 +287,10 @@ export class ProductService {
         ],
         description: 'Precision-engineered VCO tube socket providing secure tube termination and connection point. Features optimized bore design for smooth flow transition and reliable tube grip. Manufactured with exact tolerances for consistent assembly and sealing performance.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'Tube Wall Compatibility': '0.035" to 0.083"',
-            'Surface Finish': '< 20 Ra',
-            'Installation Type': 'Weld Socket'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2"',
+          'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+          'Pressure Rating': 'Upto 10000 psi'
         }
     },
     {
@@ -340,13 +302,10 @@ export class ProductService {
         ],
         description: 'Precision-engineered VCR nut designed for secure and leak-tight connections in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'Tube Wall Compatibility': '0.035" to 0.083"',
-            'Surface Finish': '< 20 Ra',
-            'Installation Type': 'Weld Socket'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2"',
+          'End Connections': 'Tube OD',
+          'Pressure Rating': 'Upto 10000 psi'
         }
     },
     {
@@ -358,13 +317,10 @@ export class ProductService {
         ],
         description: 'Precision-engineered VCR nut designed for secure and leak-tight connections in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
         specifications: {
-            'Material': '316/316L Stainless Steel',
-            'Size Range': '1/4" to 1"',
-            'Pressure Rating': 'Up to 3000 PSI',
-            'Temperature Range': '-20°F to 450°F',
-            'Tube Wall Compatibility': '0.035" to 0.083"',
-            'Surface Finish': '< 20 Ra',
-            'Installation Type': 'Weld Socket'
+          'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+          'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+          'End Connections': 'Tube OD',
+          'Pressure Rating': 'Upto 10000 psi'
         }
     },
     {
@@ -376,16 +332,10 @@ export class ProductService {
       ],
       description: 'High-precision VCR gland engineered for critical fluid handling applications. Features proprietary surface finishing technology and optimized geometry for maximum sealing reliability. Designed with advanced anti-rotation features and precise dimensional control for consistent performance in ultra-high purity systems.',
       specifications: {
-          'Material': '316/316L Stainless Steel',
-          'Size Range': '1/4" to 1"',
-          'Pressure Rating': 'Up to 3000 PSI',
-          'Temperature Range': '-65°F to 450°F',
-          'Surface Finish': '< 10 Ra',
-          'Hardness': 'Rb 80 maximum',
-          'Concentricity': '0.005" TIR max',
-          'Thread Type': 'Precision-rolled',
-          'Sealing Technology': 'Metal-to-metal',
-          'Certification': 'Material traceability per EN 10204 3.1'
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+        'Size': '1/8" to 2"',
+        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+        'Pressure Rating': 'Upto 10000 psi'
       }
   },
   {
@@ -397,16 +347,10 @@ export class ProductService {
       ],
       description: 'Premium VCR union tee featuring advanced flow optimization technology. Engineered with computational fluid dynamics-designed internal geometry for minimal pressure drop and uniform flow distribution. Ideal for high-purity gas distribution systems requiring precise flow control and contamination-free operation.',
       specifications: {
-          'Material': '316/316L Stainless Steel',
-          'Size Range': '1/4" to 1"',
-          'Pressure Rating': 'Up to 3000 PSI',
-          'Temperature Range': '-65°F to 450°F',
-          'Surface Finish': '< 10 Ra',
-          'Flow Coefficient': 'Optimized Cv values',
-          'Branch Angle': '90° ±1°',
-          'Internal Volume': 'Minimized dead space',
-          'Assembly Torque': 'Specified per size',
-          'Helium Leak Rating': '4 x 10⁻⁹ std cc/sec'
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+        'End Connections': 'Tube OD',
+        'Pressure Rating': 'Upto 10000 psi'
       }
   },
   {
@@ -418,16 +362,10 @@ export class ProductService {
       ],
       description: 'Advanced VCR union cross incorporating symmetrical flow path design for multi-directional fluid distribution. Features precision-machined internal passages with optimized flow geometry for balanced distribution and minimal turbulence. Engineered for high-purity semiconductor and analytical instrumentation applications.',
       specifications: {
-          'Material': '316/316L Stainless Steel',
-          'Size Range': '1/4" to 1"',
-          'Pressure Rating': 'Up to 3000 PSI',
-          'Temperature Range': '-65°F to 450°F',
-          'Surface Finish': '< 10 Ra',
-          'Flow Configuration': 'Symmetrical 4-way',
-          'Port Alignment': '90° ±0.5°',
-          'Internal Passageway': 'Electropolished',
-          'Cleanliness': 'Certified particle-free',
-          'Quality Control': '100% helium leak tested'
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+        'End Connections': 'Tube OD',
+        'Pressure Rating': 'Upto 10000 psi'
       }
     },
     {
@@ -439,13 +377,10 @@ export class ProductService {
       ],
       description: 'Premium grade VCR male connector engineered for ultra-high purity applications. Features our proprietary surface finishing technology ensuring class-leading seal integrity and minimal particle generation. The innovative gland design provides exceptional radial alignment and prevents galling during repeated assembly cycles. Ideal for semiconductor, pharmaceutical, and critical gas delivery systems.',
       specifications: {
-          'Material': '316/316L SS with enhanced surface finish ≤ 8 Ra',
-          'Size Range': '1/4", 3/8", 1/2", 3/4", 1"',
-          'Max Working Pressure': '4500 PSI at 70°F',
-          'Temperature Range': '-65°F to 600°F',
-          'Surface Treatment': 'Electropolished',
-          'Helium Leak Rating': '4 x 10⁻⁹ std cc/sec',
-          'End Connections': 'Compatible with all standard VCR components'
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+        'Size': '1/8" to 2"',
+        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+        'Pressure Rating': 'Upto 10000 psi'
       }
     },  
     {
@@ -457,13 +392,10 @@ export class ProductService {
       ],
       description: 'State-of-the-art VCR female connector featuring precision-machined sealing surfaces and our exclusive geometrical optimization for superior connector engagement. Enhanced thread profile ensures consistent sealing force distribution and prevents cold welding. Ideal for ultra-high purity gas systems, analytical instrumentation, and critical process applications.',
       specifications: {
-          'Material': '316/316L SS with electropolished finish',
-          'Size Range': '1/4", 3/8", 1/2", 3/4", 1"',
-          'Max Working Pressure': '4500 PSI at 70°F',
-          'Temperature Range': '-65°F to 600°F',
-          'Internal Surface Finish': '≤ 10 Ra',
-          'Particulate Generation': '< Class 100',
-          'Torque Specification': 'Size-specific calibrated torque values'
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+        'Size': '1/8" to 2"',
+        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+        'Pressure Rating': 'Upto 10000 psi'
       }
     },
     {
@@ -475,13 +407,10 @@ export class ProductService {
       ],
       description: 'Advanced 90° VCR union elbow incorporating our innovative flow-optimized geometry for minimal pressure drop and turbulence. Precision-machined from high-purity bar stock with controlled sulfur content for enhanced weldability. Features our proprietary internal polishing process ensuring exceptional surface smoothness and corrosion resistance.',
       specifications: {
-          'Material': '316/316L SS (low sulfur content)',
-          'Size Range': '1/4", 3/8", 1/2", 3/4", 1"',
-          'Max Working Pressure': '4000 PSI at 70°F',
-          'Temperature Range': '-65°F to 600°F',
-          'Flow Coefficient': 'Size-specific optimized Cv values',
-          'Surface Finish': 'EP finished to < 10 Ra',
-          'Bend Radius': 'Optimized for minimal flow restriction'
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+        'Size': '1/8" to 2"',
+        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+        'Pressure Rating': 'Upto 10000 psi'
       }
     },
     {
@@ -493,13 +422,10 @@ export class ProductService {
       ],
       description: 'High-performance VCR male elbow featuring our patented flow-optimization technology. Engineered with computational fluid dynamics analysis to minimize dead space and ensure uniform flow distribution. The precision-machined sealing surface incorporates our advanced geometry for enhanced gasket retention and leak-tight connections.',
       specifications: {
-          'Material': '316/316L SS with certified material traceability',
-          'Size Range': '1/4", 3/8", 1/2", 3/4", 1"',
-          'Max Working Pressure': '4000 PSI at 70°F',
-          'Temperature Range': '-65°F to 600°F',
-          'Dead Space': 'Minimized by design',
-          'Surface Finish': 'EP finished to < 8 Ra',
-          'Manufacturing': 'ISO 9001:2015 certified process'
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+        'Size': '1/8" to 2"',
+        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
+        'Pressure Rating': 'Upto 10000 psi'
       }
     },
     {
@@ -511,13 +437,10 @@ export class ProductService {
       ],
       description: 'Premium bulkhead union featuring our innovative panel-mount design for superior stability and alignment. Engineered with dual-sided sealing technology ensuring leak-tight connections on both faces. Enhanced thread profile and proprietary surface treatment provide exceptional resistance to vibration and thermal cycling.',
       specifications: {
-          'Material': '316/316L SS with enhanced passivation',
-          'Size Range': '1/4", 3/8", 1/2", 3/4", 1"',
-          'Max Working Pressure': '4500 PSI at 70°F',
-          'Temperature Range': '-65°F to 600°F',
-          'Panel Thickness Range': 'Up to 0.5"',
-          'Mounting Hardware': 'Included hex nut and washer',
-          'Concentricity': '≤ 0.005" TIR'
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+        'End Connections': 'Tube OD',
+        'Pressure Rating': 'Upto 10000 psi'
       }
     },
     {
@@ -529,13 +452,10 @@ export class ProductService {
       ],
       description: 'Ultra-high purity VCR equal union featuring our symmetrical flow path design for optimal fluid dynamics. Incorporates dual-sided precision-machined sealing surfaces with our proprietary surface enhancement technology. Engineering-optimized hex flats provide superior wrench engagement and torque transfer during assembly.',
       specifications: {
-          'Material': '316/316L SS with advanced surface treatment',
-          'Size Range': '1/4", 3/8", 1/2", 3/4", 1"',
-          'Max Working Pressure': '4500 PSI at 70°F',
-          'Temperature Range': '-65°F to 600°F',
-          'Internal Volume': 'Size-specific minimized volumes',
-          'Cleanliness': 'Certified to ASTM G93 Level A',
-          'Quality Control': '100% helium leak tested'
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM / TANTALUM',
+        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+        'End Connections': 'Tube OD',
+        'Pressure Rating': 'Upto 10000 psi'
       }
     },
     {
@@ -1328,9 +1248,9 @@ export class ProductService {
     }
   },
   {
-    name: 'SORF Flanges',
+    name: 'Slip On Flanges',
     categoryName: 'FLANGES',
-    subCategory: ['SORF Flanges'],
+    subCategory: ['Slip On Flanges'],
     mainImage: 'assets/product/FLANGE/3.png',
     otherImages: [
     ],
@@ -1347,9 +1267,9 @@ export class ProductService {
   },
   
   {
-    name: 'BLRF Flanges',
+    name: 'BLIND Flanges',
     categoryName: 'FLANGES', 
-    subCategory: ['BLRF Flanges'],
+    subCategory: ['BLIND Flanges'],
     mainImage: 'assets/product/FLANGE/Blind Flanges.png',
     otherImages: [
     ],
@@ -1364,66 +1284,10 @@ export class ProductService {
         'Quality Control': '100% pressure tested'
     }
   },
-  
   {
-    name: 'Ring Joint Flanges',
+    name: 'Weld Neck Flanges',
     categoryName: 'FLANGES',
-    subCategory: ['Ring Joint Flanges'],
-    mainImage: 'assets/product/FLANGE/Ring Joint Flanges.png',
-    otherImages: [
-    ],
-    description: 'Heavy-duty Ring Joint flanges engineered for high-pressure and high-temperature applications. Features precision-machined ring groove for metal-to-metal sealing. Superior design ensures excellent joint integrity and leak prevention.',
-    specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
-    }
-  },
-  {
-    name: 'Paddle & Spacer',
-    categoryName: 'FLANGES',
-    subCategory: ['Paddle & Spacer'],
-    mainImage: 'assets/product/FLANGE/13.png',
-    otherImages: [
-    ],
-    description: 'High-performance paddle and spacer flanges designed for precise flow control and isolation. Features robust construction with integrated spacing elements for optimal alignment. Engineered for demanding industrial applications with superior sealing capabilities.',
-    specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
-    }
-  },
-  
-  {
-    name: 'Spectacles',
-    categoryName: 'FLANGES',
-    subCategory: ['Spectacles'],
-    mainImage: 'assets/product/FLANGE/Spectacles.png',
-    otherImages: [
-    ],
-    description: 'Premium spectacle flanges providing dual-function isolation and flow-through capabilities. Precision-engineered rotating disc design allows quick transitions between blind and open positions. Ideal for maintenance operations and system isolation.',
-    specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
-    }
-  },  
-  {
-    name: 'Long Weld Neck Flanges',
-    categoryName: 'FLANGES',
-    subCategory: ['Long Weld Neck Flanges'],
+    subCategory: ['Weld Neck Flanges'],
     mainImage: 'assets/product/FLANGE/8.png',
     otherImages: [
     ],
@@ -1439,9 +1303,9 @@ export class ProductService {
     }
   },
   {
-    name: 'Threaded/screwed Flanges',
+    name: 'Threarded Flanges',
     categoryName: 'FLANGES',
-    subCategory: ['Threaded/screwed Flanges'],
+    subCategory: ['Threarded Flanges'],
     mainImage: 'assets/product/FLANGE/Thread.png',
     otherImages: [
     ],
@@ -1457,9 +1321,9 @@ export class ProductService {
     }
   },
   {
-    name: 'Lapped Joint Flanges',
+    name: 'Lap Joint Flanges',
     categoryName: 'FLANGES',
-    subCategory: ['Lapped Joint Flanges'],
+    subCategory: ['Lap Joint Flanges'],
     mainImage: 'assets/product/FLANGE/Lap Joint.png',
     otherImages: [
     ],
@@ -1475,9 +1339,9 @@ export class ProductService {
     }
   },
   {
-    name: 'Tongue & Groove Flanges',
+    name: 'Olet Flanges',
     categoryName: 'FLANGES',
-    subCategory: ['Tongue & Groove Flanges'],
+    subCategory: ['Olet Flanges'],
     mainImage: 'assets/product/FLANGE/Tongue & Groove.png',
     otherImages: [
     ],
@@ -1493,27 +1357,9 @@ export class ProductService {
     }
   },
   {
-    name: 'Orifice Flanges',
+    name: 'Olet flanges',
     categoryName: 'FLANGES',
-    subCategory: ['Orifice Flanges'],
-    mainImage: 'assets/product/FLANGE/Orifice Flanges.png',
-    otherImages: [
-    ],
-    description: 'Professional-grade orifice flanges designed for flow measurement applications. Incorporates precision-machined pressure taps and surface finish for accurate flow readings. Engineered for long-term reliability in metering services.',
-    specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
-    }
-  },
-  {
-    name: 'Flange Olet',
-    categoryName: 'FLANGES',
-    subCategory: ['Flange Olet'],
+    subCategory: ['Olet flanges'],
     mainImage: 'assets/product/FLANGE/Olet flange.png',
     otherImages: [
     ],
@@ -1527,47 +1373,11 @@ export class ProductService {
         'Manufacturing': 'Hot forged process',
         'Quality Control': '100% pressure tested'
     }
-  },
+  },  
   {
-    name: 'Nipo Flanges',
+    name: 'Socket Weld Flanges',
     categoryName: 'FLANGES',
-    subCategory: ['Nipo Flanges'],
-    mainImage: 'assets/product/FLANGE/8.png',
-    otherImages: [
-    ],
-    description: 'Advanced nipo flanges engineered for versatile piping connections. Provides excellent alignment and sealing properties with integrated nipple design. Ideal for applications requiring compact installation and reliable performance.',
-    specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
-    }
-  },
-  {
-    name: 'Puddle Flanges',
-    categoryName: 'FLANGES',
-    subCategory: ['Puddle Flanges'],
-    mainImage: 'assets/product/FLANGE/10.png',
-    otherImages: [
-    ],
-    description: 'Specialized puddle flanges designed for tank and wall penetrations. Features enhanced sealing capabilities for leak-proof installations. Engineered with corrosion-resistant materials for long-term reliability in embedded applications.',
-    specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
-    }
-  },
-  {
-    name: 'WNRF Flanges',
-    categoryName: 'FLANGES',
-    subCategory: ['WNRF Flanges'],
+    subCategory: ['Socket Weld Flanges'],
     mainImage: 'assets/product/FLANGE/weld nake raised.png',
     otherImages: [
     ],
@@ -1582,9 +1392,6 @@ export class ProductService {
         'Quality Control': '100% pressure tested'
     }
   }
-  
-
-  
   
 
   ];

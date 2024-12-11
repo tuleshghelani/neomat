@@ -421,9 +421,29 @@
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 1rem;
+  
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    // This ensures each card maintains its position relative to the card above it
+    grid-column: auto;
+  }
 }
 
 .product-card {

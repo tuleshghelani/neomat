@@ -2,14 +2,14 @@
     <br>
     <div class="hero-banner">
         <div class="hero-content">
-            <h1>Catelogue</h1>
-            <p>Discover Our Premium Range of Construction Materials and Solutions</p>
+            <h1>Catalogue</h1>
+            <p>Discover Our Premium Range of Pipe And Tube Fittings</p>
         </div>
     </div>
     <div class="container mx-auto px-4 py-12">
       <div class="text-center mb-12">
         <h1 class="text-4xl font-bold text-primary mb-4">Our Premium Catalogue</h1>
-        <p class="text-lg text-gray-600">Discover our extensive range of high-quality materials and solutions</p>
+        <p class="text-lg text-gray-600">Discover our extensive range of high-quality pipe and tube fittings</p>
       </div>
   
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -21,9 +21,9 @@
                  class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="p-6">
-            <span class="text-sm text-primary-color font-semibold uppercase tracking-wider">{{item.category}}</span>
+            <!-- <span class="text-sm text-primary-color font-semibold uppercase tracking-wider">{{item.category}}</span> -->
             <h3 class="text-xl font-bold mt-2 mb-3">{{item.title}}</h3>
-            <p class="text-gray-600">{{item.description}}</p>
+            <!-- <p class="text-gray-600">{{item.description}}</p> -->
             <button (click)="openEnquiryForm(item)" class="mt-4 bg-primary-color text-white px-6 py-2 rounded-full hover:bg-primary-color-light transition-colors duration-300">
                 Enquiry Now
               </button>
@@ -38,7 +38,7 @@
 <div class="popup-overlay" *ngIf="showEnquiryForm" (click)="closeEnquiryForm()">
     <div class="popup-content" (click)="$event.stopPropagation()">
       <div class="popup-header">
-        <h2>Catelogue</h2>
+        <h2>Catalogue</h2>
         <button class="close-btn" (click)="closeEnquiryForm()">&times;</button>
       </div>
       
