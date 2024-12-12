@@ -54,57 +54,57 @@ export class IndustriesComponent {
     },
     {
       name: 'Hydraulics',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Hydraulics.jpeg',
       description: 'High-pressure hydraulic system components designed for optimal flow and maximum system efficiency.'
     },
     {
       name: 'Pneumatics',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Pneumatics.jpeg',
       description: 'Precision-engineered pneumatic components ensuring reliable compressed air distribution and control.'
     },
     {
       name: 'Alternative Fuels',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Alternative Fuels.jpeg',
       description: 'Specialized components for alternative fuel systems, supporting sustainable energy infrastructure.'
     },
     {
       name: 'Pulp & Paper',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Pulp & Paper.jpeg',
       description: 'Corrosion-resistant fittings designed for pulp and paper processing, handling aggressive chemicals and high temperatures.'
     },
     {
       name: 'Instrumentations',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Instrumentations.jpeg',
       description: 'Precision instrument fittings ensuring accurate measurements and reliable monitoring in critical applications.'
     },
     {
       name: 'Aerospace',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Aerospace.jpeg',
       description: 'High-performance aerospace components meeting strict industry standards for safety and reliability.'
     },
     {
       name: 'Structural Engineering',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Structural Engineering.jpeg',
       description: 'Robust structural components engineered for building integrity and long-term structural stability.'
     },
     {
       name: 'Refineries',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Refineries.jpeg',
       description: 'Heavy-duty refinery components designed to handle extreme temperatures and corrosive environments.'
     },
     {
       name: 'Power Generation',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Power Generation.jpeg',
       description: 'Critical components for power plants, engineered for reliability in high-pressure steam and cooling systems.'
     },
     {
       name: 'Chemicals',
-      image: 'assets/industries/marine.jpeg',
+      image: 'assets/industries/Chemicals.jpeg',
       description: 'Chemical-resistant fittings designed for safe handling and processing of aggressive industrial chemicals.'
     },
     {
       name: 'Fertilizers',
-      image: 'assets/industries/oil_and_gas.jpeg',
+      image: 'assets/industries/Fertilizers.jpeg',
       description: 'Corrosion-resistant components supporting fertilizer production, designed for handling aggressive materials and ensuring process efficiency.'
     }
   ];
