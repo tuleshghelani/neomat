@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { environment } from '../../../environments/environment';
+import { CountryService } from '../../services/country.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -14,10 +15,16 @@ export class ContactUsComponent {
     subject: '',
     message: '',
     company_name: '',
-    designation: ''
+    designation: '',
+    country: ''
   };
 
   isSubmitting = false;
+  countries: any[] = [];
+
+  constructor(private countryService: CountryService) {
+    this.countries = this.countryService.getCountries();
+  }
 
   async onSubmit() {
     if (this.isSubmitting) return;
@@ -36,7 +43,8 @@ export class ContactUsComponent {
           mobilenumber: this.contactData.mobilenumber,
           message: this.contactData.message,
           company_name: this.contactData.company_name,
-          designation: this.contactData.designation
+          designation: this.contactData.designation,
+          country: this.contactData.country
         })
       });
 
@@ -51,7 +59,8 @@ export class ContactUsComponent {
           subject: '',
           message: '',
           company_name: '',
-          designation: ''
+          designation: '',
+          country: ''
         };
       } else {
         throw new Error('Failed to send message');

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ContactUsRoutingModule } from './contact-us-routing.module';
+import { CountryService } from '../../services/country.service';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { ContactUsRoutingModule } from './contact-us-routing.module';
     CommonModule,
     FormsModule,
     ContactUsRoutingModule
-  ]
+  ],
+  providers: [CountryService]
 })
 export class ContactUsModule { }

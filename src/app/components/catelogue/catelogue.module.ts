@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CatelogueComponent } from './catelogue.component';
 import { CatelogueRoutingModule } from './catelogue-routing.module';
+import { CountryService } from '../../services/country.service';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import { CatelogueRoutingModule } from './catelogue-routing.module';
     // FormsModule,
     CatelogueRoutingModule,
     ReactiveFormsModule
-  ]
+  ],
+  providers: [CountryService]
 })
-
 export class CatelogueModule { }

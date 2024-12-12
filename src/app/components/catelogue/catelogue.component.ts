@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { environment } from '../../../environments/environment';
+import { CountryService } from '../../services/country.service';
 
 interface CatalogueItem {
   id: number;
@@ -20,11 +21,14 @@ export class CatelogueComponent {
   enquiryForm: FormGroup;
   isSubmitting = false;
   selectedItem: CatalogueItem | null = null;
+  countries: any[] = [];
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private countryService: CountryService) {
+    this.countries = this.countryService.getCountries();
     this.enquiryForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
+      country: ['', [Validators.required]],
       mobilenumber: ['', [Validators.required]],
       address: ['', [Validators.required, Validators.minLength(10)]],
       company_name: [null, ],
