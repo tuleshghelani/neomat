@@ -1204,7 +1204,7 @@ export class ProductService {
       'End Connections': 'UNF',
       'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
-  },
+  },  
   {
     name: 'Slip On Flanges',
     categoryName: 'FLANGES',
@@ -1214,13 +1214,10 @@ export class ProductService {
     ],
     description: 'High-quality Slip-On Raised Face (SORF) flanges manufactured to exact specifications. Features precision-machined raised face for optimal sealing and uniform load distribution. Engineered for easy installation and reliable performance in demanding industrial applications.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+      'Size': '1/2" NB to 24" NB',
+      'End Connections': 'PL',
+      'Pressure Rating': 'Class 150# to 2500#'
     }
   },
   
@@ -1233,13 +1230,10 @@ export class ProductService {
     ],
     description: 'Premium Blind Raised Face (BLRF) flanges designed for pipe system termination. Features robust construction with raised face design for enhanced sealing capability. Manufactured to strict tolerances for reliable closure in high-pressure applications.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+      'Size': '1/2" NB to 24" NB',
+      'End Connections': 'Blind',
+      'Pressure Rating': 'Class 150# to 2500#'
     }
   },
   {
@@ -1251,13 +1245,10 @@ export class ProductService {
     ],
     description: 'Extended weld neck flanges designed for superior strength and alignment in high-stress applications. Features elongated neck for enhanced stress distribution and improved weld joint integrity. Engineered for critical piping systems requiring maximum reliability.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+      'Size': '1/2" NB to 24" NB',
+      'End Connections': 'BW',
+      'Pressure Rating': 'Class 150# to 2500#'
     }
   },
   {
@@ -1269,13 +1260,10 @@ export class ProductService {
     ],
     description: 'High-quality threaded flanges designed for superior pipe connections. Features precision-cut threads for optimal sealing and durability. Engineered for reliable performance in high-pressure applications with excellent corrosion resistance.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+      'Size': '1/2" NB to 24" NB',
+      'End Connections': 'NPT / BSP / BSPT / UNF / Metric',
+      'Pressure Rating': 'Class 150# to 2500#'
     }
   },
   {
@@ -1287,13 +1275,9 @@ export class ProductService {
     ],
     description: 'Premium lapped joint flanges featuring precision-machined surfaces for exceptional sealing capabilities. Designed for applications requiring frequent assembly and disassembly, with enhanced joint reliability and maintenance accessibility.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+      'Size': '1/2" NB to 24" NB',
+      'Pressure Rating': 'Class 150# to 2500#'
     }
   },
   {
@@ -1305,33 +1289,29 @@ export class ProductService {
     ],
     description: 'Specialized tongue and groove flanges engineered for high-pressure applications. Features precise matching surfaces for superior sealing and alignment. Ideal for services requiring enhanced gasket retention and leak prevention.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+      'Size': '1/2" NB to 24" NB',
+      'Pressure Rating': 'Class 150# to 2500#'
     }
   },
-  {
-    name: 'Olet flanges',
-    categoryName: 'FLANGES',
-    subCategory: ['Olet flanges'],
-    mainImage: 'assets/product/FLANGE/Olet flange.png',
-    otherImages: [
-    ],
-    description: 'Heavy-duty flange olets manufactured for branch connections in piping systems. Features reinforced construction for enhanced structural integrity. Designed for optimal flow characteristics and ease of installation.',
-    specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
-    }
-  },  
+  // {
+  //   name: 'Olet flanges',
+  //   categoryName: 'FLANGES',
+  //   subCategory: ['Olet flanges'],
+  //   mainImage: 'assets/product/FLANGE/Olet flange.png',
+  //   otherImages: [
+  //   ],
+  //   description: 'Heavy-duty flange olets manufactured for branch connections in piping systems. Features reinforced construction for enhanced structural integrity. Designed for optimal flow characteristics and ease of installation.',
+  //   specifications: {
+  //       'Material': '316/316L SS Forged Steel',
+  //       'Size Range': '1/4" to 4"',
+  //       'Max Working Pressure': '3000-6000 PSI',
+  //       'Temperature Range': '-20°F to 450°F',
+  //       'Surface Finish': 'Standard industrial finish',
+  //       'Manufacturing': 'Hot forged process',
+  //       'Quality Control': '100% pressure tested'
+  //   }
+  // },  
   {
     name: 'Socket Weld Flanges',
     categoryName: 'FLANGES',
@@ -1341,16 +1321,12 @@ export class ProductService {
     ],
     description: 'Premium weld neck raised face flanges manufactured for critical piping applications. Features optimal stress distribution and superior joint integrity. Engineered for high-pressure and high-temperature services with excellent weld joint reliability.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+      'Size': '1/2" NB to 24" NB',
+      'End Connections': 'NPT / BSP / BSPT / UNF / Metric',
+      'Pressure Rating': 'Class 150# to 2500#'
     }
   }
-  
 
   ];
 
