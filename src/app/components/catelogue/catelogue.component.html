@@ -124,6 +124,19 @@
         </div>
   
         <div class="form-group">
+          <label for="mobile">Designation</label>
+          <input 
+            type="text" 
+            id="designation" 
+            formControlName="designation" 
+            placeholder="Enter your designation"
+            [class.error]="isFieldInvalid('designation')">
+          <div class="error-message" *ngIf="isFieldInvalid('designation')">
+            Please enter a valid designation
+          </div>
+        </div>
+  
+        <div class="form-group">
           <label for="address">Address</label>
           <textarea 
             id="address" 

@@ -60,7 +60,7 @@
           </div>
           <div class="spec-item">
             <span class="spec-label">Product Code:</span>
-            <span class="spec-value"></span>
+            <span class="spec-value">{{product?.productCode}}</span>
           </div>
           <div class="spec-item" *ngFor="let spec of product.specifications | keyvalue">
             <span class="spec-label">{{spec.key}}:</span>

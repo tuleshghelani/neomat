@@ -15,4 +15,5 @@ import { CatelogueRoutingModule } from './catelogue-routing.module';
     ReactiveFormsModule
   ]
 })
+
 export class CatelogueModule { }

@@ -12,7 +12,9 @@ export class ContactUsComponent {
     email: '',
     mobilenumber: '',
     subject: '',
-    message: ''
+    message: '',
+    company_name: '',
+    designation: ''
   };
 
   isSubmitting = false;
@@ -32,7 +34,9 @@ export class ContactUsComponent {
           email: this.contactData.email,
           subject: this.contactData.subject,
           mobilenumber: this.contactData.mobilenumber,
-          message: this.contactData.message
+          message: this.contactData.message,
+          company_name: this.contactData.company_name,
+          designation: this.contactData.designation
         })
       });
 
@@ -45,7 +49,9 @@ export class ContactUsComponent {
           email: '',
           mobilenumber: '',
           subject: '',
-          message: ''
+          message: '',
+          company_name: '',
+          designation: ''
         };
       } else {
         throw new Error('Failed to send message');

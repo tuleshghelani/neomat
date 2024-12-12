@@ -8,6 +8,7 @@ export interface ProductDetail {
   mainImage: string;
   otherImages?: string[];
   description?: string;
+  productCode?: string;
   specifications?: { [key: string]: string };
 }
 
@@ -1210,6 +1211,7 @@ export class ProductService {
     categoryName: 'FLANGES',
     subCategory: ['Slip On Flanges'],
     mainImage: 'assets/product/FLANGE/3.png',
+    productCode: 'ADAPTIXFLSON',
     otherImages: [
     ],
     description: 'High-quality Slip-On Raised Face (SORF) flanges manufactured to exact specifications. Features precision-machined raised face for optimal sealing and uniform load distribution. Engineered for easy installation and reliable performance in demanding industrial applications.',
@@ -1226,6 +1228,7 @@ export class ProductService {
     categoryName: 'FLANGES', 
     subCategory: ['BLIND Flanges'],
     mainImage: 'assets/product/FLANGE/Blind Flanges.png',
+    productCode: 'ADAPTIXFLBLN',
     otherImages: [
     ],
     description: 'Premium Blind Raised Face (BLRF) flanges designed for pipe system termination. Features robust construction with raised face design for enhanced sealing capability. Manufactured to strict tolerances for reliable closure in high-pressure applications.',
@@ -1241,6 +1244,7 @@ export class ProductService {
     categoryName: 'FLANGES',
     subCategory: ['Weld Neck Flanges'],
     mainImage: 'assets/product/FLANGE/8.png',
+    productCode: 'ADAPTIXFLWN',
     otherImages: [
     ],
     description: 'Extended weld neck flanges designed for superior strength and alignment in high-stress applications. Features elongated neck for enhanced stress distribution and improved weld joint integrity. Engineered for critical piping systems requiring maximum reliability.',
@@ -1256,6 +1260,7 @@ export class ProductService {
     categoryName: 'FLANGES',
     subCategory: ['Threarded Flanges'],
     mainImage: 'assets/product/FLANGE/Thread.png',
+    productCode: 'ADAPTIXFLT',
     otherImages: [
     ],
     description: 'High-quality threaded flanges designed for superior pipe connections. Features precision-cut threads for optimal sealing and durability. Engineered for reliable performance in high-pressure applications with excellent corrosion resistance.',
@@ -1270,6 +1275,7 @@ export class ProductService {
     name: 'Lap Joint Flanges',
     categoryName: 'FLANGES',
     subCategory: ['Lap Joint Flanges'],
+    productCode: 'ADAPTIXFLLJ',
     mainImage: 'assets/product/FLANGE/Lap Joint.png',
     otherImages: [
     ],
@@ -1284,6 +1290,7 @@ export class ProductService {
     name: 'Olet Flanges',
     categoryName: 'FLANGES',
     subCategory: ['Olet Flanges'],
+    productCode: 'ADAPTIXFLOL',
     mainImage: 'assets/product/FLANGE/Tongue & Groove.png',
     otherImages: [
     ],
@@ -1312,21 +1319,7 @@ export class ProductService {
   //       'Quality Control': '100% pressure tested'
   //   }
   // },  
-  {
-    name: 'Socket Weld Flanges',
-    categoryName: 'FLANGES',
-    subCategory: ['Socket Weld Flanges'],
-    mainImage: 'assets/product/FLANGE/weld nake raised.png',
-    otherImages: [
-    ],
-    description: 'Premium weld neck raised face flanges manufactured for critical piping applications. Features optimal stress distribution and superior joint integrity. Engineered for high-pressure and high-temperature services with excellent weld joint reliability.',
-    specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-      'Size': '1/2" NB to 24" NB',
-      'End Connections': 'NPT / BSP / BSPT / UNF / Metric',
-      'Pressure Rating': 'Class 150# to 2500#'
-    }
-  }
+
 
   ];
 

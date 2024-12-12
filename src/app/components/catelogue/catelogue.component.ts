@@ -25,9 +25,10 @@ export class CatelogueComponent {
     this.enquiryForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
-      mobilenumber: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+      mobilenumber: ['', [Validators.required]],
       address: ['', [Validators.required, Validators.minLength(10)]],
-      company_name: ['', [Validators.required, Validators.minLength(2)]],
+      company_name: [null, ],
+      designation: [null, ],
     });
   }
 

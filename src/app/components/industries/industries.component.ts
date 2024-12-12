@@ -13,11 +13,6 @@ export class IndustriesComponent {
       description: 'Providing critical components for upstream, midstream, and downstream operations with high-pressure and corrosion-resistant solutions.'
     },
     {
-      name: 'Medical',
-      image: 'assets/industries/Medical.jpeg',
-      description: 'High-precision components for medical equipment and devices, meeting stringent sterilization and safety standards.'
-    },
-    {
       name: 'Marine',
       image: 'assets/industries/marine.jpeg',
       description: 'Specialized fittings and components designed to withstand harsh marine environments and extreme weather conditions.'
@@ -43,11 +38,6 @@ export class IndustriesComponent {
       description: 'Advanced fittings for petrochemical processing, engineered to handle aggressive chemicals and extreme temperatures.'
     },
     {
-      name: 'Food',
-      image: 'assets/industries/Food.jpeg',
-      description: 'Hygienic fittings and components meeting FDA standards for safe food processing and handling operations.'
-    },
-    {
       name: 'Pharmaceuticals',
       image: 'assets/industries/Pharmaceuticals.jpeg',
       description: 'Ultra-pure components for pharmaceutical manufacturing, meeting GMP standards and regulatory requirements.'
@@ -56,16 +46,6 @@ export class IndustriesComponent {
       name: 'Hydraulics',
       image: 'assets/industries/Hydraulics.jpeg',
       description: 'High-pressure hydraulic system components designed for optimal flow and maximum system efficiency.'
-    },
-    {
-      name: 'Pneumatics',
-      image: 'assets/industries/Pneumatics.jpeg',
-      description: 'Precision-engineered pneumatic components ensuring reliable compressed air distribution and control.'
-    },
-    {
-      name: 'Alternative Fuels',
-      image: 'assets/industries/Alternative Fuels.jpeg',
-      description: 'Specialized components for alternative fuel systems, supporting sustainable energy infrastructure.'
     },
     {
       name: 'Pulp & Paper',
