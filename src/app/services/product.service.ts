@@ -1004,13 +1004,10 @@ export class ProductService {
     ],
     description: 'Premium male connector fitting designed for high-pressure fluid systems. Features precision-machined threads and optimized sealing geometry for reliable connections. Engineered for maximum flow efficiency and leak-tight performance.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
+      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1022,13 +1019,10 @@ export class ProductService {
     ],
     description: 'High-performance female connector with precision-engineered threading and enhanced sealing surface. Designed for optimal flow characteristics and superior leak resistance in demanding applications.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
+      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1040,13 +1034,10 @@ export class ProductService {
     ],
     description: 'Versatile tube fitting adapter engineered for seamless integration between different connection types. Features precision-machined surfaces and optimized flow path design for maximum system efficiency.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
+      'End Connections': 'PL / Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1058,13 +1049,10 @@ export class ProductService {
     ],
     description: 'Premium quality tube fitting plug designed for reliable sealing and system isolation. Features precision-machined threads and sealing surfaces for maximum leak-tight performance. Manufactured from high-grade materials for exceptional durability and corrosion resistance.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+      'End Connections': 'UNF',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1076,13 +1064,10 @@ export class ProductService {
     ],
     description: 'High-performance union tee fitting enabling three-way flow connections with superior sealing capability. Engineered for optimal flow distribution and minimal pressure drop. Features precision-machined surfaces and robust construction for reliable long-term operation.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+      'End Connections': 'Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1094,13 +1079,10 @@ export class ProductService {
     ],
     description: 'Advanced design run tee fitting for efficient fluid distribution in straight-through applications. Optimized flow path reduces turbulence and pressure loss. Manufactured with precision-machined sealing surfaces for maximum reliability.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
+      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1112,13 +1094,10 @@ export class ProductService {
     ],
     description: 'Premium female tee fitting featuring three female thread connections for versatile system integration. Engineered for optimal flow characteristics and robust sealing performance. Precision-machined threads ensure reliable and leak-free connections.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
+      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1130,13 +1109,10 @@ export class ProductService {
     ],
     description: 'High-quality tube union designed for connecting same-size tubing with maximum reliability. Features precision-machined sealing surfaces and optimized thread design for secure connections. Built for long-term performance in demanding applications.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+      'End Connections': 'Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1148,13 +1124,10 @@ export class ProductService {
     ],
     description: 'Precision-engineered reducing union for connecting tubes of different sizes. Features smooth transitional bore design to minimize turbulence and pressure drop. Manufactured with high-grade materials for superior durability and sealing performance.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+      'End Connections': 'Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1166,13 +1139,10 @@ export class ProductService {
     ],
     description: 'Heavy-duty bulkhead union designed for secure panel-mount installations. Features reinforced construction and precision-machined threads for reliable sealing. Includes integrated mounting features for easy installation and maintenance.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+      'End Connections': 'Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1184,13 +1154,10 @@ export class ProductService {
     ],
     description: 'High-performance 90-degree tube elbow for precise directional flow control. Engineered with optimized bend radius for minimum flow restriction. Features precision-machined sealing surfaces for maximum reliability and leak-free operation.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
+      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1202,13 +1169,10 @@ export class ProductService {
     ],
     description: 'Premium quality OD cap designed for reliable tube end sealing. Features precision-machined internal surfaces for maximum sealing effectiveness. Constructed from durable materials for long-term performance and system protection.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+      'End Connections': 'Tube OD',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1220,13 +1184,10 @@ export class ProductService {
     ],
     description: 'High-quality OD plug engineered for secure system isolation. Features precision-machined sealing surfaces for reliable performance. Manufactured from premium materials for maximum durability and corrosion resistance.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+      'End Connections': 'UNF',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {
@@ -1238,13 +1199,10 @@ export class ProductService {
     ],
     description: 'Precision-engineered hex nipple featuring robust hex design for secure installation. Manufactured with exact threading and superior surface finish for optimal sealing performance. Built for reliable long-term operation in demanding applications.',
     specifications: {
-        'Material': '316/316L SS Forged Steel',
-        'Size Range': '1/4" to 4"',
-        'Max Working Pressure': '3000-6000 PSI',
-        'Temperature Range': '-20°F to 450°F',
-        'Surface Finish': 'Standard industrial finish',
-        'Manufacturing': 'Hot forged process',
-        'Quality Control': '100% pressure tested'
+      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
+      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
+      'End Connections': 'UNF',
+      'Pressure Rating':  '3000 / 6000 / 9000 psi'
     }
   },
   {

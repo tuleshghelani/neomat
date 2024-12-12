@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { environment } from '../../../environments/environment';
 
 interface CatalogueItem {
   id: number;
@@ -12,7 +13,7 @@ interface CatalogueItem {
 @Component({
   selector: 'app-catelogue',
   templateUrl: './catelogue.component.html',
-  styleUrl: './catelogue.component.scss'
+  styleUrls: ['./catelogue.component.scss']
 })
 export class CatelogueComponent {
   showEnquiryForm = false;
@@ -20,13 +21,13 @@ export class CatelogueComponent {
   isSubmitting = false;
   selectedItem: CatalogueItem | null = null;
 
-
   constructor(private fb: FormBuilder) {
     this.enquiryForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
-      mobile: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
-      address: ['', [Validators.required, Validators.minLength(10)]]
+      mobilenumber: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+      address: ['', [Validators.required, Validators.minLength(10)]],
+      company_name: ['', [Validators.required, Validators.minLength(2)]],
     });
   }
 
@@ -53,23 +54,33 @@ export class CatelogueComponent {
   async submitEnquiry(): Promise<void> {
     if (this.enquiryForm.valid && !this.isSubmitting) {
       this.isSubmitting = true;
-      
+
       try {
-        // Here you would typically make an API call to submit the form
+        // Construct the API URL
+        const apiUrl = `${environment.baseURL}/api/enquiries/`;
+
+        // Prepare form data
         const formData = {
           ...this.enquiryForm.value,
           productId: this.selectedItem?.id,
           productName: this.selectedItem?.title
         };
-        
-        console.log('Form submitted:', formData);
-        
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        // Show success message (you can implement a proper notification system)
-        alert('Enquiry submitted successfully!');
-        this.closeEnquiryForm();
+
+        // Make the API call
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        if (response.status === 201) {
+          alert('Enquiry submitted successfully!');
+          this.closeEnquiryForm();
+        } else {
+          throw new Error('Failed to submit enquiry');
+        }
       } catch (error) {
         console.error('Error submitting form:', error);
         alert('Failed to submit enquiry. Please try again.');
@@ -131,6 +142,4 @@ export class CatelogueComponent {
       category: 'Designer'
     }
   ];
-
-
 }
