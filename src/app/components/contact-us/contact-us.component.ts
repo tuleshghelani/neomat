@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-contact-us',
@@ -9,12 +10,51 @@ export class ContactUsComponent {
   contactData = {
     name: '',
     email: '',
+    mobilenumber: '',
     subject: '',
     message: ''
   };
 
-  onSubmit() {
-    // Implement your form submission logic here
-    console.log('Form submitted:', this.contactData);
+  isSubmitting = false;
+
+  async onSubmit() {
+    if (this.isSubmitting) return;
+    
+    this.isSubmitting = true;
+    try {
+      const response = await fetch(`${environment.baseURL}/api/contacts/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          full_name: this.contactData.name,
+          email: this.contactData.email,
+          subject: this.contactData.subject,
+          mobilenumber: this.contactData.mobilenumber,
+          message: this.contactData.message
+        })
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        alert('Message sent successfully!');
+        // Reset form
+        this.contactData = {
+          name: '',
+          email: '',
+          mobilenumber: '',
+          subject: '',
+          message: ''
+        };
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Failed to send message. Please try again.');
+    } finally {
+      this.isSubmitting = false;
+    }
   }
 }
