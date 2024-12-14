@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { ProductService, ProductCategory, ProductDetail } from '../../services/product.service';
 
@@ -25,7 +25,7 @@ import { ProductService, ProductCategory, ProductDetail } from '../../services/p
     ])
   ]
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponent implements OnInit, OnDestroy {
   productCategories: ProductCategory[] = [];
   selectedCategory: ProductCategory | null = null;
   filteredProducts: ProductDetail[] = [];
@@ -166,6 +166,17 @@ export class ProductsComponent implements OnInit {
 
   toggleMobileCategories() {
     this.isMobileCategoriesVisible = !this.isMobileCategoriesVisible;
+    
+    // Add body scroll lock when menu is open
+    if (this.isMobileCategoriesVisible) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+  
+  ngOnDestroy() {
+    document.body.style.overflow = '';
   }
 
 }

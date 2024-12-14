@@ -8,8 +8,8 @@ export interface ProductDetail {
   mainImage: string;
   otherImages?: string[];
   description?: string;
-  productCode?: string;
   specifications?: { [key: string]: string };
+  productCode?: string;
 }
 
 export interface ProductCategory {
@@ -102,6 +102,7 @@ export class ProductService {
         name: 'Male Connector',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Male Connector'],
+        productCode: 'ADAPTIXVCOMC',
         mainImage: 'assets/product/vco/MALE CONNECTOR.png',
         otherImages: [
           'src/assets/product/vco/MALE CONNECTOR.png'
@@ -118,6 +119,7 @@ export class ProductService {
         name: 'Female Connector',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Female Connector'],
+        productCode: 'ADAPTIXVCOFC',
         mainImage: 'assets/product/vco/FEMALE CONNECTOR.png',
         otherImages: [
         ],
@@ -133,6 +135,7 @@ export class ProductService {
         name: 'Gland',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Gland'],
+        productCode: 'ADAPTIXVCOG',
         mainImage: 'assets/product/vco/GLAND.png',
         otherImages: [
         ],
@@ -148,6 +151,7 @@ export class ProductService {
       name: 'Male Elbow',
       categoryName: 'VCO FITTINGS',
       subCategory: ['Male Elbow'],
+      productCode: 'ADAPTIXVCOME',
       mainImage: 'assets/product/vco/MALE ELBOW.png',
       otherImages: [
       ],
@@ -163,6 +167,7 @@ export class ProductService {
         name: 'Union Elbow',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Union Elbow'],
+        productCode: 'ADAPTIXVCOUE',
         mainImage: 'assets/product/vco/UNION ELBOW.png',
         otherImages: [
         ],  
@@ -178,6 +183,7 @@ export class ProductService {
         name: 'Union Tee',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Union Tee'],
+        productCode: 'ADAPTIXVCOUT',
         mainImage: 'assets/product/vco/UNION TEE.png',
         otherImages: [
         ],
@@ -193,6 +199,7 @@ export class ProductService {
         name: 'Union Cross',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Union Cross'],   
+        productCode: 'ADAPTIXVCOUC',
         mainImage: 'assets/product/vco/UNION CROSS.png',
         otherImages: [
         ],
@@ -207,7 +214,8 @@ export class ProductService {
     {
         name: 'Male Run Tee',
         categoryName: 'VCO FITTINGS',
-        subCategory: ['Male Run Tee'],  
+        subCategory: ['Male Run Tee'],
+        productCode: 'ADAPTIXVCOMRT',
         mainImage: 'assets/product/vco/BULKHEAD MALE RUN TEE.png',
         otherImages: [
         ],  
@@ -223,6 +231,7 @@ export class ProductService {
         name: 'Male Branch Tee',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Male Branch Tee'],
+        productCode: 'ADAPTIXVCOMBT',
         mainImage: 'assets/product/vco/BULKHEAD MALE BRANCH TEE.png',
         otherImages: [
         ],
@@ -237,7 +246,8 @@ export class ProductService {
     {
         name: '"O" Ring Seat Connector',
         categoryName: 'VCO FITTINGS',
-        subCategory: ['"O" Ring Seat Connector'],   
+        subCategory: ['"O" Ring Seat Connector'],
+        productCode: 'ADAPTUXVCOOC',
         mainImage: 'assets/product/vco/O RING SEAT CONNNECTOR.png',
         otherImages: [
         ],
@@ -252,7 +262,8 @@ export class ProductService {
     {
         name: '"O" Ring Seat Male Connector',
         categoryName: 'VCO FITTINGS',
-        subCategory: ['"O" Ring Seat Male Connector'],  
+        subCategory: ['"O" Ring Seat Male Connector'],
+        productCode: 'ADAPTIXVCOORME',
         mainImage: 'assets/product/vco/O RING SEAT MALE ELBOW.png',
         otherImages: [
         ],
@@ -268,6 +279,7 @@ export class ProductService {
         name: 'Union',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Union'],
+        productCode: 'ADAPTIXVCOU',
         mainImage: 'assets/product/vco/UNION CROSS.png',
         otherImages: [
         ],
@@ -283,6 +295,7 @@ export class ProductService {
         name: 'Tube Socket',
         categoryName: 'VCO FITTINGS',
         subCategory: ['Tube Socket'],
+        productCode: 'ADAPTIXVCOTS',
         mainImage: 'assets/product/vco/TUBE SOCKET.png',
         otherImages: [
         ],
@@ -298,6 +311,7 @@ export class ProductService {
         name: 'Nut',
         categoryName: 'VCR FITTINGS',
         subCategory: ['Nut'],
+        productCode: 'ADAPTIXVCRN',
         mainImage: 'assets/product/vcr/NUT.png',
         otherImages: [
         ],
@@ -313,6 +327,7 @@ export class ProductService {
         name: 'Gasket',
         categoryName: 'VCR FITTINGS',
         subCategory: ['Gasket'],
+        productCode: 'ADAPTIXVCRGK',
         mainImage: 'assets/product/vcr/GASKET.png',
         otherImages: [
         ],
@@ -328,6 +343,7 @@ export class ProductService {
       name: 'Gland',
       categoryName: 'VCR FITTINGS',
       subCategory: ['Gland'],
+      productCode: 'ADAPTIXVCRGL',
       mainImage: 'assets/product/vcr/GLAND.png',
       otherImages: [
       ],
@@ -343,7 +359,8 @@ export class ProductService {
       name: 'Union Tee',
       categoryName: 'VCR FITTINGS',
       subCategory: ['Union Tee'],
-      mainImage: 'assets/product/vcr/UNION TEE.png',
+        productCode: 'ADAPTIXVCRUT',
+        mainImage: 'assets/product/vcr/UNION TEE.png',
       otherImages: [
       ],
       description: 'Premium VCR union tee featuring advanced flow optimization technology. Engineered with computational fluid dynamics-designed internal geometry for minimal pressure drop and uniform flow distribution. Ideal for high-purity gas distribution systems requiring precise flow control and contamination-free operation.',
@@ -358,7 +375,8 @@ export class ProductService {
       name: 'Union Cross',
       categoryName: 'VCR FITTINGS',
       subCategory: ['Union Cross'],
-      mainImage: 'assets/product/vcr/UNION CROSS.png',
+        productCode: 'ADAPTIXVCRUC',
+        mainImage: 'assets/product/vcr/UNION CROSS.png',
       otherImages: [
       ],
       description: 'Advanced VCR union cross incorporating symmetrical flow path design for multi-directional fluid distribution. Features precision-machined internal passages with optimized flow geometry for balanced distribution and minimal turbulence. Engineered for high-purity semiconductor and analytical instrumentation applications.',
@@ -373,7 +391,8 @@ export class ProductService {
       name: 'Male Connector',
       categoryName: 'VCR FITTINGS',
       subCategory: ['Male Connector'],
-      mainImage: 'assets/product/vcr/MALE CONNECTOR.png',
+        productCode: 'ADAPTIXVCRMC',
+        mainImage: 'assets/product/vcr/MALE CONNECTOR.png',
       otherImages: [
       ],
       description: 'Premium grade VCR male connector engineered for ultra-high purity applications. Features our proprietary surface finishing technology ensuring class-leading seal integrity and minimal particle generation. The innovative gland design provides exceptional radial alignment and prevents galling during repeated assembly cycles. Ideal for semiconductor, pharmaceutical, and critical gas delivery systems.',
@@ -388,7 +407,8 @@ export class ProductService {
       name: 'Female Connector',
       categoryName: 'VCR FITTINGS',
       subCategory: ['Female Connector'],
-      mainImage: 'assets/product/vcr/FEMALE CONNECTOR.png',
+        productCode: 'ADAPTIXVCRFC',
+        mainImage: 'assets/product/vcr/FEMALE CONNECTOR.png',
       otherImages: [
       ],
       description: 'State-of-the-art VCR female connector featuring precision-machined sealing surfaces and our exclusive geometrical optimization for superior connector engagement. Enhanced thread profile ensures consistent sealing force distribution and prevents cold welding. Ideal for ultra-high purity gas systems, analytical instrumentation, and critical process applications.',
@@ -403,7 +423,8 @@ export class ProductService {
       name: 'Union Elbow',
       categoryName: 'VCR FITTINGS',
       subCategory: ['Union Elbow'],
-      mainImage: 'assets/product/vcr/UNION ELBOW.png',
+        productCode: 'ADAPTIXVCRUE',
+        mainImage: 'assets/product/vcr/UNION ELBOW.png',
       otherImages: [
       ],
       description: 'Advanced 90° VCR union elbow incorporating our innovative flow-optimized geometry for minimal pressure drop and turbulence. Precision-machined from high-purity bar stock with controlled sulfur content for enhanced weldability. Features our proprietary internal polishing process ensuring exceptional surface smoothness and corrosion resistance.',
@@ -418,7 +439,8 @@ export class ProductService {
       name: 'Male Elbow',
       categoryName: 'VCR FITTINGS',
       subCategory: ['Male Elbow'],
-      mainImage: 'assets/product/vcr/MALE ELBOW.png',
+        productCode: 'ADAPTIXVCRME',
+        mainImage: 'assets/product/vcr/MALE ELBOW.png',
       otherImages: [
       ],
       description: 'High-performance VCR male elbow featuring our patented flow-optimization technology. Engineered with computational fluid dynamics analysis to minimize dead space and ensure uniform flow distribution. The precision-machined sealing surface incorporates our advanced geometry for enhanced gasket retention and leak-tight connections.',
@@ -433,7 +455,8 @@ export class ProductService {
       name: 'Bulkhead Union',
       categoryName: 'VCR FITTINGS',
       subCategory: ['Bulkhead Union'],
-      mainImage: 'assets/product/vcr/BULKHEAD UNION.png',
+        productCode: 'ADAPTIXVCRBU',
+        mainImage: 'assets/product/vcr/BULKHEAD UNION.png',
       otherImages: [
       ],
       description: 'Premium bulkhead union featuring our innovative panel-mount design for superior stability and alignment. Engineered with dual-sided sealing technology ensuring leak-tight connections on both faces. Enhanced thread profile and proprietary surface treatment provide exceptional resistance to vibration and thermal cycling.',
@@ -448,7 +471,8 @@ export class ProductService {
       name: 'Equal Union',
       categoryName: 'VCR FITTINGS',
       subCategory: ['Equal Union'],
-      mainImage: 'assets/product/vcr/EQUAL UNION.png',
+        productCode: 'ADAPTIXVCREU',
+        mainImage: 'assets/product/vcr/EQUAL UNION.png',
       otherImages: [
       ],
       description: 'Ultra-high purity VCR equal union featuring our symmetrical flow path design for optimal fluid dynamics. Incorporates dual-sided precision-machined sealing surfaces with our proprietary surface enhancement technology. Engineering-optimized hex flats provide superior wrench engagement and torque transfer during assembly.',
@@ -463,7 +487,8 @@ export class ProductService {
       name: '45 Deg Elbow',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['45 Deg Elbow'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/45 Elbow.png',
+        productCode: 'ADAPTIXBW45E',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/45 Elbow.png',
       otherImages: [
       ],
       description: 'High-precision 45-degree elbow fitting designed for optimal flow direction change. Features seamless construction with uniform wall thickness and precise angle consistency. Engineered for minimal flow resistance and pressure drop.',
@@ -481,7 +506,8 @@ export class ProductService {
       name: '90 Deg Elbow',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['90 Deg Elbow'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/90 Elbow.png',
+        productCode: 'ADAPTIXBW90E',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/90 Elbow.png',
       otherImages: [
       ],
       description: 'Premium 90-degree elbow fitting engineered for right-angle flow direction changes. Features reinforced construction for high-pressure applications with perfect perpendicular alignment. Optimized internal radius for smooth flow characteristics.',
@@ -499,7 +525,8 @@ export class ProductService {
       name: 'Tee Equal',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Tee Equal'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Equal tee.png',
+        productCode: 'ADAPTIXBWET',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Equal tee.png',
       otherImages: [
       ],
       description: 'Symmetrical equal tee fitting designed for three-way flow distribution. Features balanced flow characteristics with uniform wall thickness. Precision-engineered for equal pressure distribution across all ports.',
@@ -517,7 +544,8 @@ export class ProductService {
       name: 'Tee Reducing',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Tee Reducing'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Reducing tee.png',
+        productCode: 'ADAPTIXBWRT',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Reducing tee.png',
       otherImages: [
       ],
       description: 'Advanced reducing tee fitting designed for multi-diameter flow applications. Features smooth transition zones for optimal flow characteristics. Engineered for balanced pressure distribution despite size differences.',
@@ -535,7 +563,8 @@ export class ProductService {
       name: 'End Cap',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['End Cap'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Cap.png',
+        productCode: 'ADAPTIXBWC',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Cap.png',
       otherImages: [
       ],
       description: 'Heavy-duty end cap designed for positive line termination. Features reinforced construction with precision-machined sealing surface. Engineered for maximum pressure containment and zero leakage.',
@@ -553,7 +582,8 @@ export class ProductService {
       name: 'Barrel Nipple',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Barrel Nipple'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Barrel Nipple.png',
+        productCode: 'ADAPTIXBWBN',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Barrel Nipple.png',
       otherImages: [
       ],
       description: 'Precision-engineered barrel nipple featuring uniform wall thickness throughout. Designed for optimal flow characteristics with minimal pressure drop. Includes precision-machined ends for perfect alignment.',
@@ -571,7 +601,8 @@ export class ProductService {
       name: 'Pipe Nipple',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Pipe Nipple'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Pipe Nipple.png',
+        productCode: 'ADAPTIXBWPN',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Pipe Nipple.png',
       otherImages: [
       ],
       description: 'High-quality pipe nipple designed for straight-line connections. Features precise length control and perfectly perpendicular end faces. Manufactured with strict tolerances for maximum reliability.',
@@ -589,7 +620,8 @@ export class ProductService {
       name: 'Swage Nipple',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Swage Nipple'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Swage Nipple.png',
+        productCode: 'ADAPTIXBWSN',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Swage Nipple.png',
       otherImages: [
       ],
       description: 'Advanced swage nipple featuring smooth diameter transition. Engineered for gradual flow area changes with minimal turbulence. Includes precision-machined ends for perfect alignment and sealing.',
@@ -607,7 +639,8 @@ export class ProductService {
       name: 'U bend',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['U bend'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/U Bend.png',
+        productCode: 'ADAPTIXBWUB',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/U Bend.png',
       otherImages: [
       ],
       description: 'Precision-formed U-bend designed for 180-degree flow reversal. Features optimized bend radius for minimal flow restriction. Manufactured with advanced forming technology for perfect symmetry.',
@@ -625,7 +658,8 @@ export class ProductService {
       name: 'Long Stub End',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Long Stub End'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Stubend.png',
+        productCode: 'ADAPTIXBWLS',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Stubend.png',
       otherImages: [
       ],
       description: 'Extended length stub end designed for maximum engagement. Features reinforced flange face with precision-machined sealing surface. Includes extended barrel for optimal weld joint positioning.',
@@ -643,7 +677,8 @@ export class ProductService {
       name: 'Short Stub End',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Short Stub End'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Short Stub End.png',
+        productCode: 'ADAPTIXBWSS',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Short Stub End.png',
       otherImages: [
       ],
       description: 'Compact stub end designed for space-constrained applications. Features reinforced flange face with precision-machined sealing surface. Optimized for minimal installation length requirements.',
@@ -661,7 +696,8 @@ export class ProductService {
       name: 'Lateral Tee',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Lateral Tee'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Lateral Tee.png',
+        productCode: 'ADAPTIXBWLT',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Lateral Tee.png',
       otherImages: [
       ],
       description: 'Specialized lateral tee designed for angled branch connections. Features optimized flow geometry for reduced pressure drop. Engineered for balanced flow distribution with minimal turbulence.',
@@ -679,7 +715,8 @@ export class ProductService {
       name: 'Reducer Eccentric',
       categoryName: 'BUT WELD END FITTINGS',
       subCategory: ['Reducer Eccentric'],
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Reducer.png',
+        productCode: 'ADAPTIXBWET',
+        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Reducer.png',
       otherImages: [
           'assets/product/Gasket_2.jpeg',
           'assets/product/Gasket_3.jpeg',
@@ -700,7 +737,8 @@ export class ProductService {
       name: '45 Deg Elbow Fittings',
       categoryName: 'FORGED FITTINGS',
       subCategory: ['45 Deg Elbow Fittings'],
-      mainImage: 'assets/product/FORGED FITTINGS/45 elbow.png',
+        productCode: 'ADAPTIXFF45E',
+        mainImage: 'assets/product/FORGED FITTINGS/45 elbow.png',
       otherImages: [
       ],
       description: 'High-quality forged 45-degree elbow fitting manufactured for optimal flow direction change. Features precision-engineered angles and smooth internal surfaces for minimal flow restriction. Ideal for applications requiring 45-degree directional changes in high-pressure systems.',
@@ -716,7 +754,8 @@ export class ProductService {
       name: '90 Deg Elbow Fittings',
       categoryName: 'FORGED FITTINGS',
       subCategory: ['90 Deg Elbow Fittings'],
-      mainImage: 'assets/product/FORGED FITTINGS/90 elbow.png',
+        productCode: 'ADAPTIXFF90E',
+        mainImage: 'assets/product/FORGED FITTINGS/90 elbow.png',
       otherImages: [
       ],
       description: 'Heavy-duty forged 90-degree elbow designed for right-angle flow direction changes. Manufactured with reinforced walls for maximum pressure resistance and durability. Perfect for tight space installations requiring 90-degree turns.',
@@ -732,7 +771,8 @@ export class ProductService {
       name: 'Union',
       categoryName: 'FORGED FITTINGS',
       subCategory: ['Union'],
-      mainImage: 'assets/product/FORGED FITTINGS/union.png',
+        productCode: 'ADAPTIXFFU',
+        mainImage: 'assets/product/FORGED FITTINGS/union.png',
       otherImages: [
       ],
       description: 'Premium forged union fitting providing secure, leak-tight pipe connections. Features precision-machined threads and sealing surfaces for reliable joining of pipe sections. Designed for easy assembly and disassembly while maintaining system integrity.',
@@ -748,6 +788,7 @@ export class ProductService {
     name: 'Barrel Nipple',
     categoryName: 'FORGED FITTINGS', 
     subCategory: ['Barrel Nipple'],
+    productCode: 'ADAPTIXFFBN',
     mainImage: 'assets/product/FORGED FITTINGS/Barrel Nipple.png',
     otherImages: [
     ],
@@ -766,6 +807,7 @@ export class ProductService {
     name: 'Swage Nipple',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Swage Nipple'], 
+    productCode: 'ADAPTIXFFSN',
     mainImage: 'assets/product/FORGED FITTINGS/Swage Nipple.png',
     otherImages: [
     ],
@@ -784,6 +826,7 @@ export class ProductService {
     name: 'Bushing',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Bushing'],
+    productCode: 'ADAPTIXFFB',
     mainImage: 'assets/product/FORGED FITTINGS/Bushing.png',
     otherImages: [
     ],
@@ -802,6 +845,7 @@ export class ProductService {
     name: 'Forged Tee',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Forged Tee'],
+    productCode: 'ADAPTIXFFFT',
     mainImage: 'assets/product/FORGED FITTINGS/Forged Tee.png',
     otherImages: [
     ],
@@ -820,6 +864,7 @@ export class ProductService {
     name: 'Equal Tee Fittings',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Equal Tee Fittings'],
+    productCode: 'ADAPTIXFFET',
     mainImage: 'assets/product/FORGED FITTINGS/Equal Tee Fittings.png',
     otherImages: [
     ],
@@ -838,6 +883,7 @@ export class ProductService {
     name: 'Reducing Tee Fittings',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Reducing Tee Fittings'],
+    productCode: 'ADAPTIXFFRT',
     mainImage: 'assets/product/FORGED FITTINGS/Reducing Tee.png',
     otherImages: [
     ],
@@ -856,6 +902,7 @@ export class ProductService {
     name: 'End Cap',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['End Cap'],
+    productCode: 'ADAPTIXFFEC',
     mainImage: 'assets/product/FORGED FITTINGS/cap.png',
     otherImages: [
     ],
@@ -874,6 +921,7 @@ export class ProductService {
     name: 'Cross',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Cross'],
+    productCode: 'ADAPTIXFFC',
     mainImage: 'assets/product/FORGED FITTINGS/Cross.png',
     otherImages: [
     ],
@@ -892,6 +940,7 @@ export class ProductService {
     name: 'Plug',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Plug'],
+    productCode: 'ADAPTIXFFP',
     mainImage: 'assets/product/FORGED FITTINGS/Plug.png',
     otherImages: [
     ],
@@ -910,6 +959,7 @@ export class ProductService {
     name: 'Coupling',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Coupling'],
+    productCode: 'ADAPTICFFC',
     mainImage: 'assets/product/FORGED FITTINGS/Coupling.png',
     otherImages: [
     ],
@@ -928,6 +978,7 @@ export class ProductService {
     name: 'Full Coupling',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Full Coupling'],
+    productCode: 'ADAPTIXFFFC',
     mainImage: 'assets/product/FORGED FITTINGS/Coupling.png',
     otherImages: [
     ],
@@ -946,6 +997,7 @@ export class ProductService {
     name: 'Half Coupling',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Half Coupling'],
+    productCode: 'ADAPTIXFFHC',
     mainImage: 'assets/product/FORGED FITTINGS/Coupling.png',
     otherImages: [
     ],
@@ -964,6 +1016,7 @@ export class ProductService {
     name: 'Reducing Coupling',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Reducing Coupling'],
+    productCode: 'ADAPTIXFFRC',
     mainImage: 'assets/product/FORGED FITTINGS/reduce coupling.png',
     otherImages: [
     ],
@@ -982,6 +1035,7 @@ export class ProductService {
     name: 'Boss',
     categoryName: 'FORGED FITTINGS',
     subCategory: ['Boss'],
+    productCode: 'ADAPTIXFFB',
     mainImage: 'assets/product/FORGED FITTINGS/Boss.png',
     otherImages: [
     ],
@@ -1000,218 +1054,274 @@ export class ProductService {
     name: 'Male Connector',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Male Connector'],
+    productCode: 'ADAPTIXTFMC',
     mainImage: 'assets/product/TUBE FITTING/1.png',
     otherImages: [
     ],
     description: 'Premium male connector fitting designed for high-pressure fluid systems. Features precision-machined threads and optimized sealing geometry for reliable connections. Engineered for maximum flow efficiency and leak-tight performance.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
-      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Female Connector',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Female Connector'],
+    productCode: 'ADAPTIXTFFC',
     mainImage: 'assets/product/TUBE FITTING/2.png',
     otherImages: [
     ],
     description: 'High-performance female connector with precision-engineered threading and enhanced sealing surface. Designed for optimal flow characteristics and superior leak resistance in demanding applications.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
-      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Adapter',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Adapter'],
+    productCode: 'ADAPTIXTFA',
     mainImage: 'assets/product/TUBE FITTING/3.png',
     otherImages: [
     ],
     description: 'Versatile tube fitting adapter engineered for seamless integration between different connection types. Features precision-machined surfaces and optimized flow path design for maximum system efficiency.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
-      'End Connections': 'PL / Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Plug',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Plug'],
+    productCode: 'ADAPTIXTFP',
     mainImage: 'assets/product/TUBE FITTING/4.png',
     otherImages: [
     ],
     description: 'Premium quality tube fitting plug designed for reliable sealing and system isolation. Features precision-machined threads and sealing surfaces for maximum leak-tight performance. Manufactured from high-grade materials for exceptional durability and corrosion resistance.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'UNF',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Union Tee',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Union Tee'],
+    productCode: 'ADAPTIXTFUT',
     mainImage: 'assets/product/TUBE FITTING/7.png',
     otherImages: [
     ],
     description: 'High-performance union tee fitting enabling three-way flow connections with superior sealing capability. Engineered for optimal flow distribution and minimal pressure drop. Features precision-machined surfaces and robust construction for reliable long-term operation.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Run Tee',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Run Tee'],
+    productCode: 'ADAPTIXTFRT',
     mainImage: 'assets/product/TUBE FITTING/8.png',
     otherImages: [
     ],
     description: 'Advanced design run tee fitting for efficient fluid distribution in straight-through applications. Optimized flow path reduces turbulence and pressure loss. Manufactured with precision-machined sealing surfaces for maximum reliability.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
-      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Female Tee',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Female Tee'],
+    productCode: 'ADAPTIXTFFT',
     mainImage: 'assets/product/TUBE FITTING/9.png',
     otherImages: [
     ],
     description: 'Premium female tee fitting featuring three female thread connections for versatile system integration. Engineered for optimal flow characteristics and robust sealing performance. Precision-machined threads ensure reliable and leak-free connections.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
-      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Union',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Union'],
+    productCode: 'ADAPTIXTFU',
     mainImage: 'assets/product/TUBE FITTING/11.png',
     otherImages: [
     ],
     description: 'High-quality tube union designed for connecting same-size tubing with maximum reliability. Features precision-machined sealing surfaces and optimized thread design for secure connections. Built for long-term performance in demanding applications.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Reducing Union',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Reducing Union'],
+    productCode: 'ADAPTIXTFRU',
     mainImage: 'assets/product/TUBE FITTING/12.png',
     otherImages: [
     ],
     description: 'Precision-engineered reducing union for connecting tubes of different sizes. Features smooth transitional bore design to minimize turbulence and pressure drop. Manufactured with high-grade materials for superior durability and sealing performance.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Bulkhead Union',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Bulkhead Union'],
+    productCode: 'ADAPTIXTFBU',
     mainImage: 'assets/product/TUBE FITTING/13.png',
     otherImages: [
     ],
     description: 'Heavy-duty bulkhead union designed for secure panel-mount installations. Features reinforced construction and precision-machined threads for reliable sealing. Includes integrated mounting features for easy installation and maintenance.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Tube Elbow',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Tube Elbow'],
+    productCode: 'ADAPTIXTFTE',
     mainImage: 'assets/product/TUBE FITTING/Tube Elbow.png',
     otherImages: [
     ],
     description: 'High-performance 90-degree tube elbow for precise directional flow control. Engineered with optimized bend radius for minimum flow restriction. Features precision-machined sealing surfaces for maximum reliability and leak-free operation.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.) & 1/8” to 2”',
-      'End Connections': 'NPT / BSP / BSPT / SW / METRIC / Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'OD Cap',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['OD Cap'],
+    productCode: 'ADAPTIXTFOC',
     mainImage: 'assets/product/TUBE FITTING/OD Cap.png',
     otherImages: [
     ],
     description: 'Premium quality OD cap designed for reliable tube end sealing. Features precision-machined internal surfaces for maximum sealing effectiveness. Constructed from durable materials for long-term performance and system protection.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'Tube OD',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'OD Plug',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['OD Plug'],
+    productCode: 'ADAPTIXTFOP',
     mainImage: 'assets/product/TUBE FITTING/OD Plug.png',
     otherImages: [
     ],
     description: 'High-quality OD plug engineered for secure system isolation. Features precision-machined sealing surfaces for reliable performance. Manufactured from premium materials for maximum durability and corrosion resistance.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'UNF',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
   },
   {
     name: 'Hex Nipple',
     categoryName: 'TUBE FITTINGS',
     subCategory: ['Hex Nipple'],
+    productCode: 'ADAPTIXTFHN',
     mainImage: 'assets/product/TUBE FITTING/14.png',
     otherImages: [
     ],
     description: 'Precision-engineered hex nipple featuring robust hex design for secure installation. Manufactured with exact threading and superior surface finish for optimal sealing performance. Built for reliable long-term operation in demanding applications.',
     specifications: {
-      'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy / Brass / PTFE',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'UNF',
-      'Pressure Rating':  '3000 / 6000 / 9000 psi'
+        'Material': '316/316L SS Forged Steel',
+        'Size Range': '1/4" to 4"',
+        'Max Working Pressure': '3000-6000 PSI',
+        'Temperature Range': '-20°F to 450°F',
+        'Surface Finish': 'Standard industrial finish',
+        'Manufacturing': 'Hot forged process',
+        'Quality Control': '100% pressure tested'
     }
-  },  
+  },
   {
     name: 'Slip On Flanges',
     categoryName: 'FLANGES',
     subCategory: ['Slip On Flanges'],
+    productCode: 'ADAPTIXVCOMC',
     mainImage: 'assets/product/FLANGE/3.png',
-    productCode: 'ADAPTIXFLSON',
     otherImages: [
     ],
     description: 'High-quality Slip-On Raised Face (SORF) flanges manufactured to exact specifications. Features precision-machined raised face for optimal sealing and uniform load distribution. Engineered for easy installation and reliable performance in demanding industrial applications.',
@@ -1227,8 +1337,8 @@ export class ProductService {
     name: 'BLIND Flanges',
     categoryName: 'FLANGES', 
     subCategory: ['BLIND Flanges'],
-    mainImage: 'assets/product/FLANGE/Blind Flanges.png',
     productCode: 'ADAPTIXFLBLN',
+    mainImage: 'assets/product/FLANGE/Blind Flanges.png',
     otherImages: [
     ],
     description: 'Premium Blind Raised Face (BLRF) flanges designed for pipe system termination. Features robust construction with raised face design for enhanced sealing capability. Manufactured to strict tolerances for reliable closure in high-pressure applications.',
@@ -1243,8 +1353,8 @@ export class ProductService {
     name: 'Weld Neck Flanges',
     categoryName: 'FLANGES',
     subCategory: ['Weld Neck Flanges'],
+    productCode: 'ADAPTIXVCOMC',
     mainImage: 'assets/product/FLANGE/8.png',
-    productCode: 'ADAPTIXFLWN',
     otherImages: [
     ],
     description: 'Extended weld neck flanges designed for superior strength and alignment in high-stress applications. Features elongated neck for enhanced stress distribution and improved weld joint integrity. Engineered for critical piping systems requiring maximum reliability.',
@@ -1259,8 +1369,8 @@ export class ProductService {
     name: 'Threarded Flanges',
     categoryName: 'FLANGES',
     subCategory: ['Threarded Flanges'],
-    mainImage: 'assets/product/FLANGE/Thread.png',
     productCode: 'ADAPTIXFLT',
+    mainImage: 'assets/product/FLANGE/Thread.png',
     otherImages: [
     ],
     description: 'High-quality threaded flanges designed for superior pipe connections. Features precision-cut threads for optimal sealing and durability. Engineered for reliable performance in high-pressure applications with excellent corrosion resistance.',
@@ -1318,8 +1428,8 @@ export class ProductService {
   //       'Manufacturing': 'Hot forged process',
   //       'Quality Control': '100% pressure tested'
   //   }
-  // },  
-
+  // }, 
+  
 
   ];
 

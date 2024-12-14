@@ -537,21 +537,102 @@ $header-offset: 120px;
 @media (max-width: 768px) {
   .categories-section {
     position: relative;
-    
+    width: 500px;
+    height: 40px;
+    top: 80px;
+    left: 0;
+    right: 0;
+    // z-index: 1000;
+    background: var(--background-color);
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+
+    .categories-header {
+      position: sticky;
+      top: 0;
+      background: var(--background-color);
+      z-index: 2;
+      padding: 1rem;
+      margin: -1rem -1rem 1rem -1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
     .category-list {
       display: none;
+      padding: 0 1rem;
       
       &.mobile-expanded {
         display: block;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: white;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+        animation: slideDown 0.3s ease-out;
       }
     }
+  }
+
+  .mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--primary-color-light);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  .category-header {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--cream-light);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.05),
+                -4px -4px 8px rgba(255, 255, 255, 0.5);
+
+    &.active {
+      background: var(--primary-color);
+      color: white;
+    }
+  }
+
+  .sub-products {
+    margin-left: 1rem;
+    border-left: 2px solid var(--primary-color-light);
+    
+    .sub-product-item {
+      margin: 0.5rem 0;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+
+      &:active {
+        transform: scale(0.98);
+      }
+
+      &.active {
+        background: var(--primary-color);
+        color: white;
+      }
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
