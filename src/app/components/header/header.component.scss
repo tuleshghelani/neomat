@@ -97,7 +97,8 @@ $hover-color: #17a3de;
 
   @media (max-width: 768px) {
     top: 10px;
-    padding: 10px 7px;
+    height: 55px;
+    padding: 7px;
   }
 }
 
@@ -148,7 +149,7 @@ $hover-color: #17a3de;
 
   @media (max-width: 768px) {
     .logo {
-      height: 35px;
+      height: auto;
       width: auto;
     }
   }
@@ -751,12 +752,13 @@ $hover-color: #17a3de;
       display: block;
       background: var(--background-color);
       z-index: 9999;
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     .nav-links {
       flex-direction: column;
       gap: 0;
+      margin: 0px 10px 30px 10px;
 
       li {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
