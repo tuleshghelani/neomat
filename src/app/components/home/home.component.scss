@@ -362,6 +362,8 @@
 @media (max-width: 768px) {
   .about-section {
     padding: 4rem 1.5rem;
+    width: auto;
+    overflow-x: hidden;
   }
 
   .stats-container {

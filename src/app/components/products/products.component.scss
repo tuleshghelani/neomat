@@ -209,6 +209,7 @@ $header-offset: 120px;
     padding: 1rem;
     height: auto;
     min-height: 50vh;
+    width: 100%;
   }
 }
 
@@ -259,6 +260,15 @@ $header-offset: 120px;
 
   @media (max-width: 768px) {
     min-height: 300px;
+    .product-gallery {
+      .main-image {
+        img {
+          width: 290px;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
   }
 }
 
@@ -406,6 +416,13 @@ $header-offset: 120px;
       height: 100%;
       object-fit: contain;
     }
+    @media (max-width: 768px) {
+      img {
+        // width: 300px;
+        // height: 100%;
+        // object-fit: cover;
+      }
+    }
   }
 
   .main-image {
@@ -439,6 +456,7 @@ $header-offset: 120px;
 @media (max-width: 768px) {
   .products-container {
     padding: 1rem;
+    overflow-x: hidden;
   }
 
   .product-grid {
@@ -537,10 +555,10 @@ $header-offset: 120px;
 @media (max-width: 768px) {
   .categories-section {
     position: relative;
-    width: 500px;
+    width: 95%;
     height: 40px;
-    top: 80px;
-    left: 0;
+    top: 64px;
+    left: -7px;
     right: 0;
     // z-index: 1000;
     background: var(--background-color);
@@ -555,9 +573,11 @@ $header-offset: 120px;
       top: 0;
       background: var(--background-color);
       z-index: 2;
-      padding: 1rem;
-      margin: -1rem -1rem 1rem -1rem;
+      padding: 3px;
+      margin: 0;
       border-bottom: 1px solid var(--border-color);
+      width: 100%;
+      overflow-x: hidden;
     }
 
     .category-list {
@@ -652,6 +672,7 @@ $header-offset: 120px;
 @media (max-width: 480px) {
   .product-grid {
     grid-template-columns: 1fr;
+    margin-top: 30px;
   }
 
   .product-card {
