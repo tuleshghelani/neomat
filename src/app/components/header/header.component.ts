@@ -25,6 +25,61 @@ export class HeaderComponent implements OnInit {
 
   productCategories = [
     {
+      name: 'BUT WELD END FITTINGS',
+      isActive: false,
+      subItems: [
+        '45 Deg Elbow',
+        '90 Deg Elbow',
+        'Tee Equal',
+        'Tee Reducing',
+        'End Cap',
+        'Barrel Nipple',
+        'Pipe Nipple',
+        'Swage Nipple',
+        'U bend',
+        'Long Stub End',
+        'Short Stub End',
+        'Lateral Tee',
+        'Reducer Eccentric',
+      ]
+    },
+    {
+      name: 'FORGED FITTINGS',
+      isActive: false,
+      subItems: [
+        '45 Deg Elbow Fittings',
+        '90 Deg Elbow Fittings',
+        'Union',
+        'Barrel Nipple',
+        'Swage nipple',
+        'Bushing',
+        'Forged Tee',
+        'Equal Tee Fittings',
+        'Reducing Tee Fittings',
+        'End Cap',
+        'Cross',
+        'Plug',
+        'Coupling',
+        'Full Coupling',
+        'Half Coupling',
+        'Reducing Coupling',
+        'Boss',
+      ]
+    },
+    {
+      name: 'FLANGES',
+      isActive: false,
+      subItems: [
+        'Slip On Flanges',
+        'BLIND Flanges',
+        'Weld Neck Flanges',
+        'Threarded Flanges',
+        'Olet Flanges',
+        'Socket Weld Flanges',
+        'Lap Joint Flanges',
+      ]
+    },
+    {
       name: 'VCO FITTINGS',
       isActive: false,
       subItems: [
@@ -78,61 +133,6 @@ export class HeaderComponent implements OnInit {
         'OD Cap',
         'OD Plug',
         'Hex Nipple'
-      ]
-    },
-    {
-      name: 'BUT WELD END FITTINGS',
-      isActive: false,
-      subItems: [
-        '45 Deg Elbow',
-        '90 Deg Elbow',
-        'Tee Equal',
-        'Tee Reducing',
-        'End Cap',
-        'Barrel Nipple',
-        'Pipe Nipple',
-        'Swage Nipple',
-        'U bend',
-        'Long Stub End',
-        'Short Stub End',
-        'Lateral Tee',
-        'Reducer Eccentric',
-      ]
-    },
-    {
-      name: 'FORGED FITTINGS',
-      isActive: false,
-      subItems: [
-        '45 Deg Elbow Fittings',
-        '90 Deg Elbow Fittings',
-        'Union',
-        'Barrel Nipple',
-        'Swage nipple',
-        'Bushing',
-        'Forged Tee',
-        'Equal Tee Fittings',
-        'Reducing Tee Fittings',
-        'End Cap',
-        'Cross',
-        'Plug',
-        'Coupling',
-        'Full Coupling',
-        'Half Coupling',
-        'Reducing Coupling',
-        'Boss',
-      ]
-    },
-    {
-      name: 'FLANGES',
-      isActive: false,
-      subItems: [
-        'Slip On Flanges',
-        'BLIND Flanges',
-        'Weld Neck Flanges',
-        'Threarded Flanges',
-        'Olet Flanges',
-        'Socket Weld Flanges',
-        'Lap Joint Flanges',
       ]
     },
   ];
