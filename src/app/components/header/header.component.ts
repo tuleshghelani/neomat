@@ -25,6 +25,16 @@ export class HeaderComponent implements OnInit {
 
   productCategories = [
     {
+      name: 'I/C CASTING FITTINGS',
+      isActive: false,
+      subItems: [
+        '45 Elbow', '90 Elbow', 'Tee', 'Cross',
+        'Elbow Reducing', 'Reducing Cross', 'Reducing Tee', 'Y Stainer 45',
+        'Street Elbow 90', 'Street Elbow 45', 'Street TEE',
+        'Coupling', 'Reduce Coupling','CAP'
+      ]
+    },
+    {
       name: 'BUT WELD END FITTINGS',
       isActive: false,
       subItems: [
