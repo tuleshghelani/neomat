@@ -8,7 +8,7 @@
 
 <header class="header">
   <div class="header-container">
-    <div class="logo-container">
+    <div class="logo-container" routerLink="/">
       <img srcset="assets/ADAPTIX_main_logo.png 2x,
              assets/ADAPTIX_main_logo.png 1x"
      src="assets/ADAPTIX_main_logo.png"
@@ -22,21 +22,22 @@
         <li><a routerLink="/about-us" [routerLinkActive]="'active'" class="nav-link" (click)="toggleMenu()">About</a></li>
         <li class="has-dropdown">
           <a href="#" class="nav-link" [class.active]="isRouteActive('/products')" routerLink="/products" (click)="toggleMenu()">Our Products</a>
-          <div class="mega-menu">
+          <div class="mega-menu" routerLink="/products">
             <div class="mega-menu-content">
               <ul class="main-categories">
                 <li class="category-item" *ngFor="let category of productCategories">
                   <a href="#"
                      class="category-link"
                      (click)="toggleSubMenu(category, $event)"
-                     [class.active]="category.isActive">
+                     [class.active]="category.isActive"
+                     routerLink="/products">
                     {{ category.name }}
                     <i class="fas fa-chevron-right"></i>
                   </a>
-                  <div class="sub-menu" [class.active]="category.isActive">
+                  <div class="sub-menu" [class.active]="category.isActive" routerLink="/products">
                     <ul class="sub-categories">
                       <li *ngFor="let subItem of category.subItems">
-                        <a href="#">{{ subItem }}</a>
+                        <a routerLink="/products">{{ subItem }}</a>
                       </li>
                     </ul>
                   </div>
