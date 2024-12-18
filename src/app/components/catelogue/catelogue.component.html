@@ -12,23 +12,23 @@
         <p class="text-lg text-gray-600">Discover our extensive range of high-quality pipe and tube fittings</p>
       </div>
   
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div *ngFor="let item of catalogueItems" 
-             class="catalogue-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
-          <div class="relative pb-[75%] overflow-hidden">
-            <img [src]="item.image" 
-                 [alt]="item.title" loading="lazy"
-                 class="absolute inset-0 w-full h-full object-cover">
-          </div>
-          <div class="p-6">
-            <!-- <span class="text-sm text-primary-color font-semibold uppercase tracking-wider">{{item.category}}</span> -->
-            <h3 class="text-xl font-bold mt-2 mb-3">{{item.title}}</h3>
-            <!-- <p class="text-gray-600">{{item.description}}</p> -->
-            <button (click)="openEnquiryForm(item)" class="mt-4 bg-primary-color text-white px-6 py-2 rounded-full hover:bg-primary-color-light transition-colors duration-300">
+      <div class="catalogue-grid">
+        <ng-container *ngFor="let item of catalogueItems; let i = index">
+          <div class="catalogue-card" [ngClass]="{'last-item': i === catalogueItems.length - 1 && catalogueItems.length % 3 === 1}">
+            <div class="relative pb-[75%] overflow-hidden">
+              <img [src]="item.image" 
+                   [alt]="item.title" 
+                   loading="lazy"
+                   class="absolute inset-0 w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mt-2 mb-3">{{item.title}}</h3>
+              <button (click)="openEnquiryForm(item)" class="mt-4 bg-primary-color text-white px-6 py-2 rounded-full hover:bg-primary-color-light transition-colors duration-300">
                 Enquiry Now
               </button>
+            </div>
           </div>
-        </div>
+        </ng-container>
       </div>
     </div>
 </section>
