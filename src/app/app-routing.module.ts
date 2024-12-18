@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'contact-us', 
     loadChildren: () => import('./components/contact-us/contact-us.module').then(m => m.ContactUsModule) 
   },
-  { path: 'catelogue', 
+  { path: 'catalogue', 
     loadChildren: () => import('./components/catelogue/catelogue.module').then(m => m.CatelogueModule) 
   },
   // { path: '**', redirectTo: '' }  // Wildcard route for 404

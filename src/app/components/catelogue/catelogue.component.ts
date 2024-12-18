@@ -108,7 +108,7 @@ export class CatelogueComponent {
       id: 1,
       title: 'I/C Casting Fittings',
       description: 'Cutting-edge materials for future-ready construction',
-      image: 'src/assets/catelogue/IC_CASTING_FITTINGS.jpg',
+      image: 'assets/catelogue/IC.jpg',
       category: 'Innovation'
     },
     {
