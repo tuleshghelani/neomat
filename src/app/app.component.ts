@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from './services/scroll.service';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -9,6 +10,8 @@ import 'aos/dist/aos.css';
 })
 export class AppComponent {
   title = 'Neomat';
+
+  constructor(private scrollService: ScrollService) {}
 
   ngOnInit() {
     AOS.init();

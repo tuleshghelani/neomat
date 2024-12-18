@@ -10,6 +10,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { IndustriesComponent } from './components/industries/industries.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductService } from './services/product.service';
+import { ScrollService } from './services/scroll.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { ProductService } from './services/product.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ProductService],
+  providers: [ProductService,ScrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
