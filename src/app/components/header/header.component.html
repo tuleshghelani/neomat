@@ -22,22 +22,21 @@
         <li><a routerLink="/about-us" [routerLinkActive]="'active'" class="nav-link" (click)="toggleMenu()">About</a></li>
         <li class="has-dropdown">
           <a href="#" class="nav-link" [class.active]="isRouteActive('/products')" routerLink="/products" (click)="toggleMenu()">Our Products</a>
-          <div class="mega-menu" routerLink="/products">
+          <div class="mega-menu">
             <div class="mega-menu-content">
               <ul class="main-categories">
                 <li class="category-item" *ngFor="let category of productCategories">
                   <a href="#"
                      class="category-link"
-                     (click)="toggleSubMenu(category, $event)"
-                     [class.active]="category.isActive"
-                     routerLink="/products">
+                     (click)="navigateToCategory(category, $event)"
+                     [class.active]="category.isActive">
                     {{ category.name }}
                     <i class="fas fa-chevron-right"></i>
                   </a>
-                  <div class="sub-menu" [class.active]="category.isActive" routerLink="/products">
+                  <div class="sub-menu" [class.active]="category.isActive">
                     <ul class="sub-categories">
                       <li *ngFor="let subItem of category.subItems">
-                        <a routerLink="/products">{{ subItem }}</a>
+                        <a href="#" (click)="toggleSubMenu(category, $event, subItem)">{{ subItem }}</a>
                       </li>
                     </ul>
                   </div>

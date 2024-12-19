@@ -195,25 +195,42 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  toggleSubMenu(category: any, event: Event) {
+  toggleSubMenu(category: any, event: Event, subItem?: string) {
     event.preventDefault();
     event.stopPropagation();
 
-    // Reset all other categories
-    this.productCategories.forEach(cat => {
-      if (cat !== category) {
-        cat.isActive = false;
+    // Close the menu
+    this.isMenuOpen = false;
+    const navDesktop = document.querySelector('.nav-desktop');
+    if (navDesktop) {
+      navDesktop.classList.remove('active');
+    }
+
+    // Navigate to products page with query parameters
+    this.router.navigate(['/products'], {
+      queryParams: {
+        category: category.name
       }
     });
+  }
 
-    // Toggle current category
-    category.isActive = !category.isActive;
-
-    // Toggle active class on category link
-    const categoryLink = (event.target as HTMLElement).closest('.category-link');
-    if (categoryLink) {
-      categoryLink.classList.toggle('active');
+  navigateToCategory(category: any, event: Event) {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    // Close the menu
+    this.isMenuOpen = false;
+    const navDesktop = document.querySelector('.nav-desktop');
+    if (navDesktop) {
+      navDesktop.classList.remove('active');
     }
+
+    // Navigate to the category
+    this.router.navigate(['/products'], {
+      queryParams: {
+        category: category.name
+      }
+    });
   }
 
   showSubMenu(category: any) {

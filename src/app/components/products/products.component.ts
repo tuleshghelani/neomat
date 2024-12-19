@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { ProductService, ProductCategory, ProductDetail } from '../../services/product.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -40,13 +41,47 @@ export class ProductsComponent implements OnInit, OnDestroy {
   
   @ViewChild('productContainer') productContainer!: ElementRef;
 
-  constructor(private productService: ProductService) {}
+  constructor(
+    private productService: ProductService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
     this.productCategories = this.productService.getProductCategories().map(category => ({
       ...category,
-      isExpanded: false // Set all categories to collapsed initially
+      isExpanded: false
     }));
+    
+    this.selectedCategory = null;
+    this.activeCategory = null;
+    this.filteredProducts = [];
+
+
+    // Subscribe to query parameters
+    this.route.queryParams.subscribe(params => {
+      if (params['category']) {
+        const category = this.productCategories.find(
+          cat => cat.name === params['category']
+        );
+        
+        if (category) {
+          // If there's a subItem, select it
+          if (params['subItem']) {
+            this.selectSubProduct(category, params['subItem']);
+          } else {
+            // Just expand the category
+            this.toggleCategory(category);
+          }
+          
+          // Scroll to products section
+          setTimeout(() => {
+            const element = document.querySelector('.products-container');
+            element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+      }
+    });
+
     this.updateFilteredProducts();
   }
 
