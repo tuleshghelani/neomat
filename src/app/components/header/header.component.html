@@ -20,6 +20,8 @@
       <ul class="nav-links">
         <li><a routerLink="/" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="toggleMenu()">Home</a></li>
         <li><a routerLink="/about-us" [routerLinkActive]="'active'" class="nav-link" (click)="toggleMenu()">About</a></li>
+        <li><a routerLink="/process" [routerLinkActive]="'active'" class="nav-link" (click)="toggleMenu()">Process</a></li>
+        <li><a routerLink="/quality" [routerLinkActive]="'active'" class="nav-link" (click)="toggleMenu()">Quality</a></li>
         <li class="has-dropdown">
           <a href="#" class="nav-link" [class.active]="isRouteActive('/products')" routerLink="/products" (click)="toggleMenu()">Our Products</a>
           <div class="mega-menu">

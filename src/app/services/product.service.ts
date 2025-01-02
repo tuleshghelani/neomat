@@ -27,6 +27,16 @@ export interface ProductCategory {
 export class ProductService {
   private productCategories: ProductCategory[] = [
     {
+      id: 'valves',
+      name: 'VALVES',
+      isExpanded: false,
+      subProducts: [
+        'Globe Valve', 'Check Valve', 'Butterfly Valve', 'Gate Valve',
+        'Ball Valve', 'Plug Valve', 'Pilot Operated Valve', 'Pilot Operated Check Valve',
+        'Pilot Operated Gate Valve', 'Pilot Operated Ball Valve', 'Pilot Operated Plug Valve'
+      ]
+    },
+    {
       id: 'ic-casting-fittings',
       name: 'I/C CASTING FITTINGS',
       isExpanded: true,
@@ -37,17 +47,17 @@ export class ProductService {
         'Coupling', 'Reduce Coupling','CAP', 'Bends'
       ]
     },
-    {
-      id: 'but-weld-end-fittings',
-      name: 'BUT WELD END FITTINGS',
-      isExpanded: false,
-      subProducts: [
-        '45 Deg Elbow', '90 Deg Elbow', 'Tee Equal', 'Tee Reducing',
-        'End Cap', 'Barrel Nipple', 'Pipe Nipple', 'Swage Nipple',
-        'U bend', 'Long Stub End', 'Short Stub End', 'Lateral Tee',
-        'Reducer Eccentric'
-      ]
-    },
+    // {
+    //   id: 'but-weld-end-fittings',
+    //   name: 'BUT WELD END FITTINGS',
+    //   isExpanded: false,
+    //   subProducts: [
+    //     '45 Deg Elbow', '90 Deg Elbow', 'Tee Equal', 'Tee Reducing',
+    //     'End Cap', 'Barrel Nipple', 'Pipe Nipple', 'Swage Nipple',
+    //     'U bend', 'Long Stub End', 'Short Stub End', 'Lateral Tee',
+    //     'Reducer Eccentric'
+    //   ]
+    // },
     {
       id: 'forged-fittings',
       name: 'FORGED FITTINGS',
@@ -349,204 +359,204 @@ export class ProductService {
           'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL'
       }
     },
-    {
-      name: '45 Deg Elbow',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['45 Deg Elbow'],
-      productCode: 'ADAPTIX-BW-45E',
-      mainImage: 'assets/product/BUT_WELD_END_FITTINGS/45 Elbow.png',
-      otherImages: [
-      ],
-      description: 'High-precision 45-degree elbow fitting designed for optimal flow direction change. Features seamless construction with uniform wall thickness and precise angle consistency. Engineered for minimal flow resistance and pressure drop.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: '90 Deg Elbow',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['90 Deg Elbow'],
-        productCode: 'ADAPTIX-BW-90E',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/90 Elbow.png',
-      otherImages: [
-      ],
-      description: 'Premium 90-degree elbow fitting engineered for right-angle flow direction changes. Features reinforced construction for high-pressure applications with perfect perpendicular alignment. Optimized internal radius for smooth flow characteristics.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'Tee Equal',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['Tee Equal'],
-        productCode: 'ADAPTIX-BW-ET',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Equal tee.png',
-      otherImages: [
-      ],
-      description: 'Symmetrical equal tee fitting designed for three-way flow distribution. Features balanced flow characteristics with uniform wall thickness. Precision-engineered for equal pressure distribution across all ports.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'Tee Reducing',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['Tee Reducing'],
-        productCode: 'ADAPTIX-BW-RT',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Reducing tee.png',
-      otherImages: [
-      ],
-      description: 'Advanced reducing tee fitting designed for multi-diameter flow applications. Features smooth transition zones for optimal flow characteristics. Engineered for balanced pressure distribution despite size differences.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'End Cap',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['End Cap'],
-        productCode: 'ADAPTIX-BW-C',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Cap.png',
-      otherImages: [
-      ],
-      description: 'Heavy-duty end cap designed for positive line termination. Features reinforced construction with precision-machined sealing surface. Engineered for maximum pressure containment and zero leakage.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'Barrel Nipple',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['Barrel Nipple'],
-        productCode: 'ADAPTIX-BW-BN',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Barrel Nipple.png',
-      otherImages: [
-      ],
-      description: 'Precision-engineered barrel nipple featuring uniform wall thickness throughout. Designed for optimal flow characteristics with minimal pressure drop. Includes precision-machined ends for perfect alignment.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'Pipe Nipple',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['Pipe Nipple'],
-        productCode: 'ADAPTIX-BW-PN',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Pipe Nipple.png',
-      otherImages: [
-      ],
-      description: 'High-quality pipe nipple designed for straight-line connections. Features precise length control and perfectly perpendicular end faces. Manufactured with strict tolerances for maximum reliability.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'Swage Nipple',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['Swage Nipple'],
-        productCode: 'ADAPTIX-BW-SN',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Swage Nipple.png',
-      otherImages: [
-      ],
-      description: 'Advanced swage nipple featuring smooth diameter transition. Engineered for gradual flow area changes with minimal turbulence. Includes precision-machined ends for perfect alignment and sealing.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'U bend',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['U bend'],
-        productCode: 'ADAPTIX-BW-UB',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/U Bend.png',
-      otherImages: [
-      ],
-      description: 'Precision-formed U-bend designed for 180-degree flow reversal. Features optimized bend radius for minimal flow restriction. Manufactured with advanced forming technology for perfect symmetry.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'Long Stub End',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['Long Stub End'],
-        productCode: 'ADAPTIX-BW-LS',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Stubend.png',
-      otherImages: [
-      ],
-      description: 'Extended length stub end designed for maximum engagement. Features reinforced flange face with precision-machined sealing surface. Includes extended barrel for optimal weld joint positioning.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'Short Stub End',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['Short Stub End'],
-        productCode: 'ADAPTIX-BW-SS',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Short Stub End.png',
-      otherImages: [
-      ],
-      description: 'Compact stub end designed for space-constrained applications. Features reinforced flange face with precision-machined sealing surface. Optimized for minimal installation length requirements.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'Lateral Tee',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['Lateral Tee'],
-        productCode: 'ADAPTIX-BW-LT',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Lateral Tee.png',
-      otherImages: [
-      ],
-      description: 'Specialized lateral tee designed for angled branch connections. Features optimized flow geometry for reduced pressure drop. Engineered for balanced flow distribution with minimal turbulence.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
-    {
-      name: 'Reducer Eccentric',
-      categoryName: 'BUT WELD END FITTINGS',
-      subCategory: ['Reducer Eccentric'],
-        productCode: 'ADAPTIX-BW-ET',
-        mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Reducer.png',
-      otherImages: [
-          'assets/product/Gasket_2.jpeg',
-          'assets/product/Gasket_3.jpeg',
-          'assets/product/Gasket_4.jpeg'
-      ],
-      description: 'Advanced eccentric reducer designed for offset diameter transitions. Features smooth internal profile for optimal flow characteristics. Engineered for minimum turbulence and pressure drop across the reduction.',
-      specifications: {
-        'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
-        'End Connections': 'PL',
-        'Size': '1/2" NB to 24" NB',
-      }
-    },
+    // {
+    //   name: '45 Deg Elbow',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['45 Deg Elbow'],
+    //   productCode: 'ADAPTIX-BW-45E',
+    //   mainImage: 'assets/product/BUT_WELD_END_FITTINGS/45 Elbow.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'High-precision 45-degree elbow fitting designed for optimal flow direction change. Features seamless construction with uniform wall thickness and precise angle consistency. Engineered for minimal flow resistance and pressure drop.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: '90 Deg Elbow',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['90 Deg Elbow'],
+    //     productCode: 'ADAPTIX-BW-90E',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/90 Elbow.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Premium 90-degree elbow fitting engineered for right-angle flow direction changes. Features reinforced construction for high-pressure applications with perfect perpendicular alignment. Optimized internal radius for smooth flow characteristics.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'Tee Equal',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['Tee Equal'],
+    //     productCode: 'ADAPTIX-BW-ET',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Equal tee.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Symmetrical equal tee fitting designed for three-way flow distribution. Features balanced flow characteristics with uniform wall thickness. Precision-engineered for equal pressure distribution across all ports.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'Tee Reducing',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['Tee Reducing'],
+    //     productCode: 'ADAPTIX-BW-RT',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Reducing tee.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Advanced reducing tee fitting designed for multi-diameter flow applications. Features smooth transition zones for optimal flow characteristics. Engineered for balanced pressure distribution despite size differences.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'End Cap',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['End Cap'],
+    //     productCode: 'ADAPTIX-BW-C',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Cap.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Heavy-duty end cap designed for positive line termination. Features reinforced construction with precision-machined sealing surface. Engineered for maximum pressure containment and zero leakage.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'Barrel Nipple',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['Barrel Nipple'],
+    //     productCode: 'ADAPTIX-BW-BN',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Barrel Nipple.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Precision-engineered barrel nipple featuring uniform wall thickness throughout. Designed for optimal flow characteristics with minimal pressure drop. Includes precision-machined ends for perfect alignment.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'Pipe Nipple',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['Pipe Nipple'],
+    //     productCode: 'ADAPTIX-BW-PN',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Pipe Nipple.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'High-quality pipe nipple designed for straight-line connections. Features precise length control and perfectly perpendicular end faces. Manufactured with strict tolerances for maximum reliability.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'Swage Nipple',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['Swage Nipple'],
+    //     productCode: 'ADAPTIX-BW-SN',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Swage Nipple.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Advanced swage nipple featuring smooth diameter transition. Engineered for gradual flow area changes with minimal turbulence. Includes precision-machined ends for perfect alignment and sealing.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'U bend',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['U bend'],
+    //     productCode: 'ADAPTIX-BW-UB',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/U Bend.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Precision-formed U-bend designed for 180-degree flow reversal. Features optimized bend radius for minimal flow restriction. Manufactured with advanced forming technology for perfect symmetry.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'Long Stub End',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['Long Stub End'],
+    //     productCode: 'ADAPTIX-BW-LS',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Stubend.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Extended length stub end designed for maximum engagement. Features reinforced flange face with precision-machined sealing surface. Includes extended barrel for optimal weld joint positioning.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'Short Stub End',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['Short Stub End'],
+    //     productCode: 'ADAPTIX-BW-SS',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Short Stub End.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Compact stub end designed for space-constrained applications. Features reinforced flange face with precision-machined sealing surface. Optimized for minimal installation length requirements.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'Lateral Tee',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['Lateral Tee'],
+    //     productCode: 'ADAPTIX-BW-LT',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Lateral Tee.png',
+    //   otherImages: [
+    //   ],
+    //   description: 'Specialized lateral tee designed for angled branch connections. Features optimized flow geometry for reduced pressure drop. Engineered for balanced flow distribution with minimal turbulence.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
+    // {
+    //   name: 'Reducer Eccentric',
+    //   categoryName: 'BUT WELD END FITTINGS',
+    //   subCategory: ['Reducer Eccentric'],
+    //     productCode: 'ADAPTIX-BW-ET',
+    //     mainImage: 'assets/product/BUT_WELD_END_FITTINGS/Reducer.png',
+    //   otherImages: [
+    //       'assets/product/Gasket_2.jpeg',
+    //       'assets/product/Gasket_3.jpeg',
+    //       'assets/product/Gasket_4.jpeg'
+    //   ],
+    //   description: 'Advanced eccentric reducer designed for offset diameter transitions. Features smooth internal profile for optimal flow characteristics. Engineered for minimum turbulence and pressure drop across the reduction.',
+    //   specifications: {
+    //     'M.O.C': 'Stainless Steel / Carbon Steel / Alloy Steel / Nickel Alloy',
+    //     'End Connections': 'PL',
+    //     'Size': '1/2" NB to 24" NB',
+    //   }
+    // },
     {
       name: '45 Deg Elbow Fittings',
       categoryName: 'FORGED FITTINGS',

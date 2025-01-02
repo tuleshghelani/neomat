@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
 
   productCategories = [
     {
-      name: 'I/C CASTING FITTINGS',
+      name: 'VALVES',
       isActive: false,
       subItems: [
         '45 Elbow', '90 Elbow', 'Tee', 'Cross',
@@ -35,24 +35,34 @@ export class HeaderComponent implements OnInit {
       ]
     },
     {
-      name: 'BUT WELD END FITTINGS',
+      name: 'I/C CASTING FITTINGS',
       isActive: false,
       subItems: [
-        '45 Deg Elbow',
-        '90 Deg Elbow',
-        'Tee Equal',
-        'Tee Reducing',
-        'End Cap',
-        'Barrel Nipple',
-        'Pipe Nipple',
-        'Swage Nipple',
-        'U bend',
-        'Long Stub End',
-        'Short Stub End',
-        'Lateral Tee',
-        'Reducer Eccentric',
+        '45 Elbow', '90 Elbow', 'Tee', 'Cross',
+        'Elbow Reducing', 'Reducing Cross', 'Reducing Tee', 'Y Stainer 45',
+        'Street Elbow 90', 'Street Elbow 45', 'Street TEE',
+        'Coupling', 'Reduce Coupling','CAP'
       ]
     },
+    // {
+    //   name: 'BUT WELD END FITTINGS',
+    //   isActive: false,
+    //   subItems: [
+    //     '45 Deg Elbow',
+    //     '90 Deg Elbow',
+    //     'Tee Equal',
+    //     'Tee Reducing',
+    //     'End Cap',
+    //     'Barrel Nipple',
+    //     'Pipe Nipple',
+    //     'Swage Nipple',
+    //     'U bend',
+    //     'Long Stub End',
+    //     'Short Stub End',
+    //     'Lateral Tee',
+    //     'Reducer Eccentric',
+    //   ]
+    // },
     {
       name: 'FORGED FITTINGS',
       isActive: false,

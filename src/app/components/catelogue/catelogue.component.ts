@@ -106,18 +106,25 @@ export class CatelogueComponent {
   catalogueItems: CatalogueItem[] = [
     {
       id: 1,
-      title: 'I/C Casting Fittings',
+      title: 'Valves',
       description: 'Cutting-edge materials for future-ready construction',
       image: 'assets/catelogue/IC.jpg',
       category: 'Innovation'
     },
     {
       id: 2,
-      title: 'But Weld End Fittings',
+      title: 'I/C Casting Fittings',
       description: 'Cutting-edge materials for future-ready construction',
-      image: 'assets/catelogue/BUT WELD END FITTINGS.jpg',
+      image: 'assets/catelogue/IC.jpg',
       category: 'Innovation'
     },
+    // {
+    //   id: 2,
+    //   title: 'But Weld End Fittings',
+    //   description: 'Cutting-edge materials for future-ready construction',
+    //   image: 'assets/catelogue/BUT WELD END FITTINGS.jpg',
+    //   category: 'Innovation'
+    // },
     {
       id: 3,
       title: 'Forged Fittings',
