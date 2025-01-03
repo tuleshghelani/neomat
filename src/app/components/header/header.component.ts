@@ -28,10 +28,8 @@ export class HeaderComponent implements OnInit {
       name: 'VALVES',
       isActive: false,
       subItems: [
-        '45 Elbow', '90 Elbow', 'Tee', 'Cross',
-        'Elbow Reducing', 'Reducing Cross', 'Reducing Tee', 'Y Stainer 45',
-        'Street Elbow 90', 'Street Elbow 45', 'Street TEE',
-        'Coupling', 'Reduce Coupling','CAP'
+        'Forged Steel Ball Valves', 'Forged Steel Gate Valves', 'Forged Steel Globe Valve', 'Forged Steel Lift Check Valves',
+        'Cast Steel Floating Ball Valves', 'Cast Steel Gate Valves', 'Cast Steel Globe Valves', 'Cast Steel Check Valves'
       ]
     },
     {

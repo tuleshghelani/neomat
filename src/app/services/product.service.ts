@@ -31,9 +31,8 @@ export class ProductService {
       name: 'VALVES',
       isExpanded: false,
       subProducts: [
-        'Globe Valve', 'Check Valve', 'Butterfly Valve', 'Gate Valve',
-        'Ball Valve', 'Plug Valve', 'Pilot Operated Valve', 'Pilot Operated Check Valve',
-        'Pilot Operated Gate Valve', 'Pilot Operated Ball Valve', 'Pilot Operated Plug Valve'
+          'Forged Steel Ball Valves', 'Forged Steel Gate Valves', 'Forged Steel Globe Valve', 'Forged Steel Lift Check Valves',
+          'Cast Steel Floating Ball Valves', 'Cast Steel Gate Valves', 'Cast Steel Globe Valves', 'Cast Steel Check Valves'
       ]
     },
     {
@@ -119,6 +118,151 @@ export class ProductService {
   ];
 
   private productDetails: ProductDetail[] = [
+    {
+      name: 'Forged Steel Ball Valves',
+      categoryName: 'VALVES',
+      subCategory: ['Forged Steel Ball Valves'],
+      productCode: 'ADAPTIX-VS-FSBV',
+      mainImage: 'assets/product/VALVES/Forged_Steel_Ball_Valves.png',
+      otherImages: [
+      ],
+      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      specifications: {
+          'Body Style': '3-piece ball valve',
+          'Size Range': '1/2"-2" ( 15 mm to 50 mm )',
+          'End Connections': 'Screwed End, Socket Weld End, Butt Weld End',
+          'Body Material': 'A105, F11, F22, F51, LF2, F304, F304L, F316, F316L',
+          'Seat Material': 'PTFE,R-PTFE ,Graphite',
+          'Operation': 'Lever handle, Pneumatic or Electric actuator, Electrical position indicator'
+      }
+    },
+    {
+      name: 'Forged Steel Gate Valves',
+      categoryName: 'VALVES',
+      subCategory: ['Forged Steel Gate Valves'],
+      productCode: 'ADAPTIX-VS-FSGV',
+      mainImage: 'assets/product/VALVES/Forged_Steel_Gate_Valves.png',
+      otherImages: [
+      ],
+      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      specifications: {
+          'Body Style': 'Gate Valve - Bolted Bonnet',
+          'Size Range': '1/2"-2" ( 15 mm to 50 mm )',
+          'End Connections': 'Screwed End, Socket Weld End, Butt Weld End',
+          'Body Material': 'A105, F11, F22, F51, LF2, F304, F304L, F316, F316L',
+          'Seat Material': 'Matel',
+          'Operation': 'Hand Wheel, Pneumatic or Electric actuator, Electrical position indicator'
+      }
+    },
+    {
+      name: 'Forged Steel Globe Valve',
+      categoryName: 'VALVES',
+      subCategory: ['Forged Steel Globe Valve'],
+      productCode: 'ADAPTIX-VS-FSGV',
+      mainImage: 'assets/product/VALVES/Forged_Steel_Globe_Valve.png',
+      otherImages: [
+      ],
+      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      specifications: {
+          'Body Style': 'Globe Valve',
+          'Size Range': '1/2"-2” (15 mm to 50 mm)',
+          'End Connections': 'Screwed End, Socket Weld End, Butt Weld End',
+          'Body Material': 'A105, F11, F22, F51, LF2, F304, F304L, F316, F316L',
+          'Seat Material': 'Matel',
+          'Operation': 'Hand Wheel, Pneumatic or Electric actuator, Electrical position indicator'
+      }
+    },
+    {
+      name: 'Forged Steel Lift Check Valves',
+      categoryName: 'VALVES',
+      subCategory: ['Forged Steel Lift Check Valves'],
+      productCode: 'ADAPTIX-VS-FSLCKV',
+      mainImage: 'assets/product/VALVES/Forged_Steel_Lift_Check_Valve.png',
+      otherImages: [
+      ],
+      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      specifications: {
+          'Body Style': 'Check Valve',
+          'Size Range': '1/2"-2” (15 mm to 50 mm)',
+          'End Connections': 'Screwed End, Socket Weld End, Butt Weld End',
+          'Body Material': 'A105, F11, F22, F51, LF2, F304, F304L, F316, F316L',
+          'Seat Material': 'Matel',
+          'Operation': 'Auto'
+      }
+    },
+    {
+      name: 'Cast Steel Floating Ball Valves',
+      categoryName: 'VALVES',
+      subCategory: ['Cast Steel Floating Ball Valves'],
+      productCode: 'ADAPTIX-VS-FSLCKV',
+      mainImage: 'assets/product/VALVES/Cast_Steel_Floating_Ball_Valves.png',
+      otherImages: [
+      ],
+      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      specifications: {
+          'Body Style': '2-piece ball valve',
+          'Size Range': '1/2"-6” (15 mm to 150 mm)',
+          'Class': '150#, 300#',
+          'End Connections': 'Flange',
+          'Body Material': 'WCB, LCB, LCC,CF8,CF8M,CF3,CF3M and Other Alloys',
+          'Operation': 'Lever handle, Pneumatic or Electric actuator, Electrical position indicator'
+      }
+    },
+    {
+      name: 'Cast Steel Gate Valves',
+      categoryName: 'VALVES',
+      subCategory: ['Cast Steel Gate Valves'],
+      productCode: 'ADAPTIX-VS-FSGV',
+      mainImage: 'assets/product/VALVES/Cast_Steel_Gate_Valves.png',
+      otherImages: [
+      ],
+      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      specifications: {
+          'Body Style': 'Gate Valve - Bolted Bonnet',
+          'Size Range': '2"-6” (50 mm to 150 mm)',
+          'Class': '150#, 300#',
+          'End Connections': 'Flange',
+          'Body Material': 'WCB, LCB, LCC,CF8,CF8M,CF3,CF3M and Other Alloys',
+          'Operation': 'Lever handle, Pneumatic or Electric actuator, Electrical position indicator'
+      }
+    },
+    {
+      name: 'Cast Steel Globe Valves',
+      categoryName: 'VALVES',
+      subCategory: ['Cast Steel Globe Valves'],
+      productCode: 'ADAPTIX-VS-FSGV',
+      mainImage: 'assets/product/VALVES/Cast_Steel_Globe_Valves.png',
+      otherImages: [
+      ],
+      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      specifications: {
+          'Body Style': 'Globe',
+          'Size Range': '2"-6” (50 mm to 150 mm)',
+          'Class': '150#, 300#',
+          'End Connections': 'Flange',
+          'Body Material': 'WCB, LCB, LCC,CF8,CF8M,CF3,CF3M and Other Alloys',
+          'Operation': 'Lever handle, Pneumatic or Electric actuator, Electrical position indicator'
+      }
+    },
+    {
+      name: 'Cast Steel Check Valves',
+      categoryName: 'VALVES',
+      subCategory: ['Cast Steel Check Valves'],
+      productCode: 'ADAPTIX-VS-FSGV',
+      mainImage: 'assets/product/VALVES/Cast_Steel_Check_Valves.png',
+      otherImages: [
+      ],
+      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      specifications: {
+          'Body Style': 'Check Valves',
+          'Size Range': '2"-6” (50 mm to 150 mm)',
+          'Class': '150#, 300#',
+          'End Connections': 'Flange',
+          'Body Material': 'WCB, LCB, LCC,CF8,CF8M,CF3,CF3M and Other Alloys',
+          'Operation': 'Auto'
+      }
+    },
+    
     {
       name: '45 Elbow',
       categoryName: 'I/C CASTING FITTINGS',
