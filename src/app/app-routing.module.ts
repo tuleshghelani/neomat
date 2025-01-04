@@ -5,6 +5,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { IndustriesComponent } from './components/industries/industries.component';
 import { ProductsComponent } from './components/products/products.component';
 import { QualityComponent } from './components/quality/quality.component';
+import { ProcessComponent } from './components/process/process.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },  // Default route
@@ -18,6 +19,7 @@ const routes: Routes = [
     loadChildren: () => import('./components/catelogue/catelogue.module').then(m => m.CatelogueModule) 
   },
   { path: 'quality', component: QualityComponent }, 
+  { path: 'process', component: ProcessComponent },
   // { path: '**', redirectTo: '' }  // Wildcard route for 404
 ];
 

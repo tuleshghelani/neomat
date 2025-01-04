@@ -23,7 +23,7 @@
            [class.left]="i % 2 !== 0">
         
         <div class="process-icon neumorphic">
-          <app-quality-icon [iconName]="process.icon"></app-quality-icon>
+          <img [src]="process.image" [alt]="process.name" loading="lazy">
         </div>
 
         <div class="process-content neumorphic">

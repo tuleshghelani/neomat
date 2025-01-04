@@ -13,6 +13,7 @@ import { ProductService } from './services/product.service';
 import { ScrollService } from './services/scroll.service';
 import { QualityComponent } from './components/quality/quality.component';
 import { QualityIconComponent } from './shared/icons/quality-icons.component';
+import { ProcessComponent } from './components/process/process.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { QualityIconComponent } from './shared/icons/quality-icons.component';
     IndustriesComponent,
     ProductsComponent,
     QualityComponent,
-    QualityIconComponent
+    QualityIconComponent,
+    ProcessComponent
   ],
   imports: [
     BrowserModule,
