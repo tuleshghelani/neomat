@@ -8,6 +8,29 @@
 </div>
 
 <div class="process-content">
+
+    <!-- Investment Casting Process -->
+    <section class="casting-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Investment Casting Process</h2>
+        <p>Precision Engineering Through Advanced Casting</p>
+      </div>
+  
+      <div class="casting-grid">
+        <div class="process-card neumorphic" 
+             *ngFor="let step of castingSteps"
+             data-aos="fade-up"
+             data-aos-delay="200">
+          <div class="card-image">
+            <img [src]="step.image" [alt]="step.title" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3>{{step.title}}</h3>
+            <p>{{step.description}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
   <!-- Forging Process Section -->
   <section class="forging-section">
     <div class="section-header" data-aos="fade-up">
@@ -23,29 +46,6 @@
         <div class="step neumorphic" *ngFor="let step of forgingProcess.steps">
           <span class="step-marker"></span>
           <p>{{step}}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Investment Casting Process -->
-  <section class="casting-section">
-    <div class="section-header" data-aos="fade-up">
-      <h2>Investment Casting Process</h2>
-      <p>Precision Engineering Through Advanced Casting</p>
-    </div>
-
-    <div class="casting-grid">
-      <div class="process-card neumorphic" 
-           *ngFor="let step of castingSteps"
-           data-aos="fade-up"
-           data-aos-delay="200">
-        <div class="card-image">
-          <img [src]="step.image" [alt]="step.title" loading="lazy">
-        </div>
-        <div class="card-content">
-          <h3>{{step.title}}</h3>
-          <p>{{step.description}}</p>
         </div>
       </div>
     </div>
