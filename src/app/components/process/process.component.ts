@@ -9,47 +9,47 @@ export class ProcessComponent implements OnInit {
   castingSteps = [
     {
       title: 'Tooling and Pattern Making',
-      description: 'Creation of precise wax patterns using advanced tooling techniques.',
+      description: 'A tool is built to customer- provided specifications (A). Cold wax is then injected into the tool to create a wax pattern/prototype (B) that will hold precise dimensional requirements in the final casting.',
       image: 'assets/process/Tooling_and_pattern_making.jpeg'
     },
     {
       title: 'Pattern Assembly',
-      description: 'Strategic assembly of wax patterns into tree-like structures.',
+      description: 'The wax patterns are assembled onto the sprue',
       image: 'assets/process/Pattern_Assembly.jpeg'
     },
     {
       title: 'Dipping and Coating',
-      description: 'Application of ceramic slurry layers for shell formation.',
+      description: 'Successive layers of ceramic and stucco are applied to the sprue assembly to form a hard shell.',
       image: 'assets/process/Dipping_and_Coating.jpeg'
     },
     {
-      title: 'De-Waxing and Firing',
-      description: 'Removal of wax and shell strengthening through firing.',
+      title: 'De-Waxing and Shell Firing',
+      description: 'The molds are flash- fired to remove the wax and sprue materials and then heated to 1,800° and placed on a sand bed, ready for pouring.',
       image: 'assets/process/De-Waxing_and_Firing.jpeg'
     },
     {
-      title: 'Casting',
-      description: 'Pouring of molten metal into prepared ceramic shells.',
+      title: 'Metal Pouring',
+      description: 'Molten metal, up to 3,000°, is poured into the hollow mold and then cooled.',
       image: 'assets/process/Casting.jpeg'
     },
     {
       title: 'Knockout',
-      description: 'Removal of ceramic shell to reveal cast components.',
+      description: 'The ceramic shell is broken off, and the individual castings are cut away.',
       image: 'assets/process/Knockout.jpeg'
     },
     {
       title: 'Finishing',
-      description: 'Precision finishing operations for final product quality.',
+      description: 'Excess metal is removed, surfaces are finished, and castings are heat treated.',
       image: 'assets/process/Finishing.jpeg'
     },
     {
       title: 'Testing and Inspection',
-      description: 'Rigorous quality control and performance verification.',
+      description: 'Castings undergo thorough testing and inspection to ensure that they meet dimensional tolerances and specifications.',
       image: 'assets/process/Testing_and_Inspection.jpeg'
     },
     {
       title: 'Packing and Shipping',
-      description: 'Secure packaging and efficient delivery logistics.',
+      description: 'Castings are securely packaged for shipping to the customer.',
       image: 'assets/process/Packing_and_Shipping.jpeg'
     }
   ];

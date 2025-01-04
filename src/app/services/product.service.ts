@@ -122,7 +122,7 @@ export class ProductService {
       name: 'Forged Steel Ball Valves',
       categoryName: 'VALVES',
       subCategory: ['Forged Steel Ball Valves'],
-      productCode: 'ADAPTIX-VS-FSBV',
+      // productCode: 'ADAPTIX-VS-FSBV',
       mainImage: 'assets/product/VALVES/Forged_Steel_Ball_Valves.png',
       otherImages: [
       ],
@@ -140,7 +140,7 @@ export class ProductService {
       name: 'Forged Steel Gate Valves',
       categoryName: 'VALVES',
       subCategory: ['Forged Steel Gate Valves'],
-      productCode: 'ADAPTIX-VS-FSGV',
+      // productCode: 'ADAPTIX-VS-FSGV',
       mainImage: 'assets/product/VALVES/Forged_Steel_Gate_Valves.png',
       otherImages: [
       ],
@@ -150,7 +150,7 @@ export class ProductService {
           'Size Range': '1/2"-2" ( 15 mm to 50 mm )',
           'End Connections': 'Screwed End, Socket Weld End, Butt Weld End',
           'Body Material': 'A105, F11, F22, F51, LF2, F304, F304L, F316, F316L',
-          'Seat Material': 'Matel',
+          'Seat Material': 'Metal',
           'Operation': 'Hand Wheel, Pneumatic or Electric actuator, Electrical position indicator'
       }
     },
@@ -158,7 +158,7 @@ export class ProductService {
       name: 'Forged Steel Globe Valve',
       categoryName: 'VALVES',
       subCategory: ['Forged Steel Globe Valve'],
-      productCode: 'ADAPTIX-VS-FSGV',
+      // productCode: 'ADAPTIX-VS-FSGV',
       mainImage: 'assets/product/VALVES/Forged_Steel_Globe_Valve.png',
       otherImages: [
       ],
@@ -168,7 +168,7 @@ export class ProductService {
           'Size Range': '1/2"-2” (15 mm to 50 mm)',
           'End Connections': 'Screwed End, Socket Weld End, Butt Weld End',
           'Body Material': 'A105, F11, F22, F51, LF2, F304, F304L, F316, F316L',
-          'Seat Material': 'Matel',
+          'Seat Material': 'Metal',
           'Operation': 'Hand Wheel, Pneumatic or Electric actuator, Electrical position indicator'
       }
     },
@@ -176,7 +176,7 @@ export class ProductService {
       name: 'Forged Steel Lift Check Valves',
       categoryName: 'VALVES',
       subCategory: ['Forged Steel Lift Check Valves'],
-      productCode: 'ADAPTIX-VS-FSLCKV',
+      // productCode: 'ADAPTIX-VS-FSLCKV',
       mainImage: 'assets/product/VALVES/Forged_Steel_Lift_Check_Valve.png',
       otherImages: [
       ],
@@ -186,7 +186,7 @@ export class ProductService {
           'Size Range': '1/2"-2” (15 mm to 50 mm)',
           'End Connections': 'Screwed End, Socket Weld End, Butt Weld End',
           'Body Material': 'A105, F11, F22, F51, LF2, F304, F304L, F316, F316L',
-          'Seat Material': 'Matel',
+          'Seat Material': 'Metal',
           'Operation': 'Auto'
       }
     },
@@ -194,7 +194,7 @@ export class ProductService {
       name: 'Cast Steel Floating Ball Valves',
       categoryName: 'VALVES',
       subCategory: ['Cast Steel Floating Ball Valves'],
-      productCode: 'ADAPTIX-VS-FSLCKV',
+      // productCode: 'ADAPTIX-VS-FSLCKV',
       mainImage: 'assets/product/VALVES/Cast_Steel_Floating_Ball_Valves.png',
       otherImages: [
       ],
@@ -212,7 +212,7 @@ export class ProductService {
       name: 'Cast Steel Gate Valves',
       categoryName: 'VALVES',
       subCategory: ['Cast Steel Gate Valves'],
-      productCode: 'ADAPTIX-VS-FSGV',
+      // productCode: 'ADAPTIX-VS-FSGV',
       mainImage: 'assets/product/VALVES/Cast_Steel_Gate_Valves.png',
       otherImages: [
       ],
@@ -230,7 +230,7 @@ export class ProductService {
       name: 'Cast Steel Globe Valves',
       categoryName: 'VALVES',
       subCategory: ['Cast Steel Globe Valves'],
-      productCode: 'ADAPTIX-VS-FSGV',
+      // productCode: 'ADAPTIX-VS-FSGV',
       mainImage: 'assets/product/VALVES/Cast_Steel_Globe_Valves.png',
       otherImages: [
       ],
@@ -248,7 +248,7 @@ export class ProductService {
       name: 'Cast Steel Check Valves',
       categoryName: 'VALVES',
       subCategory: ['Cast Steel Check Valves'],
-      productCode: 'ADAPTIX-VS-FSGV',
+      // productCode: 'ADAPTIX-VS-FSGV',
       mainImage: 'assets/product/VALVES/Cast_Steel_Check_Valves.png',
       otherImages: [
       ],
