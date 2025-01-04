@@ -11,6 +11,8 @@ import { IndustriesComponent } from './components/industries/industries.componen
 import { ProductsComponent } from './components/products/products.component';
 import { ProductService } from './services/product.service';
 import { ScrollService } from './services/scroll.service';
+import { QualityComponent } from './components/quality/quality.component';
+import { QualityIconComponent } from './shared/icons/quality-icons.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ScrollService } from './services/scroll.service';
     FooterComponent,
     AboutUsComponent,
     IndustriesComponent,
-    ProductsComponent
+    ProductsComponent,
+    QualityComponent,
+    QualityIconComponent
   ],
   imports: [
     BrowserModule,

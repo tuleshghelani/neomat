@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { IndustriesComponent } from './components/industries/industries.component';
 import { ProductsComponent } from './components/products/products.component';
+import { QualityComponent } from './components/quality/quality.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },  // Default route
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'catalogue', 
     loadChildren: () => import('./components/catelogue/catelogue.module').then(m => m.CatelogueModule) 
   },
+  { path: 'quality', component: QualityComponent }, 
   // { path: '**', redirectTo: '' }  // Wildcard route for 404
 ];
 

@@ -1,0 +1,42 @@
+<div class="quality-banner">
+  <div class="banner-overlay">
+    <div class="banner-content" data-aos="fade-up" data-aos-duration="1000">
+      <h1>Quality Assurance</h1>
+      <p>Commitment to Excellence Through Advanced Testing</p>
+    </div>
+  </div>
+</div>
+
+<div class="quality-content">
+  <div class="intro-section" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Our Quality Process</h2>
+    <p>At Neomat, we maintain the highest standards through comprehensive testing and verification.</p>
+  </div>
+
+  <div class="process-container" #processContainer [class.desktop]="isDesktop">
+    <div class="process-timeline">
+      <div class="timeline-line"></div>
+      
+      <div *ngFor="let process of qualityProcesses; let i = index" 
+           class="process-item"
+           [class.right]="i % 2 === 0"
+           [class.left]="i % 2 !== 0">
+        
+        <div class="process-icon neumorphic">
+          <app-quality-icon [iconName]="process.icon"></app-quality-icon>
+        </div>
+
+        <div class="process-content neumorphic">
+          <h3>{{process.name}}</h3>
+          <p>{{process.description}}</p>
+        </div>
+
+        <!-- <div class="connection-line" 
+             [class.right]="i % 2 === 0" 
+             [class.left]="i % 2 !== 0"
+             [style.top.px]="-90">
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
