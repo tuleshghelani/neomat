@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Neomat';
+  title = 'Adaptix Valves and Fittings LTD';
 
   constructor(private scrollService: ScrollService) {}
 
