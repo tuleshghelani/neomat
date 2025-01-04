@@ -281,3 +281,115 @@
     display: none;
   }
 }
+
+.quality-grid-section {
+  padding: 3rem 2rem;
+  background: var(--white-color);
+  
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
+}
+
+.quality-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  
+  &:last-child {
+    justify-content: center;
+  }
+
+  @media (max-width: 1400px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.quality-card {
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  background: var(--white-color);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1),
+              -8px -8px 16px rgba(255, 255, 255, 0.8);
+
+  .quality-icon {
+    height: 200px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .quality-content {
+    flex: 1;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    
+    h3 {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+    }
+    
+    p {
+      color: var(--text-color);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      overflow-y: auto;
+      max-height: 120px;
+      padding-right: 0.5rem;
+      
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background: var(--primary-color);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.15),
+                -12px -12px 24px rgba(255, 255, 255, 0.9);
+    
+    .quality-icon img {
+      transform: scale(1.1);
+    }
+  }
+}

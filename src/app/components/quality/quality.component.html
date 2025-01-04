@@ -13,29 +13,21 @@
     <p>At Adaptix Valves and Fittings LTD, we maintain the highest standards through comprehensive testing and verification.</p>
   </div>
 
-  <div class="process-container" #processContainer [class.desktop]="isDesktop">
-    <div class="process-timeline">
-      <div class="timeline-line"></div>
-      
-      <div *ngFor="let process of qualityProcesses; let i = index" 
-           class="process-item"
-           [class.right]="i % 2 === 0"
-           [class.left]="i % 2 !== 0">
-        
-        <div class="process-icon neumorphic">
-          <img [src]="process.image" [alt]="process.name" loading="lazy">
+  <div class="quality-grid-section neumorphic">
+    <div class="quality-container">
+      <div class="quality-grid">
+        <div class="quality-card neumorphic-card" 
+             *ngFor="let process of qualityProcesses; let i = index"
+             data-aos="fade-up" 
+             [attr.data-aos-delay]="i * 200">
+          <div class="quality-icon">
+            <img [src]="process.image" [alt]="process.name" loading="lazy">
+          </div>
+          <div class="quality-content">
+            <h3>{{process.name}}</h3>
+            <p>{{process.description}}</p>
+          </div>
         </div>
-
-        <div class="process-content neumorphic">
-          <h3>{{process.name}}</h3>
-          <p>{{process.description}}</p>
-        </div>
-
-        <!-- <div class="connection-line" 
-             [class.right]="i % 2 === 0" 
-             [class.left]="i % 2 !== 0"
-             [style.top.px]="-90">
-        </div> -->
       </div>
     </div>
   </div>
