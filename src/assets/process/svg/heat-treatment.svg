@@ -1,0 +1,23 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Heat Treatment Furnace -->
+  <g transform="translate(400, 300)">
+    <!-- Furnace Body -->
+    <rect x="-200" y="-150" width="400" height="300" fill="#e0e0e0" stroke="#17a3de" stroke-width="3"/>
+    
+    <!-- Temperature Gauge -->
+    <circle cx="150" cy="-100" r="30" fill="white" stroke="#17a3de" stroke-width="2"/>
+    <path d="M150 -115 L150 -85" stroke="#ff6b6b" stroke-width="2">
+      <animate attributeName="transform" attributeType="XML" type="rotate" from="0 150 -100" to="45 150 -100" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Heat Waves -->
+    <g>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+      <path d="M-150 0 Q-100 -50 -50 0 T50 0 T150 0" fill="none" stroke="#ff6b6b" stroke-width="3"/>
+      <path d="M-150 40 Q-100 -10 -50 40 T50 40 T150 40" fill="none" stroke="#ff6b6b" stroke-width="3"/>
+    </g>
+  </g>
+</svg> 

@@ -1,0 +1,19 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Trimming Process -->
+  <g transform="translate(400, 300)">
+    <!-- Trimming Tool -->
+    <path d="M-150 -100 L150 -100 L100 100 L-100 100 Z" fill="#17a3de" stroke="#0f7aa6" stroke-width="2"/>
+    
+    <!-- Flash Lines -->
+    <path d="M-80 0 L80 0" stroke="#ff6b6b" stroke-width="4" stroke-dasharray="8 4"/>
+    <path d="M0 -50 L0 50" stroke="#ff6b6b" stroke-width="4" stroke-dasharray="8 4"/>
+    
+    <!-- Cutting Animation -->
+    <rect x="-60" y="-30" width="120" height="60" fill="#e0e0e0">
+      <animate attributeName="width" values="120;100;120" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg> 

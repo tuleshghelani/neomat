@@ -30,7 +30,7 @@ export class ProcessComponent implements OnInit {
     {
       title: 'Metal Pouring',
       description: 'Molten metal, up to 3,000°, is poured into the hollow mold and then cooled.',
-      image: 'assets/process/Casting.jpeg'
+      image: 'assets/process/Metal_Pouring.jpg'
     },
     {
       title: 'Knockout',
@@ -66,6 +66,39 @@ export class ProcessComponent implements OnInit {
     ],
     image: 'assets/process/1.jpeg'
   };
+
+  forgingSteps = [
+    {
+      title: 'Designing & Creating Dies',
+      description: 'Making dies is a procedure that is not necessary for closed-die steel forging parts. Once a new product is placed, our engineer will create dies using the customer`s steel forging layout. Additionally, forging dies are substantially more expensive than casting Molds since they include trimming dies and flattening dies.',
+      image: 'assets/process/svg/designing-dies.svg'
+    },
+    {
+      title: 'Cutting and Heating the Billet',
+      description: 'For continuous manufacturing, experts maintain regular steel material specifications with the forging company. Following the completion of the dies, steel billets will be removed from the material warehouse, chopped to the desired length, and heated in a medium-frequency furnace before forging.',
+      image: 'assets/process/svg/cutting-heating.svg'
+    },
+    {
+      title: 'The Actual Forging Process',
+      description: 'This process is done through the so-called “flash.” Heat-treated steel bars that have been placed under lower and upper dies and then pressed into the desired shape after being heated from billets.',
+      image: 'assets/process/svg/forging-process.svg'
+    },
+    {
+      title: 'Trimming',
+      description: 'Now that forging blanks with flash have been acquired, the flash will be removed by pressing the steel blanks once more while being placed under trimming dies. A complete forging blank is finished in this step.',
+      image: 'assets/process/svg/trimming.svg'
+    },
+    {
+      title: 'Heat Treatment',
+      description: 'After forging, heat treatment will be carried out to enhance the strength and mechanical qualities. Common heat treatment techniques for steel forgings include normalizing, quenching, annealing, tempering & hardening, solution treatment, etc., just like they are for investment castings. Naturally, heat treatment is only used when necessary.',
+      image: 'assets/process/svg/heat-treatment.svg'
+    },
+    {
+      title: 'Shot Blasting and Machining',
+      description: 'Steel forgings will be shot blasted to eliminate the scale and get a superior surface finish. After shot blasting, products will appear considerably smoother and more transparent.',
+      image: 'assets/process/svg/shot-blasting.svg'
+    }
+  ];
 
   ngOnInit() {
   }

@@ -33,22 +33,36 @@
       </div>
     </section>
   <!-- Forging Process Section -->
-  <!-- <section class="forging-section">
+  <section class="forging-section">
     <div class="section-header" data-aos="fade-up">
-      <h2>{{forgingProcess.title}}</h2>
-      <p>{{forgingProcess.description}}</p>
+      <h2>Forging Process</h2>
+      <p>Forging is a manufacturing process that involves shaping metal into a desired shape using compressive forces like hammering, pressing, or rolling. 
+        <br>The process can be performed at different temperatures, including cold, warm, or hot. Forging is used to create parts that are stronger and
+        <br> more durable than other metalworking processes, and are often used in critical applications</p>
     </div>
 
-    <div class="forging-content" data-aos="fade-up" data-aos-delay="200">
-      <div class="process-image neumorphic">
-        <img [src]="forgingProcess.image" alt="Forging Process">
-      </div>
-      <div class="process-steps">
-        <div class="step neumorphic" *ngFor="let step of forgingProcess.steps">
-          <span class="step-marker"></span>
-          <p>{{step}}</p>
+    <div class="casting-grid">
+      <div class="process-card neumorphic" 
+           *ngFor="let step of forgingSteps"
+           data-aos="fade-up"
+           data-aos-delay="200">
+        <div class="card-image">
+          <img [src]="step.image" [alt]="step.title" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3>{{step.title}}</h3>
+          <p>{{step.description}}</p>
         </div>
       </div>
     </div>
-  </section> -->
+    
+    <div class="section-header" data-aos="fade-up">
+      <p>Although forging blanks have tighter tolerances than casting ones, occasionally, 
+      <br>this is still 
+      insufficient for application. To solve this concern, machining is required. 
+      <br>The NC lathe and CNC are the primary machining tools used. 
+      <br>While CNC is used for precise, expensive machining, NC lathes are utilized for simple machining.  
+      </p>
+    </div>
+  </section>
 </div>
