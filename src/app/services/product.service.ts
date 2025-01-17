@@ -84,24 +84,17 @@ export class ProductService {
       ]
     },
     {
-      id: 'vco-fittings',
-      name: 'VCO FITTINGS',
+      id: 'pipe-fittings',
+      name: 'PIPE FITTINGS',
       isExpanded: true,
       subProducts: [
-        'Male Connector', 'Female Connector', 'Gland', 'Male Elbow',
-        'Union Elbow', 'Union Tee', 'Union Cross', 'Male Run Tee',
-        'Male Branch Tee', '"O" Ring Seat Connector', '"O" Ring Seat Male Connector',
-        'Union', 'Tube Socket'
-      ]
-    },
-    {
-      id: 'vcr-fittings',
-      name: 'VCR FITTINGS',
-      isExpanded: false,
-      subProducts: [
-        'Nut', 'Gasket', 'Gland', 'Union Tee', 'Union Cross',
-        'Male Connector', 'Female Connector', 'Union Elbow',
-        'Male Elbow', 'Bulkhead Union', 'Equal Union'
+        'Male Tee', 'Female Tee', 'Male Run Tee', 'Female Run Tee',
+        'Male Branch Tee', 'Female Branch Tee', '90 Male Elbow', '90 Female Elbow',
+        'Female Cross(Hex.Th)', 'Female Cross(Round Th)', 'Pipe Plug', 'Pipe Plug',
+        'Full Coupling', 'Half Coupling', 'Reducing Coupling', 'Reducing Bushing',
+        'Pipe Union 3PC (Hex.Th)', 'Pipe Union 3PC (Round.Sh)', 'Male Adaptor', 'Female Adaptor',
+        'Reducer Swage Nipple (Round - BW)', 'Reducer Swage Nipple (Round - TH)', 'Breather',
+        'Hix Nipple', 'Pipe Nipple (PL x TH)', 'Pipe Nipple (PL x PL)', 'Pipe Nipple (TH x TH)',
       ]
     },
     {
@@ -1053,388 +1046,480 @@ export class ProductService {
   },
   
   {
-    name: 'Male Connector',
-    categoryName: 'VCO FITTINGS',
-    subCategory: ['Male Connector'],
-    productCode: 'ADAPTIX-VCO-MC',
-    mainImage: 'assets/product/vco/MALE CONNECTOR.png',
+    name: 'Male Tee',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Male Tee'],
+    productCode: 'ADAPTIX-PIPE-MT',
+    mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
-      'src/assets/product/vco/MALE CONNECTOR.png'
+      'src/assets/product/PIPE_FITTINGS/MALE TEE.png'
     ],
-    description: 'Premium VCO male connector featuring precision-machined threads and sealing surface, designed for high-purity fluid handling systems. Provides reliable metal-to-metal seal with excellent resistance to vibration and thermal cycling.',
+    description: 'Premium PIPE FITTINGS male connector featuring precision-machined threads and sealing surface, designed for high-purity fluid handling systems. Provides reliable metal-to-metal seal with excellent resistance to vibration and thermal cycling.',
     specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2"',
-        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-        'Pressure Rating':  'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
     }
   },
   {
-      name: 'Female Connector',
-      categoryName: 'VCO FITTINGS',
-      subCategory: ['Female Connector'],
-      productCode: 'ADAPTIX-VCO-FC',
-      mainImage: 'assets/product/vco/FEMALE CONNECTOR.png',
+      name: 'Female Tee',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['Female Tee'],
+      productCode: 'ADAPTIX-PIPE-FT',
+      mainImage: 'assets/product/PIPE_FITTINGS/FEMALE TEE.png',
       otherImages: [
       ],
-      description: 'High-precision VCO female connector with expertly machined gland pocket, engineered for leak-tight connections in critical fluid systems. Features smooth bore design for optimal flow characteristics.',
+      description: 'High-precision PIPE FITTINGS female connector with expertly machined gland pocket, engineered for leak-tight connections in critical fluid systems. Features smooth bore design for optimal flow characteristics.',
       specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2"',
-        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-        'Pressure Rating':  'Upto 10000 psi'
-      }
-  },
-  {
-      name: 'Gland',
-      categoryName: 'VCO FITTINGS',
-      subCategory: ['Gland'],
-      productCode: 'ADAPTIX-VCO-G',
-      mainImage: 'assets/product/vco/GLAND.png',
-      otherImages: [
-      ],
-      description: 'Precision-engineered VCO gland designed for secure mechanical grip and reliable sealing. Features optimized geometry for proper compression and seal engagement, ensuring leak-free performance in demanding applications.',
-      specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-        'End Connections': 'Tube OD',
-        'Pressure Rating':  'Upto 10000 psi'
-      }
-  },
-  {
-    name: 'Male Elbow',
-    categoryName: 'VCO FITTINGS',
-    subCategory: ['Male Elbow'],
-    productCode: 'ADAPTIX-VCO-ME',
-    mainImage: 'assets/product/vco/MALE ELBOW.png',
-    otherImages: [
-    ],
-    description: 'Precision-crafted 90-degree male elbow fitting with VCO end connection, designed for space-efficient directional changes in high-purity fluid systems. Features smooth internal bore for optimal flow characteristics.',
-      specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-        'End Connections': 'Tube OD',
-        'Pressure Rating':  'Upto 10000 psi'
-      }
-  },
-  {
-      name: 'Union Elbow',
-      categoryName: 'VCO FITTINGS',
-      subCategory: ['Union Elbow'],
-      productCode: 'ADAPTIX-VCO-UE',
-      mainImage: 'assets/product/vco/UNION ELBOW.png',
-      otherImages: [
-      ],  
-      description: 'High-performance VCO union elbow providing 90-degree flow direction change with the convenience of union-style assembly. Ideal for systems requiring frequent maintenance or reconfiguration.',
-      specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-        'End Connections': 'Tube OD',
-        'Pressure Rating':  'Upto 10000 psi'
-      }
-  },
-  {
-      name: 'Union Tee',
-      categoryName: 'VCO FITTINGS',
-      subCategory: ['Union Tee'],
-      productCode: 'ADAPTIX-VCO-UT',
-      mainImage: 'assets/product/vco/UNION TEE.png',
-      otherImages: [
-      ],
-      description: 'High-performance VCO union tee fitting designed for three-way flow distribution in high-purity systems. Features precision-machined body with uniform flow paths and metal-to-metal sealing surfaces for consistent performance. Ideal for applications requiring frequent system modifications or maintenance.',
-      specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2"',
-        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-        'Pressure Rating':  'Upto 10000 psi'
-      }
-  },
-  {
-      name: 'Union Cross',
-      categoryName: 'VCO FITTINGS',
-      subCategory: ['Union Cross'],   
-      productCode: 'ADAPTIX-VCO-UC',
-      mainImage: 'assets/product/vco/UNION CROSS.png',
-      otherImages: [
-      ],
-      description: 'Versatile VCO union cross fitting providing four-way flow distribution with balanced flow characteristics. Engineered for multi-directional fluid handling in complex systems. Features precision-machined body and standardized end connections for maximum system flexibility.',
-      specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-        'End Connections': 'Tube OD',
-        'Pressure Rating':  'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
       }
   },
   {
       name: 'Male Run Tee',
-      categoryName: 'VCO FITTINGS',
+      categoryName: 'PIPE FITTINGS',
       subCategory: ['Male Run Tee'],
-      productCode: 'ADAPTIX-VCO-MRT',
-      mainImage: 'assets/product/vco/BULKHEAD MALE RUN TEE.png',
+      productCode: 'ADAPTIX-PIPE-MRT',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
       otherImages: [
-      ],  
-      description: 'Specialized VCO male run tee featuring straight-through flow path with branch connection. Designed for applications requiring minimal flow restriction in the main run with a secondary branch connection. Precision-machined for optimal flow characteristics and reliable sealing.',
+      ],
+      description: 'Precision-engineered PIPE FITTINGS gland designed for secure mechanical grip and reliable sealing. Features optimized geometry for proper compression and seal engagement, ensuring leak-free performance in demanding applications.',
       specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-        'End Connections': 'Tube OD',
-        'Pressure Rating':  'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
+      }
+  },
+  {
+    name: 'Female Run Tee',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Female Run Tee'],
+    productCode: 'ADAPTIX-PIPE-FRT',
+    mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
+    otherImages: [
+    ],
+    description: 'Precision-crafted 90-degree male elbow fitting with PIPE FITTINGS end connection, designed for space-efficient directional changes in high-purity fluid systems. Features smooth internal bore for optimal flow characteristics.',
+      specifications: {
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
       }
   },
   {
       name: 'Male Branch Tee',
-      categoryName: 'VCO FITTINGS',
+      categoryName: 'PIPE FITTINGS',
       subCategory: ['Male Branch Tee'],
-      productCode: 'ADAPTIX-VCO-MBT',
-      mainImage: 'assets/product/vco/BULKHEAD MALE BRANCH TEE.png',
+      productCode: 'ADAPTIX-PIPE-MBT',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
       otherImages: [
-      ],
-      description: 'Advanced VCO male branch tee designed with optimized flow geometry for branch-off applications. Features male thread branch connection with female run connections, ideal for instrument connections and sampling points. Ensures minimal pressure drop and uniform flow distribution.',
+      ],  
+      description: 'High-performance PIPE FITTINGS union elbow providing 90-degree flow direction change with the convenience of union-style assembly. Ideal for systems requiring frequent maintenance or reconfiguration.',
       specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2"',
-        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-        'Pressure Rating': 'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
       }
   },
   {
-      name: '"O" Ring Seat Connector',
-      categoryName: 'VCO FITTINGS',
-      subCategory: ['"O" Ring Seat Connector'],
-      productCode: 'ADAPTIX-VCO-OC',
-      mainImage: 'assets/product/vco/O RING SEAT CONNNECTOR.png',
+      name: 'Female Branch Tee',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['Female Branch Tee'],
+      productCode: 'ADAPTIX-PIPE-FT',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
       otherImages: [
       ],
-      description: 'Precision-engineered VCO O-ring seat connector providing reliable sealing in high-purity applications. Features specially designed O-ring groove geometry for optimal compression and seal integrity. Ideal for applications requiring frequent assembly/disassembly with maintained sealing performance.',
+      description: 'High-performance PIPE FITTINGS union tee fitting designed for three-way flow distribution in high-purity systems. Features precision-machined body with uniform flow paths and metal-to-metal sealing surfaces for consistent performance. Ideal for applications requiring frequent system modifications or maintenance.',
       specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2"',
-        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-        'Pressure Rating': 'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
       }
   },
   {
-      name: '"O" Ring Seat Male Connector',
-      categoryName: 'VCO FITTINGS',
-      subCategory: ['"O" Ring Seat Male Connector'],
-      productCode: 'ADAPTIX-VCO-ORME',
-      mainImage: 'assets/product/vco/O RING SEAT MALE ELBOW.png',
+      name: '90 Male Elbow',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['90 Male Elbow'],   
+      productCode: 'ADAPTIX-PIPE-ME',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
       otherImages: [
       ],
-      description: 'High-performance VCO O-ring seat male connector combining thread sealing with O-ring technology. Features precision-machined male thread end and optimized O-ring groove design. Ensures reliable sealing in dynamic temperature and pressure conditions.',
+      description: 'Versatile PIPE FITTINGS union cross fitting providing four-way flow distribution with balanced flow characteristics. Engineered for multi-directional fluid handling in complex systems. Features precision-machined body and standardized end connections for maximum system flexibility.',
       specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-        'End Connections': 'Tube OD',
-        'Pressure Rating': 'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
       }
   },
   {
-      name: 'Union',
-      categoryName: 'VCO FITTINGS',
-      subCategory: ['Union'],
-      productCode: 'ADAPTIX-VCO-U',
-      mainImage: 'assets/product/vco/UNION CROSS.png',
+      name: '90 Female Elbow',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['90 Female Elbow'],
+      productCode: 'ADAPTIX-PIPE-FE',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
       otherImages: [
-      ],
-      description: 'Premium VCO union connector designed for joining tube sections with maximum reliability. Features symmetrical design with precision-machined sealing surfaces and robust body construction. Ideal for applications requiring frequent maintenance access or system modifications.',
+      ],  
+      description: 'Specialized PIPE FITTINGS male run tee featuring straight-through flow path with branch connection. Designed for applications requiring minimal flow restriction in the main run with a secondary branch connection. Precision-machined for optimal flow characteristics and reliable sealing.',
       specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-        'End Connections': 'Tube OD',
-        'Pressure Rating': 'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
       }
   },
   {
-      name: 'Tube Socket',
-      categoryName: 'VCO FITTINGS',
-      subCategory: ['Tube Socket'],
-      productCode: 'ADAPTIX-VCO-TS',
-      mainImage: 'assets/product/vco/TUBE SOCKET.png',
+      name: '90 Street Elbow',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['90 Street Elbow'],
+      productCode: 'ADAPTIX-PIPE-SE',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
       otherImages: [
       ],
-      description: 'Precision-engineered VCO tube socket providing secure tube termination and connection point. Features optimized bore design for smooth flow transition and reliable tube grip. Manufactured with exact tolerances for consistent assembly and sealing performance.',
+      description: 'Advanced PIPE FITTINGS male branch tee designed with optimized flow geometry for branch-off applications. Features male thread branch connection with female run connections, ideal for instrument connections and sampling points. Ensures minimal pressure drop and uniform flow distribution.',
       specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2"',
-        'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-        'Pressure Rating': 'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
       }
   },
   {
-      name: 'Nut',
-      categoryName: 'VCR FITTINGS',
-      subCategory: ['Nut'],
-      productCode: 'ADAPTIX-VCR-N',
-      mainImage: 'assets/product/vcr/NUT.png',
+      name: 'Female Cross (Hex.Th)',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['Female Cross (Hex.Th)'],
+      productCode: 'ADAPTIX-PIPE-FC',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
       otherImages: [
       ],
-      description: 'Precision-engineered VCR nut designed for secure and leak-tight connections in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+      description: 'Precision-engineered PIPE FITTINGS O-ring seat connector providing reliable sealing in high-purity applications. Features specially designed O-ring groove geometry for optimal compression and seal integrity. Ideal for applications requiring frequent assembly/disassembly with maintained sealing performance.',
       specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2"',
-        'End Connections': 'Tube OD',
-        'Pressure Rating': 'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
       }
   },
   {
-      name: 'Gasket',
-      categoryName: 'VCR FITTINGS',
-      subCategory: ['Gasket'],
-      productCode: 'ADAPTIX-VCR-GK',
-      mainImage: 'assets/product/vcr/GASKET.png',
+      name: 'Female Cross (Round Th)',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['Female Cross (Round Th)'],
+      productCode: 'ADAPTIX-PIPE-FCT',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
       otherImages: [
       ],
-      description: 'Precision-engineered VCR nut designed for secure and leak-tight connections in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+      description: 'High-performance PIPE FITTINGS O-ring seat male connector combining thread sealing with O-ring technology. Features precision-machined male thread end and optimized O-ring groove design. Ensures reliable sealing in dynamic temperature and pressure conditions.',
       specifications: {
-        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-        'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-        'End Connections': 'Tube OD',
-        'Pressure Rating': 'Upto 10000 psi'
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
       }
   },
   {
-    name: 'Gland',
-    categoryName: 'VCR FITTINGS',
-    subCategory: ['Gland'],
-    productCode: 'ADAPTIX-VCR-GL',
-    mainImage: 'assets/product/vcr/GLAND.png',
+      name: 'Pipe Plug',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['Pipe Plug'],
+      productCode: 'ADAPTIX-PIPE-PL',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
+      otherImages: [
+      ],
+      description: 'Premium PIPE FITTINGS union connector designed for joining tube sections with maximum reliability. Features symmetrical design with precision-machined sealing surfaces and robust body construction. Ideal for applications requiring frequent maintenance access or system modifications.',
+      specifications: {
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
+      }
+  },
+  {
+      name: 'Pipe Cap',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['Pipe Cap'],
+      productCode: 'ADAPTIX-PIPE-PC',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
+      otherImages: [
+      ],
+      description: 'Precision-engineered PIPE FITTINGS tube socket providing secure tube termination and connection point. Features optimized bore design for smooth flow transition and reliable tube grip. Manufactured with exact tolerances for consistent assembly and sealing performance.',
+      specifications: {
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
+      }
+  },
+  {
+      name: 'Full Coupling',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['Full Coupling'],
+      productCode: 'ADAPTIX-PIPE-FC',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
+      otherImages: [
+      ],
+      description: 'Precision-engineered PIPE FITTINGS nut designed for secure and leak-tight connections in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+      specifications: {
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
+      }
+  },
+  {
+      name: 'Half Coupling',
+      categoryName: 'PIPE FITTINGS',
+      subCategory: ['Half Coupling'],
+      productCode: 'ADAPTIX-PIPE-HC',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
+      otherImages: [
+      ],
+      description: 'Precision-engineered PIPE FITTINGS nut designed for secure and leak-tight connections in high-pressure systems. Features optimized thread engagement and sealing surfaces for consistent performance across a wide range of applications.',
+      specifications: {
+        'Model No,': '123456789',
+        'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+        'End Connection Type': 'THREADED / WELDED',
+        'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+        'Pressure':  'Upto 6000 psi'
+      }
+  },
+  {
+    name: 'Reducing Coupling',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Reducing Coupling'],
+    productCode: 'ADAPTIX-PIPE-RC',
+    mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
     ],
-    description: 'High-precision VCR gland engineered for critical fluid handling applications. Features proprietary surface finishing technology and optimized geometry for maximum sealing reliability. Designed with advanced anti-rotation features and precise dimensional control for consistent performance in ultra-high purity systems.',
+    description: 'High-precision PIPE FITTINGS gland engineered for critical fluid handling applications. Features proprietary surface finishing technology and optimized geometry for maximum sealing reliability. Designed with advanced anti-rotation features and precise dimensional control for consistent performance in ultra-high purity systems.',
     specifications: {
-      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-      'Size': '1/8" to 2"',
-      'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-      'Pressure Rating': 'Upto 10000 psi'
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
     }
   },
   {
-    name: 'Union Tee',
-    categoryName: 'VCR FITTINGS',
-    subCategory: ['Union Tee'],
-      productCode: 'ADAPTIX-VCR-UT',
-      mainImage: 'assets/product/vcr/UNION TEE.png',
+    name: 'Reducing Bushings',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Reducing Bushings'],
+      productCode: 'ADAPTIX-PIPE-RB',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
     ],
-    description: 'Premium VCR union tee featuring advanced flow optimization technology. Engineered with computational fluid dynamics-designed internal geometry for minimal pressure drop and uniform flow distribution. Ideal for high-purity gas distribution systems requiring precise flow control and contamination-free operation.',
+    description: 'Premium PIPE FITTINGS union tee featuring advanced flow optimization technology. Engineered with computational fluid dynamics-designed internal geometry for minimal pressure drop and uniform flow distribution. Ideal for high-purity gas distribution systems requiring precise flow control and contamination-free operation.',
     specifications: {
-      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'Tube OD',
-      'Pressure Rating': 'Upto 10000 psi'
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
     }
   },
   {
-    name: 'Union Cross',
-    categoryName: 'VCR FITTINGS',
-    subCategory: ['Union Cross'],
-      productCode: 'ADAPTIX-VCR-UC',
-      mainImage: 'assets/product/vcr/UNION CROSS.png',
+    name: 'Pipe Union 3PC (Hex.Th)',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Pipe Union 3PC (Hex.Th)'],
+      productCode: 'ADAPTIX-PIPE-PU3PC',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
     ],
-    description: 'Advanced VCR union cross incorporating symmetrical flow path design for multi-directional fluid distribution. Features precision-machined internal passages with optimized flow geometry for balanced distribution and minimal turbulence. Engineered for high-purity semiconductor and analytical instrumentation applications.',
+    description: 'Advanced PIPE FITTINGS union cross incorporating symmetrical flow path design for multi-directional fluid distribution. Features precision-machined internal passages with optimized flow geometry for balanced distribution and minimal turbulence. Engineered for high-purity semiconductor and analytical instrumentation applications.',
     specifications: {
-      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'Tube OD',
-      'Pressure Rating': 'Upto 10000 psi'
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
     }
   },
   {
-    name: 'Male Connector',
-    categoryName: 'VCR FITTINGS',
-    subCategory: ['Male Connector'],
-      productCode: 'ADAPTIX-VCR-MC',
-      mainImage: 'assets/product/vcr/MALE CONNECTOR.png',
+    name: 'Pipe Union 3PC (Round.Sh)',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Pipe Union 3PC (Round.Sh)'],
+      productCode: 'ADAPTIX-PIPE-PU3PC',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
     ],
-    description: 'Premium grade VCR male connector engineered for ultra-high purity applications. Features our proprietary surface finishing technology ensuring class-leading seal integrity and minimal particle generation. The innovative gland design provides exceptional radial alignment and prevents galling during repeated assembly cycles. Ideal for semiconductor, pharmaceutical, and critical gas delivery systems.',
+    description: 'Premium grade PIPE FITTINGS male connector engineered for ultra-high purity applications. Features our proprietary surface finishing technology ensuring class-leading seal integrity and minimal particle generation. The innovative gland design provides exceptional radial alignment and prevents galling during repeated assembly cycles. Ideal for semiconductor, pharmaceutical, and critical gas delivery systems.',
     specifications: {
-      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-      'Size': '1/8" to 2"',
-      'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-      'Pressure Rating': 'Upto 10000 psi'
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
     }
   },  
   {
-    name: 'Female Connector',
-    categoryName: 'VCR FITTINGS',
-    subCategory: ['Female Connector'],
-      productCode: 'ADAPTIX-VCR-FC',
-      mainImage: 'assets/product/vcr/FEMALE CONNECTOR.png',
+    name: 'Male Adaptor',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Male Adaptor'],
+      productCode: 'ADAPTIX-PIPE-MA',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
     ],
-    description: 'State-of-the-art VCR female connector featuring precision-machined sealing surfaces and our exclusive geometrical optimization for superior connector engagement. Enhanced thread profile ensures consistent sealing force distribution and prevents cold welding. Ideal for ultra-high purity gas systems, analytical instrumentation, and critical process applications.',
+    description: 'State-of-the-art PIPE FITTINGS female connector featuring precision-machined sealing surfaces and our exclusive geometrical optimization for superior connector engagement. Enhanced thread profile ensures consistent sealing force distribution and prevents cold welding. Ideal for ultra-high purity gas systems, analytical instrumentation, and critical process applications.',
     specifications: {
-      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-      'Size': '1/8" to 2"',
-      'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-      'Pressure Rating': 'Upto 10000 psi'
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
     }
   },
   {
-    name: 'Union Elbow',
-    categoryName: 'VCR FITTINGS',
-    subCategory: ['Union Elbow'],
-      productCode: 'ADAPTIX-VCR-UE',
-      mainImage: 'assets/product/vcr/UNION ELBOW.png',
+    name: 'Female Adaptor',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Female Adaptor'],
+      productCode: 'ADAPTIX-PIPE-FA',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
     ],
-    description: 'Advanced 90° VCR union elbow incorporating our innovative flow-optimized geometry for minimal pressure drop and turbulence. Precision-machined from high-purity bar stock with controlled sulfur content for enhanced weldability. Features our proprietary internal polishing process ensuring exceptional surface smoothness and corrosion resistance.',
+    description: 'Advanced 90° PIPE FITTINGS union elbow incorporating our innovative flow-optimized geometry for minimal pressure drop and turbulence. Precision-machined from high-purity bar stock with controlled sulfur content for enhanced weldability. Features our proprietary internal polishing process ensuring exceptional surface smoothness and corrosion resistance.',
     specifications: {
-      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-      'Size': '1/8" to 2"',
-      'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-      'Pressure Rating': 'Upto 10000 psi'
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
     }
   },
   {
-    name: 'Male Elbow',
-    categoryName: 'VCR FITTINGS',
-    subCategory: ['Male Elbow'],
-      productCode: 'ADAPTIX-VCR-ME',
-      mainImage: 'assets/product/vcr/MALE ELBOW.png',
+    name: 'Reducer Swage Nipple (Round - BW)',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Reducer Swage Nipple (Round - BW)'],
+      productCode: 'ADAPTIX-PIPE-RSN',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
     ],
-    description: 'High-performance VCR male elbow featuring our patented flow-optimization technology. Engineered with computational fluid dynamics analysis to minimize dead space and ensure uniform flow distribution. The precision-machined sealing surface incorporates our advanced geometry for enhanced gasket retention and leak-tight connections.',
+    description: 'High-performance PIPE FITTINGS male elbow featuring our patented flow-optimization technology. Engineered with computational fluid dynamics analysis to minimize dead space and ensure uniform flow distribution. The precision-machined sealing surface incorporates our advanced geometry for enhanced gasket retention and leak-tight connections.',
     specifications: {
-      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-      'Size': '1/8" to 2"',
-      'End Connections': 'NPT / BSP / BSPT / UNF / METRIC / BW / SW',
-      'Pressure Rating': 'Upto 10000 psi'
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
     }
   },
   {
-    name: 'Bulkhead Union',
-    categoryName: 'VCR FITTINGS',
-    subCategory: ['Bulkhead Union'],
-      productCode: 'ADAPTIX-VCR-BU',
-      mainImage: 'assets/product/vcr/BULKHEAD UNION.png',
+    name: 'Reducer Swage Nipple (Round - TH)',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Reducer Swage Nipple (Round - TH)'],
+      productCode: 'ADAPTIX-PIPE-RSN',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
     ],
     description: 'Premium bulkhead union featuring our innovative panel-mount design for superior stability and alignment. Engineered with dual-sided sealing technology ensuring leak-tight connections on both faces. Enhanced thread profile and proprietary surface treatment provide exceptional resistance to vibration and thermal cycling.',
     specifications: {
-      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'Tube OD',
-      'Pressure Rating': 'Upto 10000 psi'
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
     }
   },
   {
-    name: 'Equal Union',
-    categoryName: 'VCR FITTINGS',
-    subCategory: ['Equal Union'],
-      productCode: 'ADAPTIX-VCR-EU',
-      mainImage: 'assets/product/vcr/EQUAL UNION.png',
+    name: 'Breather',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Breather'],
+      productCode: 'ADAPTIX-PIPE-B',
+      mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
     otherImages: [
     ],
-    description: 'Ultra-high purity VCR equal union featuring our symmetrical flow path design for optimal fluid dynamics. Incorporates dual-sided precision-machined sealing surfaces with our proprietary surface enhancement technology. Engineering-optimized hex flats provide superior wrench engagement and torque transfer during assembly.',
+    description: 'Ultra-high purity PIPE FITTINGS equal union featuring our symmetrical flow path design for optimal fluid dynamics. Incorporates dual-sided precision-machined sealing surfaces with our proprietary surface enhancement technology. Engineering-optimized hex flats provide superior wrench engagement and torque transfer during assembly.',
     specifications: {
-      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL / HASTELLOY / INCONEL/ TITANIUM',
-      'Size': '1/8" to 2" OD & 3mm to 50mm OD (Suitable to Tube Conn.)',
-      'End Connections': 'Tube OD',
-      'Pressure Rating': 'Upto 10000 psi'
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
+    }
+  },
+  {
+    name: 'Hix Nipple',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Hix Nipple'],
+    productCode: 'ADAPTIX-PIPE-HN',
+    mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
+    otherImages: [
+    ],
+    description: 'Premium male connector fitting designed for high-pressure fluid systems. Features precision-machined threads and optimized sealing geometry for reliable connections. Engineered for maximum flow efficiency and leak-tight performance.',
+    specifications: {
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
+    }
+  },
+  {
+    name: 'Pipe Nipple (PL x TH)',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Pipe Nipple (PL x TH)'],
+    productCode: 'ADAPTIX-PIPE-PNPLTH',
+    mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
+    otherImages: [
+    ],
+    description: 'Premium male connector fitting designed for high-pressure fluid systems. Features precision-machined threads and optimized sealing geometry for reliable connections. Engineered for maximum flow efficiency and leak-tight performance.',
+    specifications: {
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
+    }
+  },
+  {
+    name: 'Pipe Nipple (PL x PL)',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Pipe Nipple (PL x PL)'],
+    productCode: 'ADAPTIX-PIPE-PNPLPL',
+    mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
+    otherImages: [
+    ],
+    description: 'Premium male connector fitting designed for high-pressure fluid systems. Features precision-machined threads and optimized sealing geometry for reliable connections. Engineered for maximum flow efficiency and leak-tight performance.',
+    specifications: {
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
+    }
+  },
+  {
+    name: 'Pipe Nipple (TH x TH)',
+    categoryName: 'PIPE FITTINGS',
+    subCategory: ['Pipe Nipple (TH x TH)'],
+    productCode: 'ADAPTIX-PIPE-PNTHTH',
+    mainImage: 'assets/product/PIPE_FITTINGS/MALE TEE.png',
+    otherImages: [
+    ],
+    description: 'Premium male connector fitting designed for high-pressure fluid systems. Features precision-machined threads and optimized sealing geometry for reliable connections. Engineered for maximum flow efficiency and leak-tight performance.',
+    specifications: {
+      'Model No,': '123456789',
+      'M.O.C': 'CS / AS / SS / DSS / SDSS / SASS / MONEL /HASTELLOY / INCONEL / TITANIUM',
+      'End Connection Type': 'THREADED / WELDED',
+      'End Connection Size': 'NPT / BSPP / BSPT / METRIC / UNF / SW / BW',
+      'Pressure':  'Upto 6000 psi'
     }
   },
   {

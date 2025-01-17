@@ -141,17 +141,10 @@ export class CatelogueComponent {
     },
     {
       id: 5,
-      title: 'VCO Fittings',
+      title: 'PIPE FITTINGS',
       description: 'Discover our exclusive range of premium materials',
       image: 'assets/catelogue/VCO FETTING.jpg',
       category: 'Premium'
-    },
-    {
-      id: 6,
-      title: 'VCR Fitting',
-      description: 'Contemporary solutions for modern spaces',
-      image: 'assets/catelogue/VCR FETTING.jpg',
-      category: 'Modern'
     },
     {
       id: 7,

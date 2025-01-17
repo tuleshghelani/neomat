@@ -98,39 +98,16 @@ export class HeaderComponent implements OnInit {
       ]
     },
     {
-      name: 'VCO FITTINGS',
+      name: 'PIPE FITTINGS',
       isActive: false,
       subItems: [
-        'Male Connector',
-        'Female Connector',
-        'Gland',
-        'Male Elbow',
-        'Union Elbow',
-        'Union Tee',
-        'Union Cross',
-        'Male Run Tee',
-        'Male Branch Tee',
-        '"O" Ring Seat Connector',
-        '"O" Ring Seat Male Connector',
-        'Union',
-        'Tube Socket'
-      ]
-    },
-    {
-      name: 'VCR FITTINGS',
-      isActive: false,
-      subItems: [
-        'Nut',
-        'Gasket',
-        'Gland',
-        'Union Tee',
-        'Union Cross',
-        'Male Connector',
-        'Female Connector',
-        'Union Elbow',
-        'Male Elbow',
-        'Bulkhead Union',
-        'Equal Union'
+        'Male Tee', 'Female Tee', 'Male Run Tee', 'Female Run Tee',
+        'Male Branch Tee', 'Female Branch Tee', '90 Male Elbow', '90 Female Elbow',
+        'Female Cross(Hex.Th)', 'Female Cross(Round Th)', 'Pipe Plug', 'Pipe Plug',
+        'Full Coupling', 'Half Coupling', 'Reducing Coupling', 'Reducing Bushing',
+        'Pipe Union 3PC (Hex.Th)', 'Pipe Union 3PC (Round.Sh)', 'Male Adaptor', 'Female Adaptor',
+        'Reducer Swage Nipple (Round - BW)', 'Reducer Swage Nipple (Round - TH)', 'Breather',
+        'Hix Nipple', 'Pipe Nipple (PL x TH)', 'Pipe Nipple (PL x PL)', 'Pipe Nipple (TH x TH)'
       ]
     },
     {
