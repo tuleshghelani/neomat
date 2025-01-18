@@ -506,3 +506,126 @@
       transform: translateY(-5px);
     }
   }
+
+  
+  .catalogue-grid-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+    
+    @media (min-width: 1024px) {
+      .last-item:last-child:nth-child(3n + 1) {
+        grid-column: 2;
+      }
+    }
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      
+      .last-item:last-child:nth-child(2n + 1) {
+        grid-column: 1 / -1;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  .catalogue-card-main {
+    width: 100%;
+    background: var(--white-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 
+      8px 8px 16px var(--shadow-dark),
+      -8px -8px 16px var(--shadow-light);
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px var(--shadow-dark);
+    }
+  
+    .relative {
+      position: relative;
+      width: 100%;
+      padding-top: 75%; // 4:3 aspect ratio
+      overflow: hidden;
+  
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.5s ease;
+  
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  
+    .p-6 {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .text-primary-color {
+      color: var(--primary-color);
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--text-color);
+    }
+  
+    p {
+      color: var(--accent-color);
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+      line-height: 1.5;
+    }
+  
+    button {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      width: fit-content;
+      border: none;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: var(--primary-color-light);
+        transform: translateY(-2px);
+      }
+    }
+  }

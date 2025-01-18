@@ -9,6 +9,23 @@
         <h1 class="text-4xl font-bold text-primary mb-4">Our Premium Catalogue</h1>
         <p class="text-lg text-gray-600">Discover Our Extensive Range of High-Quality Industrial Valves and Fittings.</p>
       </div>
+
+      <div class="catalogue-grid-main">
+        <div class="catalogue-card-main" [ngClass]="">
+          <div class="relative pb-[75%] overflow-hidden">
+            <img src="assets/catelogue/NEOMAT BROCHURE FINAL UK MOCKUP.png" 
+                alt="NEOMAT BROCHURE FINAL UK MOCKUP" 
+                loading="lazy"
+                class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mt-2 mb-3">Neomat Brochure</h3>
+            <button class="mt-4 bg-primary-color text-white px-6 py-2 rounded-full hover:bg-primary-color-light transition-colors duration-300">
+              Download Now
+            </button>
+          </div>
+        </div>
+      </div>
   
       <div class="catalogue-grid">
         <ng-container *ngFor="let item of catalogueItems; let i = index">

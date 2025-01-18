@@ -108,14 +108,14 @@ export class CatelogueComponent {
       id: 1,
       title: 'Valves',
       description: 'Cutting-edge materials for future-ready construction',
-      image: 'assets/catelogue/IC.jpg',
+      image: 'assets/catelogue/VALVES FITTING MOCKUP.png',
       category: 'Innovation'
     },
     {
       id: 2,
       title: 'I/C Casting Fittings',
       description: 'Cutting-edge materials for future-ready construction',
-      image: 'assets/catelogue/IC.jpg',
+      image: 'assets/catelogue/I-C CASTING FITTINGS MOCK UP.png',
       category: 'Innovation'
     },
     // {
@@ -129,28 +129,28 @@ export class CatelogueComponent {
       id: 3,
       title: 'Forged Fittings',
       description: 'Eco-friendly options for conscious building',
-      image: 'assets/catelogue/FORGED FITTINGS..jpg',
+      image: 'assets/catelogue/FORGED FITTINGS MOCKUP.png',
       category: 'Sustainable'
     },
     {
       id: 4,
       title: 'Flanges',
       description: 'Expertly curated designer materials',
-      image: 'assets/catelogue/Flanges _Detail Catalog.jpg',
+      image: 'assets/catelogue/FLANGE FITTINGS MOCKUP.png',
       category: 'Designer'
     },
     {
       id: 5,
       title: 'PIPE FITTINGS',
       description: 'Discover our exclusive range of premium materials',
-      image: 'assets/catelogue/VCO FETTING.jpg',
+      image: 'assets/catelogue/PIPE FITTINGS MOCKUP.png',
       category: 'Premium'
     },
     {
       id: 7,
       title: 'Tube Fittings',
       description: 'Timeless elegance for every project',
-      image: 'assets/catelogue/TUBE FETTINGS.jpg',
+      image: 'assets/catelogue/TUBE FITTINGS MOCKUP.png',
       category: 'Classic'
     },
   ];
