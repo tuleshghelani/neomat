@@ -106,14 +106,14 @@ export class CatelogueComponent {
   catalogueItems: CatalogueItem[] = [
     {
       id: 1,
-      title: 'Valves',
+      title: 'VALVES - DIMENSIONAL CATALOGUE',
       description: 'Cutting-edge materials for future-ready construction',
       image: 'assets/catelogue/VALVES FITTING MOCKUP.png',
       category: 'Innovation'
     },
     {
       id: 2,
-      title: 'I/C Casting Fittings',
+      title: 'I/C CASTING FITTINGS - DIMENSIONAL CATALOGUE',
       description: 'Cutting-edge materials for future-ready construction',
       image: 'assets/catelogue/I-C CASTING FITTINGS MOCK UP.png',
       category: 'Innovation'
@@ -127,31 +127,36 @@ export class CatelogueComponent {
     // },
     {
       id: 3,
-      title: 'Forged Fittings',
+      title: 'FORGED FITTINGS - DIMENSIONAL CATALOGUE',
       description: 'Eco-friendly options for conscious building',
       image: 'assets/catelogue/FORGED FITTINGS MOCKUP.png',
       category: 'Sustainable'
     },
     {
       id: 4,
-      title: 'Flanges',
+      title: 'FLANGES - DIMENSIONAL CATALOGUE',
       description: 'Expertly curated designer materials',
       image: 'assets/catelogue/FLANGE FITTINGS MOCKUP.png',
       category: 'Designer'
     },
     {
       id: 5,
-      title: 'PIPE FITTINGS',
+      title: 'PIPE FITTINGS - DIMENSIONAL CATALOGUE',
       description: 'Discover our exclusive range of premium materials',
       image: 'assets/catelogue/PIPE FITTINGS MOCKUP.png',
       category: 'Premium'
     },
     {
       id: 7,
-      title: 'Tube Fittings',
+      title: 'TUBE FITTINGS - DIMENSIONAL CATALOGUE',
       description: 'Timeless elegance for every project',
       image: 'assets/catelogue/TUBE FITTINGS MOCKUP.png',
       category: 'Classic'
     },
   ];
+
+  downloadCatalogue() {
+    const pdfUrl = 'assets/catelogue/Adaptix_Valves_Product_Catalog.pdf';
+    window.open(pdfUrl, '_blank');
+  }
 }
