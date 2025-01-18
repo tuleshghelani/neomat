@@ -119,7 +119,7 @@ export class ProductService {
       mainImage: 'assets/product/VALVES/Forged_Steel_Ball_Valves.png',
       otherImages: [
       ],
-      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      description: 'A ball valve is a flow control device which uses a hollow, perforated, and pivoting ball to control fluid flowing through it. It is open when the hole through the middle of the ball is in line with the flow inlet, and closed when it is pivoted 90 degrees by the valve handle, blocking the flow.',
       specifications: {
           'Body Style': '3-piece ball valve',
           'Size Range': '1/2"-2" ( 15 mm to 50 mm )',
@@ -137,7 +137,7 @@ export class ProductService {
       mainImage: 'assets/product/VALVES/Forged_Steel_Gate_Valves.png',
       otherImages: [
       ],
-      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      description: 'A gate valve, also known as a sluice valve, is a valve that opens by lifting a barrier (gate) out of the path of the fluid. Gate valves require very little space along the pipe axis and hardly restrict the flow of fluid when the gate is fully opened.',
       specifications: {
           'Body Style': 'Gate Valve - Bolted Bonnet',
           'Size Range': '1/2"-2" ( 15 mm to 50 mm )',
@@ -155,7 +155,7 @@ export class ProductService {
       mainImage: 'assets/product/VALVES/Forged_Steel_Globe_Valve.png',
       otherImages: [
       ],
-      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      description: 'A globe valve, different from ball valve, is a type of valve used for regulating flow in a pipeline, consisting of a movable plug or disc element and a stationary ring seat in a generally spherical body.',
       specifications: {
           'Body Style': 'Globe Valve',
           'Size Range': '1/2"-2” (15 mm to 50 mm)',
@@ -173,7 +173,7 @@ export class ProductService {
       mainImage: 'assets/product/VALVES/Forged_Steel_Lift_Check_Valve.png',
       otherImages: [
       ],
-      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      description: 'A check valve, is a valve that normally allows fluid (liquid or gas) to flow through it in only one direction.',
       specifications: {
           'Body Style': 'Check Valve',
           'Size Range': '1/2"-2” (15 mm to 50 mm)',
@@ -191,7 +191,7 @@ export class ProductService {
       mainImage: 'assets/product/VALVES/Cast_Steel_Floating_Ball_Valves.png',
       otherImages: [
       ],
-      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      description: 'A ball valve is a flow control device which uses a hollow, perforated, and pivoting ball to control fluid flowing through it. It is open when the hole through the middle of the ball is in line with the flow inlet, and closed when it is pivoted 90 degrees by the valve handle, blocking the flow.',
       specifications: {
           'Body Style': '2-piece ball valve',
           'Size Range': '1/2"-6” (15 mm to 150 mm)',
@@ -209,7 +209,7 @@ export class ProductService {
       mainImage: 'assets/product/VALVES/Cast_Steel_Gate_Valves.png',
       otherImages: [
       ],
-      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      description: 'A gate valve, also known as a sluice valve, is a valve that opens by lifting a barrier (gate) out of the path of the fluid. Gate valves require very little space along the pipe axis and hardly restrict the flow of fluid when the gate is fully opened.',
       specifications: {
           'Body Style': 'Gate Valve - Bolted Bonnet',
           'Size Range': '2"-6” (50 mm to 150 mm)',
@@ -227,7 +227,7 @@ export class ProductService {
       mainImage: 'assets/product/VALVES/Cast_Steel_Globe_Valves.png',
       otherImages: [
       ],
-      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      description: 'A globe valve, different from ball valve, is a type of valve used for regulating flow in a pipeline, consisting of a movable plug or disc element and a stationary ring seat in a generally spherical body.',
       specifications: {
           'Body Style': 'Globe',
           'Size Range': '2"-6” (50 mm to 150 mm)',
@@ -245,7 +245,7 @@ export class ProductService {
       mainImage: 'assets/product/VALVES/Cast_Steel_Check_Valves.png',
       otherImages: [
       ],
-      description: 'High-precision 45-degree elbow fitting optimized for moderate flow direction changes in industrial and commercial casting systems. Features seamless construction with uniform wall thickness and precise 45-degree angle consistency. Engineered for minimal flow resistance and pressure drop in I/C applications.',
+      description: 'A check valve, is a valve that normally allows fluid (liquid or gas) to flow through it in only one direction.',
       specifications: {
           'Body Style': 'Check Valves',
           'Size Range': '2"-6” (50 mm to 150 mm)',
