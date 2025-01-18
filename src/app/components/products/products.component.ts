@@ -121,11 +121,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
     
     // Reset pagination and update products
     this.resetPagination();
-    if (category.isExpanded) {
-      this.updateFilteredProducts(category);
-    } else {
-      this.updateFilteredProducts();
-    }
+    this.updateFilteredProducts(category);
   }
 
   isCategoryActive(category: ProductCategory): boolean {
@@ -151,7 +147,12 @@ export class ProductsComponent implements OnInit, OnDestroy {
     } else if (category) {
       this.filteredProducts = this.productService.getProductsByCategory(category.name);
     } else {
-      this.filteredProducts = this.productService.getAllProducts();
+      // Instead of getting all products, we should maintain the current category filter
+      if (this.selectedCategory) {
+        this.filteredProducts = this.productService.getProductsByCategory(this.selectedCategory.name);
+      } else {
+        this.filteredProducts = this.productService.getAllProducts();
+      }
     }
     this.loadNextBatch();
   }
@@ -170,11 +171,17 @@ export class ProductsComponent implements OnInit, OnDestroy {
     
     this.isLoading = true;
     const endIndex = Math.min(startIndex + this.batchSize, this.filteredProducts.length);
+    
+    // Only load products from the filtered list
     const newBatch = this.filteredProducts.slice(startIndex, endIndex);
     
-    // Reduced timeout for better responsiveness
     setTimeout(() => {
-      this.displayedProducts = [...this.displayedProducts, ...newBatch];
+      // Replace existing products instead of concatenating
+      if (this.currentPage === 0) {
+        this.displayedProducts = newBatch;
+      } else {
+        this.displayedProducts = [...this.displayedProducts, ...newBatch];
+      }
       this.currentPage++;
       this.isLoading = false;
     }, 400);
